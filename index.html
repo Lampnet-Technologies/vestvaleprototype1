@@ -1,19 +1,756 @@
-<!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<title>My static Space</title>
-		<link rel="stylesheet" href="style.css" />
-	</head>
-	<body>
-		<div class="card">
-			<h1>Welcome to your static Space!</h1>
-			<p>You can modify this app directly by editing <i>index.html</i> in the Files and versions tab.</p>
-			<p>
-				Also don't forget to check the
-				<a href="https://huggingface.co/docs/hub/spaces" target="_blank">Spaces documentation</a>.
-			</p>
-		</div>
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintage Homes & Decor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap');
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f1ea;
+            color: #4a3c30;
+        }
+        
+        .vintage-header {
+            background: linear-gradient(rgba(74, 60, 48, 0.9), rgba(74, 60, 48, 0.9)), 
+                        url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .title-font {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .vintage-brown {
+            background-color: #4a3c30;
+        }
+        
+        .light-brown {
+            background-color: #d2c8b8;
+        }
+        
+        .text-vintage {
+            color: #4a3c30;
+        }
+        
+        .border-vintage {
+            border-color: #4a3c30;
+        }
+        
+        .property-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(74, 60, 48, 0.2);
+        }
+        
+        .appliance-card:hover {
+            transform: scale(1.03);
+        }
+        
+        .nav-link:hover {
+            color: #d2c8b8;
+        }
+        
+        .search-btn:hover {
+            background-color: #3a2e24;
+        }
+        
+        .hero-text {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #d2c8b8;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: #4a3c30;
+            border-radius: 5px;
+        }
+        
+        /* Vintage photo effect */
+        .vintage-img {
+            filter: sepia(30%) contrast(110%) brightness(90%);
+            transition: all 0.3s ease;
+        }
+        
+        .vintage-img:hover {
+            filter: sepia(0%) contrast(100%) brightness(100%);
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="vintage-brown text-white py-2 px-4 flex justify-between items-center text-sm">
+        <div class="flex space-x-4">
+            <span><i class="fas fa-phone-alt mr-1"></i> +1 (555) 123-4567</span>
+            <span><i class="fas fa-envelope mr-1"></i> info@vintagehomes.com</span>
+        </div>
+        <div class="flex space-x-4">
+            <a href="#" class="hover:text-amber-100"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="hover:text-amber-100"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="hover:text-amber-100"><i class="fab fa-pinterest-p"></i></a>
+        </div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="light-brown sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <i class="fas fa-home text-3xl text-vintage mr-2"></i>
+                <span class="title-font text-2xl font-bold text-vintage">Vintage Homes</span>
+            </div>
+            
+            <div class="hidden md:flex space-x-8">
+                <a href="#" class="nav-link text-vintage font-medium hover:text-amber-900 transition">Home</a>
+                <a href="#properties" class="nav-link text-vintage font-medium hover:text-amber-900 transition">Properties</a>
+                <a href="#appliances" class="nav-link text-vintage font-medium hover:text-amber-900 transition">Home Decor</a>
+                <a href="#about" class="nav-link text-vintage font-medium hover:text-amber-900 transition">About</a>
+                <a href="#contact" class="nav-link text-vintage font-medium hover:text-amber-900 transition">Contact</a>
+            </div>
+            
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-vintage hover:text-amber-900"><i class="fas fa-heart"></i></a>
+                <a href="#" class="text-vintage hover:text-amber-900"><i class="fas fa-shopping-cart"></i></a>
+                <button class="md:hidden text-vintage focus:outline-none" id="mobile-menu-button">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden vintage-brown text-white" id="mobile-menu">
+            <div class="px-4 py-2 space-y-3">
+                <a href="#" class="block py-2 hover:bg-amber-900 px-2 rounded">Home</a>
+                <a href="#properties" class="block py-2 hover:bg-amber-900 px-2 rounded">Properties</a>
+                <a href="#appliances" class="block py-2 hover:bg-amber-900 px-2 rounded">Home Decor</a>
+                <a href="#about" class="block py-2 hover:bg-amber-900 px-2 rounded">About</a>
+                <a href="#contact" class="block py-2 hover:bg-amber-900 px-2 rounded">Contact</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <header class="vintage-header text-white py-20 md:py-32">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="title-font hero-text text-4xl md:text-6xl font-bold mb-4">Timeless Homes, Modern Comfort</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto hero-text">Discover vintage properties and classic home decor that tell a story</p>
+            
+            <div class="max-w-2xl mx-auto bg-white bg-opacity-20 backdrop-filter backdrop-blur-sm rounded-lg p-4">
+                <div class="flex flex-col md:flex-row gap-2">
+                    <select class="flex-grow p-3 rounded bg-white bg-opacity-90 text-vintage focus:outline-none">
+                        <option>Property Type</option>
+                        <option>Apartment</option>
+                        <option>House</option>
+                        <option>Villa</option>
+                        <option>Cottage</option>
+                    </select>
+                    <select class="flex-grow p-3 rounded bg-white bg-opacity-90 text-vintage focus:outline-none">
+                        <option>Location</option>
+                        <option>New York</option>
+                        <option>Chicago</option>
+                        <option>San Francisco</option>
+                        <option>Boston</option>
+                    </select>
+                    <button class="search-btn bg-amber-800 hover:bg-amber-900 text-white p-3 rounded font-medium transition">
+                        <i class="fas fa-search mr-2"></i> Search
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Featured Properties -->
+    <section id="properties" class="py-16 bg-amber-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="title-font text-3xl md:text-4xl font-bold text-vintage mb-2">Featured Properties</h2>
+                <div class="w-20 h-1 bg-amber-800 mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Explore our curated selection of vintage properties with character and charm</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Property 1 -->
+                <div class="property-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                             alt="Vintage Apartment" class="w-full h-64 object-cover vintage-img">
+                        <div class="absolute top-4 right-4 bg-amber-800 text-white px-3 py-1 rounded-full text-sm font-medium">
+                            For Sale
+                        </div>
+                        <div class="absolute bottom-4 left-4 bg-white text-vintage px-3 py-1 rounded-full text-sm font-medium">
+                            $450,000
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="title-font text-xl font-bold mb-2">The Heritage Loft</h3>
+                        <p class="text-gray-600 mb-4"><i class="fas fa-map-marker-alt text-amber-800 mr-2"></i> 124 Maple Street, Boston</p>
+                        <div class="flex justify-between text-sm text-gray-600 mb-4">
+                            <span><i class="fas fa-bed text-amber-800 mr-1"></i> 3 Beds</span>
+                            <span><i class="fas fa-bath text-amber-800 mr-1"></i> 2 Baths</span>
+                            <span><i class="fas fa-ruler-combined text-amber-800 mr-1"></i> 1,850 sq.ft</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">A beautifully restored loft with original hardwood floors and exposed brick walls.</p>
+                        <button class="w-full bg-amber-800 hover:bg-amber-900 text-white py-2 rounded transition">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Property 2 -->
+                <div class="property-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                             alt="Classic Brownstone" class="w-full h-64 object-cover vintage-img">
+                        <div class="absolute top-4 right-4 bg-amber-800 text-white px-3 py-1 rounded-full text-sm font-medium">
+                            For Sale
+                        </div>
+                        <div class="absolute bottom-4 left-4 bg-white text-vintage px-3 py-1 rounded-full text-sm font-medium">
+                            $725,000
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="title-font text-xl font-bold mb-2">Classic Brownstone</h3>
+                        <p class="text-gray-600 mb-4"><i class="fas fa-map-marker-alt text-amber-800 mr-2"></i> 78 Oak Avenue, New York</p>
+                        <div class="flex justify-between text-sm text-gray-600 mb-4">
+                            <span><i class="fas fa-bed text-amber-800 mr-1"></i> 4 Beds</span>
+                            <span><i class="fas fa-bath text-amber-800 mr-1"></i> 3 Baths</span>
+                            <span><i class="fas fa-ruler-combined text-amber-800 mr-1"></i> 2,400 sq.ft</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">Stunning brownstone with original details, fireplace, and private garden.</p>
+                        <button class="w-full bg-amber-800 hover:bg-amber-900 text-white py-2 rounded transition">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Property 3 -->
+                <div class="property-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                             alt="Vintage Cottage" class="w-full h-64 object-cover vintage-img">
+                        <div class="absolute top-4 right-4 bg-amber-800 text-white px-3 py-1 rounded-full text-sm font-medium">
+                            For Sale
+                        </div>
+                        <div class="absolute bottom-4 left-4 bg-white text-vintage px-3 py-1 rounded-full text-sm font-medium">
+                            $325,000
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="title-font text-xl font-bold mb-2">Cozy Vintage Cottage</h3>
+                        <p class="text-gray-600 mb-4"><i class="fas fa-map-marker-alt text-amber-800 mr-2"></i> 32 Pine Road, Chicago</p>
+                        <div class="flex justify-between text-sm text-gray-600 mb-4">
+                            <span><i class="fas fa-bed text-amber-800 mr-1"></i> 2 Beds</span>
+                            <span><i class="fas fa-bath text-amber-800 mr-1"></i> 1 Bath</span>
+                            <span><i class="fas fa-ruler-combined text-amber-800 mr-1"></i> 1,200 sq.ft</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">Charming cottage with vintage details, updated kitchen, and large backyard.</p>
+                        <button class="w-full bg-amber-800 hover:bg-amber-900 text-white py-2 rounded transition">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <button class="bg-vintage hover:bg-amber-900 text-white px-6 py-3 rounded font-medium transition">
+                    View All Properties <i class="fas fa-arrow-right ml-2"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Home Appliances Section -->
+    <section id="appliances" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="title-font text-3xl md:text-4xl font-bold text-vintage mb-2">Vintage Home Decor</h2>
+                <div class="w-20 h-1 bg-amber-800 mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Complete your vintage home with our curated selection of classic home decor</p>
+            </div>
+            
+            <div class="flex justify-center mb-8">
+                <div class="flex space-x-2 overflow-x-auto pb-2">
+                    <button class="category-btn bg-amber-800 text-white px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap">All Items</button>
+                    <button class="category-btn bg-amber-100 hover:bg-amber-200 text-vintage px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap">Lighting</button>
+                    <button class="category-btn bg-amber-100 hover:bg-amber-200 text-vintage px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap">Wall Decor</button>
+                    <button class="category-btn bg-amber-100 hover:bg-amber-200 text-vintage px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap">Furniture</button>
+                    <button class="category-btn bg-amber-100 hover:bg-amber-200 text-vintage px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap">Kitchenware</button>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Product 1 -->
+                <div class="appliance-card bg-white rounded-lg overflow-hidden shadow-md border border-amber-100 transition duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                             alt="Edison Bulb" class="w-full h-48 object-cover vintage-img">
+                        <div class="absolute top-2 right-2 bg-white text-amber-800 p-1 rounded-full">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-medium text-vintage mb-1">Vintage Edison Bulb</h3>
+                        <p class="text-gray-600 text-sm mb-2">Set of 3 - Warm White</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-vintage">$24.99</span>
+                            <button class="bg-amber-100 hover:bg-amber-200 text-vintage p-2 rounded-full">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="appliance-card bg-white rounded-lg overflow-hidden shadow-md border border-amber-100 transition duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27c2d015d4f7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1180&q=80" 
+                             alt="Floral Wallpaper" class="w-full h-48 object-cover vintage-img">
+                        <div class="absolute top-2 right-2 bg-white text-amber-800 p-1 rounded-full">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-medium text-vintage mb-1">Victorian Floral Wallpaper</h3>
+                        <p class="text-gray-600 text-sm mb-2">Roll (20.5" x 33')</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-vintage">$39.99</span>
+                            <button class="bg-amber-100 hover:bg-amber-200 text-vintage p-2 rounded-full">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="appliance-card bg-white rounded-lg overflow-hidden shadow-md border border-amber-100 transition duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1180&q=80" 
+                             alt="Brass Chandelier" class="w-full h-48 object-cover vintage-img">
+                        <div class="absolute top-2 right-2 bg-white text-amber-800 p-1 rounded-full">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-medium text-vintage mb-1">Antique Brass Chandelier</h3>
+                        <p class="text-gray-600 text-sm mb-2">6-Light, 24" Wide</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-vintage">$189.99</span>
+                            <button class="bg-amber-100 hover:bg-amber-200 text-vintage p-2 rounded-full">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="appliance-card bg-white rounded-lg overflow-hidden shadow-md border border-amber-100 transition duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
+                             alt="Wooden Blinds" class="w-full h-48 object-cover vintage-img">
+                        <div class="absolute top-2 right-2 bg-white text-amber-800 p-1 rounded-full">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-medium text-vintage mb-1">Classic Wooden Blinds</h3>
+                        <p class="text-gray-600 text-sm mb-2">Custom Sizes Available</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-vintage">$79.99</span>
+                            <button class="bg-amber-100 hover:bg-amber-200 text-vintage p-2 rounded-full">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <button class="bg-vintage hover:bg-amber-900 text-white px-6 py-3 rounded font-medium transition">
+                    Browse All Decor <i class="fas fa-arrow-right ml-2"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-amber-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-8 lg:mb-0 lg:pr-12">
+                    <img src="https://images.unsplash.com/photo-1600121848594-d8644e57abab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                         alt="Our Story" class="w-full rounded-lg shadow-lg vintage-img">
+                </div>
+                <div class="lg:w-1/2">
+                    <h2 class="title-font text-3xl md:text-4xl font-bold text-vintage mb-4">Our Story</h2>
+                    <div class="w-20 h-1 bg-amber-800 mb-6"></div>
+                    <p class="text-gray-700 mb-4">
+                        Founded in 1985, Vintage Homes has been helping families find their perfect vintage property while preserving the charm and character of bygone eras. 
+                        What started as a small real estate agency has grown into a full-service vintage home specialist.
+                    </p>
+                    <p class="text-gray-700 mb-6">
+                        We understand that a home is more than just walls and a roof - it's a living space that tells a story. That's why we've expanded our services to include 
+                        carefully curated vintage home decor that complements the architectural beauty of older properties.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="flex items-center">
+                            <div class="bg-amber-800 text-white p-3 rounded-full mr-4">
+                                <i class="fas fa-home text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-vintage">500+</h4>
+                                <p class="text-gray-600 text-sm">Properties Sold</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-amber-800 text-white p-3 rounded-full mr-4">
+                                <i class="fas fa-star text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-vintage">35 Years</h4>
+                                <p class="text-gray-600 text-sm">Of Experience</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="bg-vintage hover:bg-amber-900 text-white px-6 py-3 rounded font-medium transition">
+                        Learn More About Us
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="title-font text-3xl md:text-4xl font-bold text-vintage mb-2">What Our Clients Say</h2>
+                <div class="w-20 h-1 bg-amber-800 mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-amber-50 p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="text-amber-800 text-2xl mr-2">“</div>
+                        <div class="flex-1">
+                            <div class="flex items-center">
+                                <div class="text-yellow-400 mr-1">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        Vintage Homes found us the perfect 1920s bungalow that had all the original charm but with modern updates. Their attention to detail is unmatched.
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Sarah J." class="w-12 h-12 rounded-full mr-4 object-cover">
+                        <div>
+                            <h4 class="font-bold text-vintage">Sarah J.</h4>
+                            <p class="text-gray-600 text-sm">Homeowner, Chicago</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-amber-50 p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="text-amber-800 text-2xl mr-2">“</div>
+                        <div class="flex-1">
+                            <div class="flex items-center">
+                                <div class="text-yellow-400 mr-1">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        The vintage lighting and wallpaper we purchased transformed our apartment into a cozy, nostalgic retreat. Quality products and excellent service!
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael T." class="w-12 h-12 rounded-full mr-4 object-cover">
+                        <div>
+                            <h4 class="font-bold text-vintage">Michael T.</h4>
+                            <p class="text-gray-600 text-sm">Interior Designer, Boston</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-amber-50 p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="text-amber-800 text-2xl mr-2">“</div>
+                        <div class="flex-1">
+                            <div class="flex items-center">
+                                <div class="text-yellow-400 mr-1">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        As first-time buyers, we were nervous about purchasing an older home. Vintage Homes guided us through every step and found us our dream home.
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Emily R." class="w-12 h-12 rounded-full mr-4 object-cover">
+                        <div>
+                            <h4 class="font-bold text-vintage">Emily R.</h4>
+                            <p class="text-gray-600 text-sm">First-time Buyer, New York</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Newsletter -->
+    <section class="py-16 vintage-brown text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="title-font text-3xl md:text-4xl font-bold mb-4">Stay Updated</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Subscribe to our newsletter for exclusive property listings and decor deals</p>
+            
+            <div class="max-w-md mx-auto flex">
+                <input type="email" placeholder="Your email address" class="flex-grow p-3 rounded-l focus:outline-none text-vintage">
+                <button class="bg-amber-800 hover:bg-amber-900 px-6 py-3 rounded-r font-medium transition">
+                    Subscribe
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="title-font text-3xl md:text-4xl font-bold text-vintage mb-2">Contact Us</h2>
+                <div class="w-20 h-1 bg-amber-800 mx-auto"></div>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row">
+                <div class="lg:w-1/2 mb-8 lg:mb-0 lg:pr-12">
+                    <h3 class="title-font text-2xl font-bold text-vintage mb-4">Get In Touch</h3>
+                    <p class="text-gray-700 mb-6">
+                        Have questions about our properties or home decor items? Our team is here to help you find the perfect vintage solution for your needs.
+                    </p>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start">
+                            <div class="bg-amber-100 text-amber-800 p-3 rounded-full mr-4">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-vintage">Our Office</h4>
+                                <p class="text-gray-600">123 Vintage Lane, Heritage District, NY 10001</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-amber-100 text-amber-800 p-3 rounded-full mr-4">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-vintage">Call Us</h4>
+                                <p class="text-gray-600">+1 (555) 123-4567</p>
+                                <p class="text-gray-600">Mon-Fri: 9am-6pm</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-amber-100 text-amber-800 p-3 rounded-full mr-4">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-vintage">Email Us</h4>
+                                <p class="text-gray-600">info@vintagehomes.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-amber-100 hover:bg-amber-200 text-amber-800 p-3 rounded-full">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-amber-100 hover:bg-amber-200 text-amber-800 p-3 rounded-full">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="bg-amber-100 hover:bg-amber-200 text-amber-800 p-3 rounded-full">
+                            <i class="fab fa-pinterest-p"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <form class="bg-amber-50 p-6 rounded-lg shadow-sm">
+                        <div class="mb-4">
+                            <label for="name" class="block text-vintage font-medium mb-2">Your Name</label>
+                            <input type="text" id="name" class="w-full p-3 rounded border border-amber-200 focus:outline-none focus:ring-1 focus:ring-amber-800">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-vintage font-medium mb-2">Email Address</label>
+                            <input type="email" id="email" class="w-full p-3 rounded border border-amber-200 focus:outline-none focus:ring-1 focus:ring-amber-800">
+                        </div>
+                        <div class="mb-4">
+                            <label for="subject" class="block text-vintage font-medium mb-2">Subject</label>
+                            <input type="text" id="subject" class="w-full p-3 rounded border border-amber-200 focus:outline-none focus:ring-1 focus:ring-amber-800">
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="block text-vintage font-medium mb-2">Message</label>
+                            <textarea id="message" rows="4" class="w-full p-3 rounded border border-amber-200 focus:outline-none focus:ring-1 focus:ring-amber-800"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-amber-800 hover:bg-amber-900 text-white py-3 rounded font-medium transition">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="vintage-brown text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-home text-2xl text-amber-300 mr-2"></i>
+                        <span class="title-font text-xl font-bold text-amber-300">Vintage Homes</span>
+                    </div>
+                    <p class="text-amber-100 mb-4">
+                        Preserving the past, building the future. Vintage Homes specializes in historic properties and period-appropriate decor.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-amber-100 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-amber-100 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-amber-100 hover:text-white"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#" class="text-amber-100 hover:text-white"><i class="fab fa-yelp"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="title-font text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-amber-100 hover:text-white">Home</a></li>
+                        <li><a href="#properties" class="text-amber-100 hover:text-white">Properties</a></li>
+                        <li><a href="#appliances" class="text-amber-100 hover:text-white">Home Decor</a></li>
+                        <li><a href="#about" class="text-amber-100 hover:text-white">About Us</a></li>
+                        <li><a href="#contact" class="text-amber-100 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="title-font text-lg font-bold mb-4">Properties</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-amber-100 hover:text-white">Apartments</a></li>
+                        <li><a href="#" class="text-amber-100 hover:text-white">Townhouses</a></li>
+                        <li><a href="#" class="text-amber-100 hover:text-white">Cottages</a></li>
+                        <li><a href="#" class="text-amber-100 hover:text-white">Brownstones</a></li>
+                        <li><a href="#" class="text-amber-100 hover:text-white">Historic Homes</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="title-font text-lg font-bold mb-4">Home Decor</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-amber-100 hover:text-white">Lighting</a></li>
+                        <li><a href="#" class="text-amber-100 hover:text-white">Wallpaper</a></li>
+                        <li><a href="#" class="text-amber-100 hover:text-white">Window Treatments</a></li>
+                        <li><a href="#" class="text-amber-100 hover:text-white">Hardware</a></li>
+                        <li><a href="#" class="text-amber-100 hover:text-white">Furniture</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="pt-8 border-t border-amber-800 text-center text-amber-100 text-sm">
+                <p>&copy; 2023 Vintage Homes & Decor. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+        
+        // Category filter buttons
+        const categoryButtons = document.querySelectorAll('.category-btn');
+        categoryButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all buttons
+                categoryButtons.forEach(btn => {
+                    btn.classList.remove('bg-amber-800', 'text-white');
+                    btn.classList.add('bg-amber-100', 'text-vintage', 'hover:bg-amber-200');
+                });
+                
+                // Add active class to clicked button
+                this.classList.remove('bg-amber-100', 'text-vintage', 'hover:bg-amber-200');
+                this.classList.add('bg-amber-800', 'text-white');
+                
+                // Here you would typically filter the products
+                // For this demo, we're just changing the button appearance
+            });
+        });
+        
+        // Property card hover effect
+        const propertyCards = document.querySelectorAll('.property-card');
+        propertyCards.forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transition = 'transform 0.3s ease, box-shadow 0.3s ease';
+            });
+        });
+        
+        // Appliance card hover effect
+        const applianceCards = document.querySelectorAll('.appliance-card');
+        applianceCards.forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transition = 'transform 0.3s ease';
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const menu = document.getElementById('mobile-menu');
+                    menu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+<p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://enzostvs-deepsite.hf.space/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=Lampcloud/lampcloud-space" style="color: #fff;text-decoration: underline;" target="_blank" >Remix</a></p></body>
 </html>
