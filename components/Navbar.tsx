@@ -17,7 +17,9 @@ type SectionKey =
   | "properties"
   | "homedecor"
   | "service"
-  | "interior-decor";
+  | "interior-decor"
+  | "homeAccessories"
+  | "interiorDecor";
 
 interface NavbarProps {
   onNavClick?: (section: SectionKey) => void;
@@ -25,10 +27,10 @@ interface NavbarProps {
 
 const navLinks: { label: string; section: SectionKey; href: string }[] = [
   { label: "About Us", section: "about", href: "#about" },
-  { label: "Our Properties", section: "products", href: "#products" },
-  { label: "Interior Decor", section: "interior-decor", href: "#services" },
+  { label: "Home Accessories", section: "homeAccessories", href: "#homeAccessories" },
+  { label: "Interior Decor", section: "interiorDecor", href: "#interiorDecor" },
   { label: "Services", section: "services", href: "#services" },
-  { label: "Virtual Tour", section: "testimonials", href: "#testimonials" },
+  { label: "Virtual Tour", section: "testimonials", href: "#virtualTour" },
 ];
 
 interface languagesType<S,N>{
@@ -97,13 +99,13 @@ else{
       <div className="container mx-auto px-2 py-3 flex justify-between items-center ">
         {/* Logo */}
         <div className="flex items-center ">
-          <Image
-            src="/vestvale logo 1.png"
+          <Link href={"/"}><Image
+            src="/vest-logo.png"
             alt="Vestvale Logo"
-            width={118}
-            height={52}
-            className="md:w-30 w-24"
-            />
+            width={20}
+            height={30}
+            className="md:w-14 w-10"
+            /></Link>
         </div>
 
 
@@ -124,6 +126,16 @@ return <button className="text-center text-black py-1 hover:bg-white cursor-poin
               key={link.section}
               href={link.href}
               onClick={(e) => {
+                if (link.label == "Virtual Tour") {
+                  const el = document.getElementById("virtualTour")
+                  el?.scrollIntoView({behavior:"smooth"})
+                  setTimeout(()=>{
+
+                    setIsOpen(false);
+                  },100)
+                  return
+                }
+
                 e.preventDefault();
                 onNavClick?.(link.section);
               }}
@@ -188,9 +200,21 @@ return <button className="text-center text-black py-1 hover:bg-white cursor-poin
                   href={link.href}
                   className="block py-2 hover:bg-amber-900 px-2 rounded"
                   onClick={(e) => {
-                    e.preventDefault();
+                    // e.preventDefault();
+                    if (link.label == "Virtual Tour") {
+                      const el = document.getElementById("virtualTour")
+                      el?.scrollIntoView({behavior:"smooth"})
+                      setTimeout(()=>{
+
+                        setIsOpen(false);
+                      },100)
+                      return
+                    }
                     onNavClick?.(link.section);
-                    setIsOpen(false);
+                    setTimeout(()=>{
+
+                      setIsOpen(false);
+                    },100)
                   }}
                 >
                   {link.label}

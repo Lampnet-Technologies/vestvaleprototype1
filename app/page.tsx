@@ -13,6 +13,7 @@ import HomeDecor from '@/components/HomeDecor';
 import Services from '@/components/Services';
 import { Accessories } from '@/components/AccessoriesCard';
 import OurPartners from '@/components/OurPartners';
+import WhatOurCustomersSay from '@/components/WhatOurCustomersSay';
 
 
 export default function HomePage() {
@@ -21,6 +22,8 @@ export default function HomePage() {
     hero: useRef<HTMLElement>(null),
     about: useRef<HTMLElement>(null),
     products: useRef<HTMLElement>(null),
+    homeAccessories:useRef<HTMLElement>(null),
+    interiorDecor:useRef<HTMLElement>(null),
     homedecor: useRef<HTMLElement>(null),
     services: useRef<HTMLElement>(null),
     testimonials: useRef<HTMLElement>(null),
@@ -40,14 +43,15 @@ export default function HomePage() {
       <Navbar  onNavClick={scrollToSection} />
       <Hero ref={sections.hero} />
       <OurStory ref={sections.about} />
-      <PropertiesSection ref={sections.properties} />
+      <PropertiesSection ref={sections.interiorDecor} />
       <HomeDecor ref={sections.homedecor} />  
-      <Accessories />
-      <Services ref={sections.service}/>
-      <TestimonialsSection ref={sections.testimonials} /> 
+      <Accessories ref={sections.homeAccessories} />
+      <Services ref={sections.services}/>
+      <WhatOurCustomersSay/>
+      {/* <TestimonialsSection ref={sections.testimonials} />  */}
       <OurPartners ref={sections.partners}/>
-      <NewsletterSection ref={sections.services} />
-      <ContactSection ref={sections.contact}   /> 
+      <NewsletterSection ref={sections.service} />
+      {/* <ContactSection ref={sections.contact}   />  */}
       <FooterSection />
       {/* Add FooterSection if you have one, or remove this line if not */}
       

@@ -1,5 +1,10 @@
+import { type Metadata } from "next";
+import AccessoryDynamicComponent from "@/components/AccessoryComponent/AccessoryDynamicComponent";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
+// Forcefully override any weird type expectations
+export const dynamic = "force-static";
+
 
 type AccessoryImage = string | { image: string; text: string };
 
@@ -13,8 +18,7 @@ const accessoriesData: Record<
 > = {
   door: {
     title: "About our Home Accessories",
-    description:
-      "At Vestvale Estate, we believe luxury is defined by culture, craftsmanship, and timeless design. Each of our interiors is inspired by some of the world’s most iconic and refined aesthetics — offering residents a truly global living experience.",
+    description: "Luxury is defined by culture, craftsmanship, and timeless design...",
     images: [
       { image: "/door-01.svg", text: "door" },
       { image: "/door-02.svg", text: "door" },
@@ -79,14 +83,28 @@ const accessoriesData: Record<
       { image: "/wallpaper-09.svg", text: "wallpaper" },
     ],
   },
+  tiles: {
+    title: "About our Home Accessories ",
+    description:
+      "At Vestvale Estate, we believe luxury is defined by culture, craftsmanship, and timeless design. Each of our interiors is inspired by some of the world’s most iconic and refined aesthetics — offering residents a truly global living experience.",
+    images: [
+      { image: "/tile-01.svg", text: "title" },
+      { image: "/tile-02.svg", text: "title" },
+      { image: "/tile-03.svg", text: "title" },
+      { image: "/tile-04.svg", text: "title" },
+   
+    ],
+  },
 };
 
 interface PageProps {
-  params: { slug: string };
+  params: Promise<{ slug: string }>,
+  
 }
 
-const AccessoriesDetailPage = ({ params }: PageProps) => {
-  const content = accessoriesData[params.slug];
+const AccessoriesDetailPage =async({ params }: PageProps) => {
+  const {slug} = await params
+  const content = accessoriesData[slug];
 
   if (!content) {
     return (
@@ -96,39 +114,8 @@ const AccessoriesDetailPage = ({ params }: PageProps) => {
 
   return (
     <>
-    <Navbar/>
-      <section className="w-full h-full bg-[#17120F] font-inter">
-        <div className="w-full  md:w-10/12 mx-auto py-16 bg-[#17120F] text-white font-inter">
-          <div className="space-y-6 mb-12 ">
-            <h1 className="text-4xl md:text-5xl font-bold ">{content.title}</h1>
-            <p className="font-normal text-white/80 ">{content.description}</p>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
-            {content.images.map((img, i) => {
-              const src = typeof img === "string" ? img : img.image;
-
-              const alt =
-                typeof img === "string"
-                  ? `${content.title} ${i + 1}`
-                  : img.text || `${content.title} ${i + 1}`;
-              return (
-                <div key={i}>
-                  <Image
-                    src={src}
-                    alt={alt}
-                    width={400}
-                    height={500}
-                    className=" border -full border-white  object-cover rounded-lg shadow-md transition-transform hover:scale-105 ease-in-out duration-300"
-                  />
-                  <p className="font-bold text-2xl capitalize md:text-3xl text-white mt-4">
-                    {typeof img === "string" ? "" : img.text}
-                  </p>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
+      <Navbar />
+      <AccessoryDynamicComponent content={content} />
     </>
   );
 };
@@ -138,3 +125,4 @@ export default AccessoriesDetailPage;
 export function generateStaticParams() {
   return Object.keys(accessoriesData).map((slug) => ({ slug }));
 }
+
