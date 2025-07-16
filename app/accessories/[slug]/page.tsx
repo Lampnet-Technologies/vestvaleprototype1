@@ -6,7 +6,7 @@ import { type Metadata } from "next";
 const accessoriesData = {
   door: {
     title: "About our Home Accessories",
-    description: "Luxury is defined by culture, craftsmanship, and timeless design...",
+    description: "Luxury is defined by culture, craftsmanship, and timeless design at Vestvale Estate. Each of our interiors is inspired by some of the world’s most iconic and refined aesthetics — offering residents a truly global living experience.",
     images: [
       { image: "/door-01.svg", text: "door" },
       { image: "/door-02.svg", text: "door" },
@@ -81,7 +81,7 @@ const accessoriesData = {
   },
 };
 
-export default async function AccessoriesCategoryPage({ params }: { params: { slug: string } }) {
+export default function AccessoriesCategoryPage({ params }: { params: { slug: string } }) {
   const content = accessoriesData[params.slug as keyof typeof accessoriesData];
   if (!content) return <div>Not Found</div>;
 
