@@ -1,10 +1,9 @@
 "use client";
 
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { easeInOut, motion, useAnimation, useInView } from "framer-motion";
-import { useRef, useEffect } from "react";
 
 interface AccessoriesCardProps {
   image: string;
@@ -12,17 +11,63 @@ interface AccessoriesCardProps {
   index: number;
 }
 
-const cardVariants = {
-  hidden: { opacity: 0, y: 100 },
-  visible: (i: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: i * 0.5,
-      duration: 0.7,
-      ease: easeInOut,
+export const AccessoriesCard: React.FC<AccessoriesCardProps> = ({
+  image,
+  title,
+  index,
+}) => {
+  const router = useRouter();
+  const slug = title.toLowerCase().replace(/\s+/g, "");
+  const ref = useRef(null);
+  const inView = useInView(ref, { amount: 0.3, once: false });
+  const controls = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    } else {
+      controls.start("hidden");
+    }
+  }, [inView, controls]);
+
+  const variants = {
+    hidden: {
+      opacity: 0,
+      x: index % 2 === 0 ? 80 : -80, // Alternate directions
+      scale: 0.95,
     },
-  }),
+    visible: {
+      opacity: 1,
+      x: 0,
+      scale: 1,
+      transition: {
+        delay: index * 0.1,
+        duration: 0.8,
+        ease: "easeOut",
+      },
+    },
+  };
+
+  return (
+    <motion.div
+      ref={ref}
+      variants={variants}
+      initial="hidden"
+      animate={controls}
+      className="cursor-pointer flex flex-col items-center transition-transform hover:scale-105"
+      onClick={() => router.push(`/accessories/${slug}`)}
+    >
+      <div className="relative overflow-hidden w-full h-[200px]">
+        <Image
+          src={image}
+          alt={title}
+          fill
+          className="absolute w-full h-full rounded-md shadow-lg object-cover"
+        />
+      </div>
+      <p className="font-medium text-start text-lg w-full my-2">{title}</p>
+    </motion.div>
+  );
 };
 
 const sectionVariants = {
@@ -37,39 +82,7 @@ const sectionVariants = {
   },
 };
 
-export const AccessoriesCard: React.FC<AccessoriesCardProps> = ({
-  image,
-  title,
-  index,
-}) => {
-  const router = useRouter();
-  const slug = title.toLowerCase().replace(/\s+/g, '');
-
-  return (
-    <motion.section
-      custom={index}
-      variants={cardVariants}
-      initial="hidden"
-      animate="visible"
-      className="cursor-pointer flex flex-col items-center transition-transform hover:scale-105"
-      onClick={() => router.push(`/accessories/${slug}`)}
-    >
-      <div className="relative overflow-hidden w-[100%] h-[200px]">
-        <Image
-          src={image}
-          alt={title}
-          fill
-          className="absolute w-full h-full rounded-md shadow-lg object-cover"
-        />
-      </div>
-      <p className="font-medium text-start text-lg w-full my-2">{title}</p>
-    </motion.section>
-  );
-};
-
-
-
-export const  Accessories = React.forwardRef<
+export const Accessories = React.forwardRef<
   HTMLElement,
   React.HTMLAttributes<HTMLElement>
 >((props, ref) => {
@@ -97,26 +110,25 @@ export const  Accessories = React.forwardRef<
         if (typeof ref === "function") ref(node);
         else if (ref) ref.current = node;
       }}
-    id="homeAccessories"
+      id="homeAccessories"
       className="w-full md:w-10/12 mx-auto py-16 bg-[#17120F] text-white font-inter px-4 lg:px-0"
       initial="hidden"
       animate={controls}
       variants={sectionVariants}
       transition={{ duration: 0.8, ease: easeInOut }}
     >
-<div className="text-center mb-12">
-        <h2 className="text-3xl md:text-5xl font-semibold mb-2">Home Accessories</h2>
+      <div className="text-center mb-12">
+        <h2 className="text-3xl md:text-5xl font-semibold mb-2">
+          Home Accessories
+        </h2>
         <div className="w-20 h-1 bg-amber-800 mx-auto"></div>
         <p className="mt-4 max-w-2xl mx-auto">
-        Complete your vintage home with our curated selection of classic home accessories
+          Complete your vintage home with our curated selection of classic home
+          accessories
         </p>
       </div>
-      {/* <div>
-        <h2  className="text-center text-inter text-4xl font-medium max-w-2xl mx-auto text-white">Home Accessories</h2>
-        <p className="text-center max-w-2xl mx-auto text-white/80 mb-12">Complete your vintage home with our curated selection of classic home accessories</p>
-      </div> */}
-      {/* grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 justify-center items-center */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 ">
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
         {theAccessories.map((accessory, index) => (
           <AccessoriesCard
             key={index}
@@ -129,8 +141,3 @@ export const  Accessories = React.forwardRef<
     </motion.section>
   );
 });
-
-
-
-// export const Accessories: React.FC = () => {
-// };

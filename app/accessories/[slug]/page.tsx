@@ -1,21 +1,9 @@
-import { type Metadata } from "next";
+// app/accessories/[slug]/page.tsx
 import AccessoryDynamicComponent from "@/components/AccessoryComponent/AccessoryDynamicComponent";
 import Navbar from "@/components/Navbar";
-import Image from "next/image";
+import { type Metadata } from "next";
 
-export const dynamic = "force-static";
-
-
-type AccessoryImage = string | { image: string; text: string };
-
-const accessoriesData: Record<
-  string,
-  {
-    title: string;
-    description: string;
-    images: AccessoryImage[];
-  }
-> = {
+const accessoriesData = {
   door: {
     title: "About our Home Accessories",
     description: "Luxury is defined by culture, craftsmanship, and timeless design...",
@@ -37,18 +25,15 @@ const accessoriesData: Record<
   "doorhandle": {
     title: "About our Home Accessories",
     description: "At Vestvale Estate, we believe luxury is defined by culture, craftsmanship, and timeless design. Each of our interiors is inspired by some of the world’s most iconic and refined aesthetics — offering residents a truly global living experience.",
-   
     images: [
       { image: "/door-handle-01.svg", text: "door handle" },
       { image: "/door-handle-02.svg", text: "door handle" },
       { image: "/door-handle-03.svg", text: "door handle" },
-      
     ],
   },
   lights: {
     title: "About our Home Accessories",
     description: "At Vestvale Estate, we believe luxury is defined by culture, craftsmanship, and timeless design. Each of our interiors is inspired by some of the world’s most iconic and refined aesthetics — offering residents a truly global living experience.",
-    
     images: [
       { image: "/light-01.svg", text: "Vintage light" },
       { image: "/light-02.svg", text: "Vintage light" },
@@ -92,25 +77,13 @@ const accessoriesData: Record<
       { image: "/tile-02.svg", text: "title" },
       { image: "/tile-03.svg", text: "title" },
       { image: "/tile-04.svg", text: "title" },
-   
     ],
   },
 };
 
-interface PageProps {
-  params: Promise<{ slug: string }>,
-  
-}
-
-const AccessoriesDetailPage =async({ params }: PageProps) => {
-  const {slug} = await params
-  const content = accessoriesData[slug];
-
-  if (!content) {
-    return (
-      <div className="text-center py-20 text-white">Accessory not found.</div>
-    );
-  }
+export default async function AccessoriesCategoryPage({ params }: { params: { slug: string } }) {
+  const content = accessoriesData[params.slug as keyof typeof accessoriesData];
+  if (!content) return <div>Not Found</div>;
 
   return (
     <>
@@ -118,11 +91,11 @@ const AccessoriesDetailPage =async({ params }: PageProps) => {
       <AccessoryDynamicComponent content={content} />
     </>
   );
-};
+}
 
-export default AccessoriesDetailPage;
+import { accessoriesMap } from "@/data/accessoriesMap";
 
 export function generateStaticParams() {
-  return Object.keys(accessoriesData).map((slug) => ({ slug }));
+  return Object.keys(accessoriesMap).map((slug) => ({ slug }));
 }
 

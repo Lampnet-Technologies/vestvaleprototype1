@@ -68,7 +68,7 @@ const FooterSection = () => {
           <div className="flex-1">
             <h3 className="text-lg font-bold text-[#361B06]">Home Accessorites</h3>
             <ul className="mt-4 space-y-4">
-              {["Door handle", "Wallpapaer", "lights","doors","tiles"].map((item) => (
+              {["Door handle", "Wallpapaer", "Lights","Doors","Tiles"].map((item) => (
                 <li key={item}>
                   <a href="#properties" className="hover:text-white transition-colors">
                     {item}
