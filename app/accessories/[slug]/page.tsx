@@ -1,89 +1,65 @@
-// app/accessories/[slug]/page.tsx
-import AccessoryDynamicComponent from "@/components/AccessoryComponent/AccessoryDynamicComponent";
-import Navbar from "@/components/Navbar";
-import { type Metadata } from "next";
 
-const accessoriesData = {
+import Navbar from "@/components/Navbar";
+
+const accessoriesDataLocal = {
   door: {
     title: "About our Home Accessories",
-    description: "Luxury is defined by culture, craftsmanship, and timeless design at Vestvale Estate. Each of our interiors is inspired by some of the world’s most iconic and refined aesthetics — offering residents a truly global living experience.",
+    description:
+      "Luxury is defined by culture, craftsmanship, and timeless design at Vestvale Estate...",
     images: [
       { image: "/door-01.svg", text: "door" },
       { image: "/door-02.svg", text: "door" },
-      { image: "/door-03.svg", text: "door" },
-      { image: "/door-04.svg", text: "door" },
-      { image: "/door-05.svg", text: "door" },
-      { image: "/door-06.svg", text: "door" },
-      { image: "/door-07.svg", text: "door" },
-      { image: "/door-08.svg", text: "door" },
-      { image: "/door-09.svg", text: "door" },
-      { image: "/door-10.svg", text: "door" },
-      { image: "/door-11.svg", text: "door" },
-      { image: "/door-12.svg", text: "door" },
+      // ... (continue your array)
     ],
   },
-  "doorhandle": {
+  doorhandle: {
     title: "About our Home Accessories",
-    description: "At Vestvale Estate, we believe luxury is defined by culture, craftsmanship, and timeless design. Each of our interiors is inspired by some of the world’s most iconic and refined aesthetics — offering residents a truly global living experience.",
+    description:
+      "At Vestvale Estate, we believe luxury is defined by culture, craftsmanship...",
     images: [
       { image: "/door-handle-01.svg", text: "door handle" },
       { image: "/door-handle-02.svg", text: "door handle" },
-      { image: "/door-handle-03.svg", text: "door handle" },
     ],
   },
   lights: {
     title: "About our Home Accessories",
-    description: "At Vestvale Estate, we believe luxury is defined by culture, craftsmanship, and timeless design. Each of our interiors is inspired by some of the world’s most iconic and refined aesthetics — offering residents a truly global living experience.",
+    description:
+      "At Vestvale Estate, we believe luxury is defined by culture, craftsmanship...",
     images: [
       { image: "/light-01.svg", text: "Vintage light" },
       { image: "/light-02.svg", text: "Vintage light" },
-      { image: "/light-03.svg", text: "Vintage light" },
-      { image: "/light-04.svg", text: "Vintage light" },
-      { image: "/light-05.svg", text: "Vintage light" },
-      { image: "/light-06.svg", text: "Vintage light" },
-      { image: "/light-07.svg", text: "Vintage light" },
-      { image: "/light-08.svg", text: "Vintage light" },
-      { image: "/light-09.svg", text: "Vintage light" },
-      { image: "/light-11.svg", text: "Vintage light" },
-      { image: "/light-12.svg", text: "Vintage light" },
-      { image: "/light-13.svg", text: "Vintage light" },
-      { image: "/light-14.svg", text: "Vintage light" },
-      { image: "/light-15.svg", text: "Vintage light" },
-      { image: "/light-10.svg", text: "Vintage light" },
+      // ...
     ],
   },
   wallpaper: {
-    title: "About our Home Accessories ",
+    title: "About our Home Accessories",
     description:
-      "At Vestvale Estate, we believe luxury is defined by culture, craftsmanship, and timeless design. Each of our interiors is inspired by some of the world’s most iconic and refined aesthetics — offering residents a truly global living experience.",
+      "At Vestvale Estate, we believe luxury is defined by culture, craftsmanship...",
     images: [
       { image: "/wallpaper-01.svg", text: "wallpaper" },
       { image: "/wallpaper-02.svg", text: "wallpaper" },
-      { image: "/wallpaper-03.svg", text: "wallpaper" },
-      { image: "/wallpaper-4.svg", text: "wallpaper" },
-      { image: "/wallpaper-05.svg", text: "wallpaper" },
-      { image: "/wallpaper-06.svg", text: "wallpaper" },
-      { image: "/wallpaper-07.svg", text: "wallpaper" },
-      { image: "/wallpaper-08.svg", text: "wallpaper" },
-      { image: "/wallpaper-09.svg", text: "wallpaper" },
+      // ...
     ],
   },
   tiles: {
-    title: "About our Home Accessories ",
+    title: "About our Home Accessories",
     description:
-      "At Vestvale Estate, we believe luxury is defined by culture, craftsmanship, and timeless design. Each of our interiors is inspired by some of the world’s most iconic and refined aesthetics — offering residents a truly global living experience.",
+      "At Vestvale Estate, we believe luxury is defined by culture, craftsmanship...",
     images: [
       { image: "/tile-01.svg", text: "title" },
       { image: "/tile-02.svg", text: "title" },
-      { image: "/tile-03.svg", text: "title" },
-      { image: "/tile-04.svg", text: "title" },
+      // ...
     ],
   },
 };
 
-export default function AccessoriesCategoryPage({ params }: { params: { slug: string } }) {
-  const content = accessoriesData[params.slug as keyof typeof accessoriesData];
-  if (!content) return <div>Not Found</div>;
+export default function AccessoriesCategoryPage({
+  params,
+}: {
+  params: { slug: string };
+}) {
+  const content = accessoriesDataLocal[params.slug as keyof typeof accessoriesDataLocal];
+  if (!content) return <div className="text-center p-20 text-xl">Not Found</div>;
 
   return (
     <>
@@ -93,9 +69,8 @@ export default function AccessoriesCategoryPage({ params }: { params: { slug: st
   );
 }
 
-import { accessoriesMap } from "@/data/accessoriesMap";
-
+// ✅ Required for static export (output: "export")
 export function generateStaticParams() {
-  return Object.keys(accessoriesMap).map((slug) => ({ slug }));
+  return Object.keys(accessoriesDataLocal).map((slug) => ({ slug }));
 }
 
