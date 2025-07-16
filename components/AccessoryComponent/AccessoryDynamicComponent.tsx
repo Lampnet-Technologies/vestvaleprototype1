@@ -22,13 +22,14 @@ const AccessoryDynamicComponent = ({content,slug}:any) => {
               ? `${content.title} ${i + 1}`
               : img.text || `${content.title} ${i + 1}`;
           return (
-    <motion.div
-    initial={{ opacity: 0, x: Number(`${i % 2 == 0 ? 40 : -40}`)}}
-    whileInView={{ opacity: 1, x: 0 }}
-    transition={{ duration: 0.8 }}
-    onClick={()=> router.push(`${slug}/${img.id}`)}
-    key={i}
-    >
+<motion.div
+  key={i}
+  initial={{ opacity: 0, x: i % 2 === 0 ? 80 : -80 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  viewport={{ once: false, amount: 0.4 }}
+  transition={{ duration: 0.6, ease: "easeOut", delay: i * 0.4 }}
+  onClick={() => router.push(`${slug}/${img.id}`)}
+>
     {/* // <div
     onClick={()=> router.push("door/1")}
     key={i} className=""> */}

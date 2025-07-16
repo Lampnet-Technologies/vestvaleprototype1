@@ -74,9 +74,11 @@ const TestimonialsSection = React.forwardRef<HTMLElement>((_, ref) => {
           {testimonials.map((item, index) => (
             <motion.div
               key={item.id}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: index * 0.2 }}
+              initial={{ opacity: 0, x: 100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: false, amount: 0.3 }}
+              custom={index}
+              transition={{ duration: 0.6, delay: index * 0.3, ease: 'easeOut' }}
               className="bg-amber-50 p-6 rounded-lg shadow-sm"
             >
               {/* Stars & Date */}

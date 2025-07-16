@@ -60,7 +60,7 @@ console.log(accessoriesData.doors.images.map((item ,index)=>{
       <Image 
       fill
       className='absolute md:object-contain object-cover'
-      src={content? content.src : "/vintage-light.png"} alt='russian iterior' />
+      src={content? content.src : "/vintage-light.png"} alt='russian interior' />
     </div>
     
     {/* name and request price */}
