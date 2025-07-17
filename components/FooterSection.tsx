@@ -21,7 +21,7 @@ const FooterSection = () => {
         {/* Logo Centered Above */}
         <div className="">
           <Image
-            src="/vest-logo.png"
+            src="/vestvale-logo1.png"
             alt="Vestvale logo"
             width={80}
             height={80}

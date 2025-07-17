@@ -41,7 +41,7 @@ export const accessoriesData: Record<
     images: [
       { image: "/door-handle-01.svg", text: "door handle", id:"door-handle-one"  },
       { image: "/door-handle-02.svg", text: "door handle", id:"door-handle-two"  },
-      { image: "/door-handle-03.svg", text: "door handle",  id:"door-handle-three"},
+      { image: "/door-handle-03.svg", text: "door handle", id:"door-handle-three"},
       
     ],
   },
