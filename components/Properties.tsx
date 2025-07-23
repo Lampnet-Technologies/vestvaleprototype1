@@ -20,7 +20,7 @@ const CountryCard: React.FC<CountryCardProps> = ({
   const router = useRouter();
   const slug = name.toLowerCase().replace(/\s+/g, "");
   const ref = useRef(null);
-  const inView = useInView(ref, { amount: 0.3, once: false }); 
+  const inView = useInView(ref, { amount: 0.3, once: false });
   const controls = useAnimation();
 
   useEffect(() => {
@@ -34,7 +34,7 @@ const CountryCard: React.FC<CountryCardProps> = ({
   const variants = {
     hidden: {
       opacity: 0,
-      x: index % 2 === 0 ? -80 : 80, 
+      x: index % 2 === 0 ? -80 : 80,
       scale: 0.95,
     },
     visible: {
@@ -123,7 +123,7 @@ export const PropertiesSection = React.forwardRef<
         else if (ref) ref.current = node;
       }}
       id="interiorDecor"
-      className="w-full md:w-10/12 mx-auto py-16 bg-[#17120F] text-white font-inter px-4 lg:px-0"
+      className="w-full md:w-10/12 mx-auto py-16 text-white font-inter px-4 lg:px-0"
       initial="hidden"
       animate={controls}
       variants={sectionVariants}

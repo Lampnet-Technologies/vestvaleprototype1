@@ -75,14 +75,14 @@ const Services = React.forwardRef<HTMLElement>((_, ref) => {
     <section
       ref={ref}
       id="services"
-      className="relative font-inter bg-cover bg-center  min-w-full  py-20 container px-4 lg:px-0"
+      className="relative font-inter bg-cover bg-center bg-no-repeat min-w-full  py-20 container px-4 lg:px-0"
       style={{
-        backgroundImage: "url('/image-11.svg')",
+        backgroundImage: 'url("https://res.cloudinary.com/dnoycjq2q/image/upload/v1753287923/BgOurServices_uwvpuw.png")',
       }}
     >
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/80 z-10"></div>
+      <div className="absolute inset-0 bg-black/40 z-10"></div>
 
       <div className="relative z-20 max-w-7xl mx-auto px-4">
 

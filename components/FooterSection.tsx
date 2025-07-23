@@ -93,13 +93,12 @@ const FooterSection = () => {
           </div>
 
         {/* Our Office */}
-        <div className=" flex flex-col  ">
+        <div className="flex-1 space-y-4">
 
-        <h3 className="text-lg font-bold text-[#361B06]">Our Offices</h3>
+        <h3 className="text-lg font-bold text-[#361B06]">Our Email Address</h3>
 
-        <div className="mt-4 space-y-4">
-          <p className="max-w-[60%]">123, Adeola Odeku street, Victoria Island. Lagos-State</p>
-          <p>12, Jabi Abuja.</p>
+        <div className="mt-4 space-y-2">
+          <a href="mailto:info@vestvaleestate.com" className=" hover:text-white transition-colors">Info@vestvaleestate.com</a>
         </div>
 
 

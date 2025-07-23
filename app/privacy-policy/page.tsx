@@ -1,5 +1,10 @@
+import Navbar from "@/components/Navbar";
+
 export default function PrivacyPolicyPage() {
   return (
+     <div className="bg-[#17120F] min-h-screen font-inter">
+      <Navbar />
+
     <main className="max-w-3xl mx-auto py-12 px-4 text-white">
       <h1 className="text-3xl font-bold mb-6">🔒 Privacy Policy</h1>
 
@@ -73,8 +78,9 @@ export default function PrivacyPolicyPage() {
 
       <h2 className="text-xl font-semibold mt-6 mb-2">6. Contact Us</h2>
       <p className="mb-4">
-        For any privacy-related questions, email us at <a href="mailto:support@vestvale.com" className="underline">support@vestvale.com</a>.
+        For any privacy-related questions, email us at <a href="mailto:info@vestvaleestate.com" className="underline">support@vestvale.com</a>.
       </p>
     </main>
+    </div>
   );
 }

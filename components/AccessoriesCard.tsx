@@ -138,7 +138,7 @@ export const Accessories = React.forwardRef<
         else if (ref) ref.current = node;
       }}
       id="homeAccessories"
-      className="w-full md:w-10/12 mx-auto py-16 bg-[#17120F] text-white font-inter px-4 lg:px-0"
+      className="w-full md:w-10/12 mx-auto py-16 text-white font-inter px-4 lg:px-0"
       initial="hidden"
       animate={controls}
       variants={sectionVariants}

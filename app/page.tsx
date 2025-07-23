@@ -5,15 +5,17 @@ import Hero from '@/components/Hero';
 import Navbar from '@/components/Navbar';
 import {PropertiesSection} from '@/components/Properties';
 import OurStory from '@/components/OurStory';
-import TestimonialsSection from '@/components/TestimonialsSection';
-import ContactSection from "@/components/Contact"
+/* import TestimonialsSection from '@/components/TestimonialsSection';
+import ContactSection from "@/components/Contact" */
 import FooterSection from '@/components/FooterSection';
 import NewsletterSection from '@/components/NewsletterSection';
 import HomeDecor from '@/components/HomeDecor';
 import Services from '@/components/Services';
 import { Accessories } from '@/components/AccessoriesCard';
-import OurPartners from '@/components/OurPartners';
-import WhatOurCustomersSay from '@/components/WhatOurCustomersSay';
+/* import OurPartners from '@/components/OurPartners';
+import WhatOurCustomersSay from '@/components/WhatOurCustomersSay'; */
+import WhatOurCustomersSayandOurPartnersWrapper from '@/components/WhatOurCustomersSayandOurPartnersWrapper';
+import BackgroundWrapper from "@/components/BackgroundWrapper";
 
 
 export default function HomePage() {
@@ -42,14 +44,17 @@ export default function HomePage() {
     <main className='bg-[#17120F] '>
       <Navbar  onNavClick={scrollToSection} />
       <Hero ref={sections.hero} />
+      <BackgroundWrapper backgroundUrl="https://res.cloudinary.com/dnoycjq2q/image/upload/v1753287923/mainBg_btg9kv.png">
       <OurStory ref={sections.about} />
       <PropertiesSection ref={sections.interiorDecor} />
       <HomeDecor ref={sections.homedecor} />  
       <Accessories ref={sections.homeAccessories} />
+      </BackgroundWrapper>
       <Services ref={sections.services}/>
-      <WhatOurCustomersSay/>
+      <WhatOurCustomersSayandOurPartnersWrapper />
+      {/* <WhatOurCustomersSay/> */}
       {/* <TestimonialsSection ref={sections.testimonials} />  */}
-      <OurPartners ref={sections.partners}/>
+      {/* <OurPartners ref={sections.partners}/> */}
       <NewsletterSection ref={sections.service} />
       {/* <ContactSection ref={sections.contact}   />  */}
       <FooterSection />
