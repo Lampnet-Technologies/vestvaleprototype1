@@ -25,12 +25,12 @@ const images = [
 
   const characteristics: string[] = [
     `
-   Exceptional Craftsmanship: Each door is meticulously crafted with attention to detail, ensuring superior quality and a flawless finish. Experience the difference of a door built to last.`,
-   `Durable & Long-Lasting: Constructed from high-grade materials [mention examples like: solid wood, engineered wood, fiberglass, steel, etc., or keep generic if product range is too wide], our doors are designed to withstand daily wear and tear, offering years of reliable performance and beauty.`,
-   `Versatile Design Options: From sleek modern lines to classic panel designs, and rustic [barn/farmhouse] styles, our diverse collection offers a door to complement any architectural style and interior decor. Find the perfect fit for your aesthetic vision.`,
-   `Enhanced Functionality & Security: Beyond aesthetics, our doors provide robust performance. [If applicable, mention: Featuring solid core construction for better sound insulation and energy efficiency, or pre-bored for standard hardware for easy lock installation, etc.] Many designs offer enhanced security features for your peace of mind.`,
-   `Easy Installation (or Contractor-Friendly): Designed for straightforward installation, our doors come ready to be fitted into your existing or new doorway. [If applicable, mention: Pre-hung options available for even simpler setup, or standard sizing to fit common door frames.]`,
-   `Ready for Your Personal Touch: Most of our doors come [primed and ready to paint/stain, or in a natural finish], allowing you to customize them to perfectly match your home's color scheme and personal style.`
+   Exceptional Craftsmanship: Each accessory is meticulously crafted with attention to detail, ensuring superior quality and a flawless finish. Experience the difference of a door built to last, lighting fixtures that illuminate your space beautifully, wallpapers that transform your walls, door handles that add elegance, and tiles that enhance your floors. Our accessories are designed to elevate your home's aesthetic and functionality.`,
+   `Durable & Long-Lasting: Made from high-quality materials, our accessories are designed to withstand the test of time. Enjoy peace of mind with products that resist wear and tear, ensuring longevity and reliability. Whether it's a door that stands up to daily use, lighting fixtures that shine bright for years, or tiles that maintain their beauty, door handles that function smoothly, our accessories are built to endure.`,
+   `Versatile Design Options: From sleek modern lines to classic panel designs, our accessories come in a variety of styles to suit any home decor. Whether you prefer a contemporary look or a traditional aesthetic, we have the perfect accessory for you. Choose from a range of finishes, colors, and textures to match your personal style.`,
+   `Enhanced Functionality & Security: Beyond aesthetics, our accessories are designed with functionality in mind. Enjoy features like efficient insulation, accessibility options, and advanced locking mechanisms that enhance your home's security and energy efficiency. Lighting options also include energy-efficient LED fixtures that provide both style and savings on your energy bills.`,
+   `Easy Installation (or Contractor-Friendly): Designed for straightforward installation, our accessories come with clear instructions and all necessary hardware. [If applicable, mention: Many designs are pre-hung for quick setup, or compatible with standard accessory sizes for easy replacement.]`,
+   `Ready for Your Personal Touch: Most of our accessories come primed and ready for painting or staining, allowing you to customize the finish to match your unique style. [If applicable, mention: Some designs are available in a variety of colors or finishes.]`,
    ]
 
    const allObjects = [
@@ -93,14 +93,14 @@ if (!content) {
     
     {/* Property Description */}
     <article className='bg-foreground px-2 md:px-6'>
-      <h1 className='font-semibold'>Property Description</h1>
+      <h1 className='font-semibold'>Home Accessory Description</h1>
       <p className='leading-8'>
      {content?.prescription}
       </p>
     
     {/* Key characteristics you'll see */}
     <aside className='py-4 '>
-    <h1 className='font-semibold my-2'>Why Choose Our Doors</h1>
+    <h1 className='font-semibold my-2'>Why Choose Our accessory?</h1>
     <ul className='mx-6 bg-foreground'>
       {content?.whyChoose.map((item,index)=>{
         return <li className='list-disc' key={index}>{item}</li>

@@ -91,7 +91,7 @@ if (!content) {
  
  {/* Property Description */}
  <article className='bg-foreground px-2 md:px-6'>
-   <h1 className='font-semibold'>Property Description</h1>
+   <h1 className='font-semibold'>Home Decoration Description</h1>
    <p>
     {content.prescription}
    {/* Step into a world of opulent beauty and historical richness with our Russian-inspired decor. 

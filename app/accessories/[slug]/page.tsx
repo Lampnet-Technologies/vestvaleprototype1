@@ -18,7 +18,7 @@ export const accessoriesData: Record<
 > = {
   doors: {
     title: "About Our Doors Accessories",
-    description: "Luxury is defined by culture, craftsmanship, and timeless design at Vestvale Estate. Each of our interiors is inspired by some of the world’s most iconic and refined aesthetics — offering residents a truly global living experience.",
+    description: "Our doors are designed to be more than just functional elements; they are a statement of style and sophistication. Crafted with precision and attention to detail, each door reflects our commitment to quality and design excellence.",
     images: [
       { image: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863733/door-01_l4mkb9.svg", text: "door-one", id:"door-one" },
       { image: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863737/door-02_lqrk81.svg", text: "door-two" ,id:"door-two"  },
@@ -36,7 +36,7 @@ export const accessoriesData: Record<
   },
   "door-handles": {
     title: "About Our Door Handles Accessories",
-    description: "At Vestvale Estate, we believe luxury is defined by culture, craftsmanship, and timeless design. Each of our interiors is inspired by some of the world’s most iconic and refined aesthetics — offering residents a truly global living experience.",
+    description: "Our door handles are designed to complement our doors, adding a touch of elegance and functionality. Crafted with high-quality materials, each handle is a perfect blend of style and durability, ensuring that your doors not only look great but also function flawlessly.",
    
     images: [
       { image: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752865128/door-handle-01_w5rxkd.svg", text: "door handle one", id:"door-handle-one"  },
@@ -56,7 +56,7 @@ export const accessoriesData: Record<
   },
   lights: {
     title: "About Our Lighting Accessories",
-    description: "At Vestvale Estate, we believe luxury is defined by culture, craftsmanship, and timeless design. Each of our interiors is inspired by some of the world’s most iconic and refined aesthetics — offering residents a truly global living experience.",
+    description: "Our lighting accessories are designed to illuminate your spaces with style and sophistication. Each piece is crafted to enhance the ambiance of your home, providing both functionality and aesthetic appeal. From elegant chandeliers to modern pendant lights, our collection offers a variety of options to suit every taste.",
     
     images: [
       { image: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772009/mmexport1748708887089_tjhojd.jpg", text: "light-one", id:"light-one" },
@@ -80,7 +80,7 @@ export const accessoriesData: Record<
   wallpapers: {
     title: "About Our Wallpapers Accessories ",
     description:
-      "At Vestvale Estate, we believe luxury is defined by culture, craftsmanship, and timeless design. Each of our interiors is inspired by some of the world’s most iconic and refined aesthetics — offering residents a truly global living experience.",
+      "Our wallpapers are designed to transform your walls into works of art. With a wide range of patterns, textures, and colors, our collection offers something for every style. Whether you prefer bold statements or subtle elegance, our wallpapers will enhance the beauty of your interiors.",
     images: [
       { image: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772167/WhatsApp_Image_2025-05-31_at_09.49.39_bcdc07df_tqwrct.jpg", text: "wallpaper-one", id:"wallpaper-one" },
       { image: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772167/WhatsApp_Image_2025-05-31_at_09.49.38_ecc7b942_gxjaar.jpg", text: "wallpaper-two" , id:"wallpaper-two" },
@@ -108,12 +108,12 @@ export const accessoriesData: Record<
   tiles: {
     title: "About Our Tiles Accessories ",
     description:
-      "At Vestvale Estate, we believe luxury is defined by culture, craftsmanship, and timeless design. Each of our interiors is inspired by some of the world’s most iconic and refined aesthetics — offering residents a truly global living experience.",
+      "Our tiles are designed to elevate your spaces with their unique patterns and textures. Perfect for both walls and floors, our collection offers a wide range of styles, from classic to contemporary, ensuring that you find the perfect match for your home decor.",
     images: [
-      { image: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772040/T4_fhom6g.png", text: "tile-One" , id:"tile-one"  },
-      { image: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772038/T2_dvgxgw.png", text: "tile-Two" , id:"tile-two"  },
-      { image: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772038/T3_l1iiuu.png", text: "tile-Three" , id:"tile-three" },
-      { image: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772038/T3_l1iiuu.png", text: "tile-Four" , id:"tile-four" },
+      { image: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772040/T4_fhom6g.png", text: "Tile One" , id:"Tile-one"  },
+      { image: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772038/T2_dvgxgw.png", text: "Tile Two" , id:"Tile-two"  },
+      { image: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772038/T3_l1iiuu.png", text: "Tile Three" , id:"Tile-three" },
+      { image: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772038/T3_l1iiuu.png", text: "Tile Four" , id:"Tile-four" },
    
     ],
   },
@@ -130,7 +130,7 @@ const AccessoriesDetailPage =async({ params }: PageProps) => {
 
   if (!content) {
     return (
-      <div className="text-center py-20 text-white">Accessory not found.</div>
+      <div className="text-center py-20 text-white">Accessory not available</div>
     );
   }
 

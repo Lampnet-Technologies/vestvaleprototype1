@@ -1,194 +1,306 @@
 export const allImagesForLights = [
-    {
+        {
 
-        id: 4,
-        slug: "light",
-        name: "light-one",
-        src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772009/mmexport1748708887089_tjhojd.jpg",
-        prescription: `Elevate Your Space with Our Premium Light Collection! Discover the perfect blend of style, security, and craftsmanship with our versatile range of doors. Whether you're seeking to enhance your home's curb appeal, redefine an interior space, or simply replace an old door, our collection offers exceptional quality and design to suit every need`,
-        whyChoose: ["Exceptional Craftsmanship: Each door is meticulously crafted with attention to detail, ensuring superior quality and a flawless finish. Experience the difference of a door built to last", `Durable & Long-Lasting: Constructed from high-grade materials [mention examples like: solid wood, engineered wood, fiberglass, steel, etc., or keep generic if product range is too wide], our doors are designed to withstand daily wear and tear, offering years of reliable performance and beauty.`, `Versatile Design Options: From sleek modern lines to classic panel designs, and rustic [barn/farmhouse] styles, our diverse collection offers a door to complement any architectural style and interior decor. Find the perfect fit for your aesthetic vision`, `Enhanced Functionality & Security: Beyond aesthetics, our doors provide robust performance. [If applicable, mention: Featuring solid core construction for better sound insulation and energy efficiency, or pre-bored for standard hardware for easy lock installation, etc.] Many designs offer enhanced security features for your peace of mind.`, `
-Easy Installation (or Contractor-Friendly): Designed for straightforward installation, our doors come ready to be fitted into your existing or new doorway. [If applicable, mention: Pre-hung options available for even simpler setup, or standard sizing to fit common door frames.]`, `Ready for Your Personal Touch: Most of our doors come [primed and ready to paint/stain, or in a natural finish], allowing you to customize them to perfectly match your home's color scheme and personal style.`],
-        itemsToPrev: [{ name: "light-two", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772006/mmexport1748708902266_tabbd8.jpg" }, { name: "light-three", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771985/mmexport1748443273048_c37cdg.jpg" }]
+                id: 4,
+                slug: "light",
+                name: "light-one",
+                src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772009/mmexport1748708887089_tjhojd.jpg",
+                prescription: `Sleek and contemporary, this pendant light features a smooth matte black dome paired with a warm interior glow. Its clean lines and suspended silhouette make it the perfect accent piece over dining tables, kitchen islands, or stylish reading corners.`,
 
-    },
-    {
+                whyChoose: [
+                        "Matte Black Exterior: Bold yet neutral — adds contrast without overwhelming.",
+                        "Soft Interior Glow: Finished with a gold-toned lining for ambient warmth.",
+                        "Versatile Mount: Adjustable cord suits both high and low ceilings.",
+                        "Statement Design: A sculptural piece that doubles as functional decor.",
+                        "Works in Clusters: Stunning when grouped over counters or entryways.",
+                        "Durable Build: Made from powder-coated metal for lasting finish integrity."
+                ],
+                itemsToPrev: [{ name: "light-two", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772006/mmexport1748708902266_tabbd8.jpg" }, { name: "light-three", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771985/mmexport1748443273048_c37cdg.jpg" }]
 
-        id: 1,
-        slug: "light",
-        name: "light-two",
-        src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772006/mmexport1748708902266_tabbd8.jpg",
-        prescription: `Elevate Your Space with Our Premium Door Collection! Discover the perfect blend of style, security, and craftsmanship with our versatile range of doors. Whether you're seeking to enhance your home's curb appeal, redefine an interior space, or simply replace an old door, our collection offers exceptional quality and design to suit every need`,
-        whyChoose: ["Exceptional Craftsmanship: Each door is meticulously crafted with attention to detail, ensuring superior quality and a flawless finish. Experience the difference of a door built to last", `Durable & Long-Lasting: Constructed from high-grade materials [mention examples like: solid wood, engineered wood, fiberglass, steel, etc., or keep generic if product range is too wide], our doors are designed to withstand daily wear and tear, offering years of reliable performance and beauty.`, `Versatile Design Options: From sleek modern lines to classic panel designs, and rustic [barn/farmhouse] styles, our diverse collection offers a door to complement any architectural style and interior decor. Find the perfect fit for your aesthetic vision`, `Enhanced Functionality & Security: Beyond aesthetics, our doors provide robust performance. [If applicable, mention: Featuring solid core construction for better sound insulation and energy efficiency, or pre-bored for standard hardware for easy lock installation, etc.] Many designs offer enhanced security features for your peace of mind.`, `
-Easy Installation (or Contractor-Friendly): Designed for straightforward installation, our doors come ready to be fitted into your existing or new doorway. [If applicable, mention: Pre-hung options available for even simpler setup, or standard sizing to fit common door frames.]`, `Ready for Your Personal Touch: Most of our doors come [primed and ready to paint/stain, or in a natural finish], allowing you to customize them to perfectly match your home's color scheme and personal style.`],
-        itemsToPrev: [{ name: "light-three", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771985/mmexport1748443273048_c37cdg.jpg" }, { name: "light-four", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771980/mmexport1748443184366_rpcnfp.jpg" }]
+        },
+        {
 
-    },
-    {
+                id: 1,
+                slug: "light",
+                name: "light-two",
+                src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772006/mmexport1748708902266_tabbd8.jpg",
+                prescription: `A modern twist on a classic lantern silhouette, this clear glass pendant light blends transparency and structure. Its chrome frame and exposed bulb deliver both vintage charm and industrial edge — perfect for transitional interiors that bridge old and new.`,
 
-        id: 1,
-        slug: "light",
-        name: "light-three",
-        src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771985/mmexport1748443273048_c37cdg.jpg",
-        prescription: `Elevate Your Space with Our Premium Door Collection! Discover the perfect blend of style, security, and craftsmanship with our versatile range of doors. Whether you're seeking to enhance your home's curb appeal, redefine an interior space, or simply replace an old door, our collection offers exceptional quality and design to suit every need`,
-        whyChoose: ["Exceptional Craftsmanship: Each door is meticulously crafted with attention to detail, ensuring superior quality and a flawless finish. Experience the difference of a door built to last", `Durable & Long-Lasting: Constructed from high-grade materials [mention examples like: solid wood, engineered wood, fiberglass, steel, etc., or keep generic if product range is too wide], our doors are designed to withstand daily wear and tear, offering years of reliable performance and beauty.`, `Versatile Design Options: From sleek modern lines to classic panel designs, and rustic [barn/farmhouse] styles, our diverse collection offers a door to complement any architectural style and interior decor. Find the perfect fit for your aesthetic vision`, `Enhanced Functionality & Security: Beyond aesthetics, our doors provide robust performance. [If applicable, mention: Featuring solid core construction for better sound insulation and energy efficiency, or pre-bored for standard hardware for easy lock installation, etc.] Many designs offer enhanced security features for your peace of mind.`, `
-Easy Installation (or Contractor-Friendly): Designed for straightforward installation, our doors come ready to be fitted into your existing or new doorway. [If applicable, mention: Pre-hung options available for even simpler setup, or standard sizing to fit common door frames.]`, `Ready for Your Personal Touch: Most of our doors come [primed and ready to paint/stain, or in a natural finish], allowing you to customize them to perfectly match your home's color scheme and personal style.`],
-        itemsToPrev: [{ name: "light-four", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771980/mmexport1748443184366_rpcnfp.jpg" }, { name: "light-five", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771975/L17_fgwgbd.jpg" }]
+                whyChoose: [
+                        "Clear Glass Body: Offers unfiltered light for a clean, bright atmosphere.",
+                        "Polished Chrome Finish: Adds reflective brilliance with a crisp edge.",
+                        "Timeless Lantern Shape: A familiar form with modern materials.",
+                        "Exposed Bulb Aesthetic: Great with filament or Edison-style bulbs.",
+                        "Ideal for Hallways or Bars: Slim profile fits narrow spaces effortlessly.",
+                        "Easy Maintenance: Wipe-clean surface resists dust and fingerprints."
+                ],
+                itemsToPrev: [{ name: "light-three", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771985/mmexport1748443273048_c37cdg.jpg" }, { name: "light-four", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771980/mmexport1748443184366_rpcnfp.jpg" }]
 
-    },
-    {
+        },
+        {
 
-        id: 1,
-        slug: "light",
-        name: "light-four",
-        src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771980/mmexport1748443184366_rpcnfp.jpg",
-        prescription: `Elevate Your Space with Our Premium Door Collection! Discover the perfect blend of style, security, and craftsmanship with our versatile range of doors. Whether you're seeking to enhance your home's curb appeal, redefine an interior space, or simply replace an old door, our collection offers exceptional quality and design to suit every need`,
-        whyChoose: ["Exceptional Craftsmanship: Each door is meticulously crafted with attention to detail, ensuring superior quality and a flawless finish. Experience the difference of a door built to last", `Durable & Long-Lasting: Constructed from high-grade materials [mention examples like: solid wood, engineered wood, fiberglass, steel, etc., or keep generic if product range is too wide], our doors are designed to withstand daily wear and tear, offering years of reliable performance and beauty.`, `Versatile Design Options: From sleek modern lines to classic panel designs, and rustic [barn/farmhouse] styles, our diverse collection offers a door to complement any architectural style and interior decor. Find the perfect fit for your aesthetic vision`, `Enhanced Functionality & Security: Beyond aesthetics, our doors provide robust performance. [If applicable, mention: Featuring solid core construction for better sound insulation and energy efficiency, or pre-bored for standard hardware for easy lock installation, etc.] Many designs offer enhanced security features for your peace of mind.`, `
-Easy Installation (or Contractor-Friendly): Designed for straightforward installation, our doors come ready to be fitted into your existing or new doorway. [If applicable, mention: Pre-hung options available for even simpler setup, or standard sizing to fit common door frames.]`, `Ready for Your Personal Touch: Most of our doors come [primed and ready to paint/stain, or in a natural finish], allowing you to customize them to perfectly match your home's color scheme and personal style.`],
-        itemsToPrev: [{ name: "light-five", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863715/door-05_tassgr.svg" }, { name: "light-six", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863716/door-06_pvxpt2.svg" }]
+                id: 1,
+                slug: "light",
+                name: "light-three",
+                src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771985/mmexport1748443273048_c37cdg.jpg",
+                prescription: `Sculptural and understated, this frosted globe ceiling light delivers soft diffusion and organic shape. It’s ideal for bedrooms, hallways, or any space where you want a glow that feels gentle, even, and modern.`,
 
-    },
-    {
+                whyChoose: [
+                        "Frosted Glass Globe: Softens and evenly spreads the light.",
+                        "Low-Profile Mount: Perfect for rooms with lower ceilings.",
+                        "Modern Organic Look: Smooth curves and minimal hardware.",
+                        "Warm Ambient Lighting: Sets a calm, cozy tone instantly.",
+                        "Great for Multiples: Use in series across corridors or living zones.",
+                        "Tool-Free Install: Comes with everything for easy ceiling mount."
+                ],
+                itemsToPrev: [{ name: "light-four", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771980/mmexport1748443184366_rpcnfp.jpg" }, { name: "light-five", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771975/L17_fgwgbd.jpg" }]
 
-        id: 1,
-        slug: "light",
-        name: "light-five",
-        src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771975/L17_fgwgbd.jpg",
-        prescription: `Elevate Your Space with Our Premium Door Collection! Discover the perfect blend of style, security, and craftsmanship with our versatile range of doors. Whether you're seeking to enhance your home's curb appeal, redefine an interior space, or simply replace an old door, our collection offers exceptional quality and design to suit every need`,
-        whyChoose: ["Exceptional Craftsmanship: Each door is meticulously crafted with attention to detail, ensuring superior quality and a flawless finish. Experience the difference of a door built to last", `Durable & Long-Lasting: Constructed from high-grade materials [mention examples like: solid wood, engineered wood, fiberglass, steel, etc., or keep generic if product range is too wide], our doors are designed to withstand daily wear and tear, offering years of reliable performance and beauty.`, `Versatile Design Options: From sleek modern lines to classic panel designs, and rustic [barn/farmhouse] styles, our diverse collection offers a door to complement any architectural style and interior decor. Find the perfect fit for your aesthetic vision`, `Enhanced Functionality & Security: Beyond aesthetics, our doors provide robust performance. [If applicable, mention: Featuring solid core construction for better sound insulation and energy efficiency, or pre-bored for standard hardware for easy lock installation, etc.] Many designs offer enhanced security features for your peace of mind.`, `
-Easy Installation (or Contractor-Friendly): Designed for straightforward installation, our doors come ready to be fitted into your existing or new doorway. [If applicable, mention: Pre-hung options available for even simpler setup, or standard sizing to fit common door frames.]`, `Ready for Your Personal Touch: Most of our doors come [primed and ready to paint/stain, or in a natural finish], allowing you to customize them to perfectly match your home's color scheme and personal style.`],
-        itemsToPrev: [{ name: "light-six", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771964/L13_mltxer.jpg" }, { name: "light-seven", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863718/door-07_wzqcea.svg" }]
+        },
+        {
 
-    },
-    {
+                id: 1,
+                slug: "light",
+                name: "light-four",
+                src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771980/mmexport1748443184366_rpcnfp.jpg",
+                prescription: `Bold, sculpted, and minimalist — this geometric LED wall light brings architectural precision to your walls. Whether lighting a staircase or framing a headboard, it adds structured elegance without taking up space.`,
 
-        id: 1,
-        slug: "light",
-        name: "light-six",
-        src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771964/L13_mltxer.jpg",
-        prescription: `Elevate Your Space with Our Premium Door Collection! Discover the perfect blend of style, security, and craftsmanship with our versatile range of doors. Whether you're seeking to enhance your home's curb appeal, redefine an interior space, or simply replace an old door, our collection offers exceptional quality and design to suit every need`,
-        whyChoose: ["Exceptional Craftsmanship: Each door is meticulously crafted with attention to detail, ensuring superior quality and a flawless finish. Experience the difference of a door built to last", `Durable & Long-Lasting: Constructed from high-grade materials [mention examples like: solid wood, engineered wood, fiberglass, steel, etc., or keep generic if product range is too wide], our doors are designed to withstand daily wear and tear, offering years of reliable performance and beauty.`, `Versatile Design Options: From sleek modern lines to classic panel designs, and rustic [barn/farmhouse] styles, our diverse collection offers a door to complement any architectural style and interior decor. Find the perfect fit for your aesthetic vision`, `Enhanced Functionality & Security: Beyond aesthetics, our doors provide robust performance. [If applicable, mention: Featuring solid core construction for better sound insulation and energy efficiency, or pre-bored for standard hardware for easy lock installation, etc.] Many designs offer enhanced security features for your peace of mind.`, `
-Easy Installation (or Contractor-Friendly): Designed for straightforward installation, our doors come ready to be fitted into your existing or new doorway. [If applicable, mention: Pre-hung options available for even simpler setup, or standard sizing to fit common door frames.]`, `Ready for Your Personal Touch: Most of our doors come [primed and ready to paint/stain, or in a natural finish], allowing you to customize them to perfectly match your home's color scheme and personal style.`],
-        itemsToPrev: [{ name: "light-seven", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771961/L12_mabx0z.jpg" }, { name: "light-eight", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771955/L11_t63n3v.jpg" }]
+                whyChoose: [
+                        "Matte Black Frame: Modern finish with subtle texture.",
+                        "Built-In LED: Long-life, energy-efficient lighting.",
+                        "Geometric Design: Architectural form makes it decorative even when off.",
+                        "Vertical or Horizontal Mounting: Flexible layout options.",
+                        "Low Heat Output: Safe for long hours of ambient use.",
+                        "Perfect Accent: Adds edge to modern, urban, or gallery-inspired interiors."
+                ],
+                itemsToPrev: [{ name: "light-five", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863715/door-05_tassgr.svg" }, { name: "light-six", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863716/door-06_pvxpt2.svg" }]
 
-    },
-    {
+        },
+        {
 
-        id: 1,
-        slug: "light",
-        name: "light-seven",
-        src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771961/L12_mabx0z.jpg",
-        prescription: `Elevate Your Space with Our Premium Door Collection! Discover the perfect blend of style, security, and craftsmanship with our versatile range of doors. Whether you're seeking to enhance your home's curb appeal, redefine an interior space, or simply replace an old door, our collection offers exceptional quality and design to suit every need`,
-        whyChoose: ["Exceptional Craftsmanship: Each door is meticulously crafted with attention to detail, ensuring superior quality and a flawless finish. Experience the difference of a door built to last", `Durable & Long-Lasting: Constructed from high-grade materials [mention examples like: solid wood, engineered wood, fiberglass, steel, etc., or keep generic if product range is too wide], our doors are designed to withstand daily wear and tear, offering years of reliable performance and beauty.`, `Versatile Design Options: From sleek modern lines to classic panel designs, and rustic [barn/farmhouse] styles, our diverse collection offers a door to complement any architectural style and interior decor. Find the perfect fit for your aesthetic vision`, `Enhanced Functionality & Security: Beyond aesthetics, our doors provide robust performance. [If applicable, mention: Featuring solid core construction for better sound insulation and energy efficiency, or pre-bored for standard hardware for easy lock installation, etc.] Many designs offer enhanced security features for your peace of mind.`, `
-Easy Installation (or Contractor-Friendly): Designed for straightforward installation, our doors come ready to be fitted into your existing or new doorway. [If applicable, mention: Pre-hung options available for even simpler setup, or standard sizing to fit common door frames.]`, `Ready for Your Personal Touch: Most of our doors come [primed and ready to paint/stain, or in a natural finish], allowing you to customize them to perfectly match your home's color scheme and personal style.`],
-        itemsToPrev: [{ name: "light-eight", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771955/L11_t63n3v.jpg" }, { name: "light-nine", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863723/door-09_bcyh0r.svg" }]
+                id: 1,
+                slug: "light",
+                name: "light-five",
+                src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771975/L17_fgwgbd.jpg",
+                prescription: `This contemporary chandelier features interlocking rings with embedded LEDs that seem to float in midair. Futuristic yet refined, it makes a dazzling centerpiece in foyers, dining rooms, or stairwell landings.`,
 
-    },
-    {
+                whyChoose: [
+                        "Floating Ring Design: Creates a sense of movement and lightness.",
+                        "Integrated LED: No need for replacement bulbs, ever.",
+                        "Adjustable Height: Perfect for tall ceilings or dramatic drops.",
+                        "Eye-Catching Geometry: Sculptural and statement-making.",
+                        "Dimmable Function: Set the tone from bright to ambient.",
+                        "Ideal for Large Spaces: Designed to hold visual weight in open areas."
+                ],
+                itemsToPrev: [{ name: "light-six", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771964/L13_mltxer.jpg" }, { name: "light-seven", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863718/door-07_wzqcea.svg" }]
 
-        id: 1,
-        slug: "light",
-        name: "light-eight",
-        src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771955/L11_t63n3v.jpg",
-        prescription: `Elevate Your Space with Our Premium Door Collection! Discover the perfect blend of style, security, and craftsmanship with our versatile range of doors. Whether you're seeking to enhance your home's curb appeal, redefine an interior space, or simply replace an old door, our collection offers exceptional quality and design to suit every need`,
-        whyChoose: ["Exceptional Craftsmanship: Each door is meticulously crafted with attention to detail, ensuring superior quality and a flawless finish. Experience the difference of a door built to last", `Durable & Long-Lasting: Constructed from high-grade materials [mention examples like: solid wood, engineered wood, fiberglass, steel, etc., or keep generic if product range is too wide], our doors are designed to withstand daily wear and tear, offering years of reliable performance and beauty.`, `Versatile Design Options: From sleek modern lines to classic panel designs, and rustic [barn/farmhouse] styles, our diverse collection offers a door to complement any architectural style and interior decor. Find the perfect fit for your aesthetic vision`, `Enhanced Functionality & Security: Beyond aesthetics, our doors provide robust performance. [If applicable, mention: Featuring solid core construction for better sound insulation and energy efficiency, or pre-bored for standard hardware for easy lock installation, etc.] Many designs offer enhanced security features for your peace of mind.`, `
-Easy Installation (or Contractor-Friendly): Designed for straightforward installation, our doors come ready to be fitted into your existing or new doorway. [If applicable, mention: Pre-hung options available for even simpler setup, or standard sizing to fit common door frames.]`, `Ready for Your Personal Touch: Most of our doors come [primed and ready to paint/stain, or in a natural finish], allowing you to customize them to perfectly match your home's color scheme and personal style.`],
-        itemsToPrev: [{ name: "light-nine", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771954/L10_zzsykc.jpg" }, { name: "light-ten", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771953/L9_fg09vn.jpg" }]
+        },
+        {
 
-    },
-    {
+                id: 1,
+                slug: "light",
+                name: "light-six",
+                src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771964/L13_mltxer.jpg",
+                prescription: `Inspired by mid-century design, this dual-cone wall sconce pairs matte black with antique brass accents. It’s a smart, symmetrical fixture that works beautifully as a bedside light or hallway accent.`,
 
-        id: 1,
-        slug: "light",
-        name: "light-nine",
-        src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771954/L10_zzsykc.jpg",
-        prescription: `Elevate Your Space with Our Premium Door Collection! Discover the perfect blend of style, security, and craftsmanship with our versatile range of doors. Whether you're seeking to enhance your home's curb appeal, redefine an interior space, or simply replace an old door, our collection offers exceptional quality and design to suit every need`,
-        whyChoose: ["Exceptional Craftsmanship: Each door is meticulously crafted with attention to detail, ensuring superior quality and a flawless finish. Experience the difference of a door built to last", `Durable & Long-Lasting: Constructed from high-grade materials [mention examples like: solid wood, engineered wood, fiberglass, steel, etc., or keep generic if product range is too wide], our doors are designed to withstand daily wear and tear, offering years of reliable performance and beauty.`, `Versatile Design Options: From sleek modern lines to classic panel designs, and rustic [barn/farmhouse] styles, our diverse collection offers a door to complement any architectural style and interior decor. Find the perfect fit for your aesthetic vision`, `Enhanced Functionality & Security: Beyond aesthetics, our doors provide robust performance. [If applicable, mention: Featuring solid core construction for better sound insulation and energy efficiency, or pre-bored for standard hardware for easy lock installation, etc.] Many designs offer enhanced security features for your peace of mind.`, `
-Easy Installation (or Contractor-Friendly): Designed for straightforward installation, our doors come ready to be fitted into your existing or new doorway. [If applicable, mention: Pre-hung options available for even simpler setup, or standard sizing to fit common door frames.]`, `Ready for Your Personal Touch: Most of our doors come [primed and ready to paint/stain, or in a natural finish], allowing you to customize them to perfectly match your home's color scheme and personal style.`],
-        itemsToPrev: [{ name: "light-ten", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771953/L9_fg09vn.jpg" }, { name: "light-eleven", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771952/L8_amq7gb.jpg" }]
+                whyChoose: [
+                        "Mid-Century Modern Styling: Classic silhouette with timeless appeal.",
+                        "Matte Black & Brass Finish: A high-contrast pairing that elevates any room.",
+                        "Directional Lighting: Angled cones for targeted or ambient light.",
+                        "Ideal for Bedside or Reading Nooks: Compact but eye-catching.",
+                        "Metal Construction: Built for durability and lasting style.",
+                        "Wall-Mount Design: Saves surface space while adding visual interest."
+                ],
+                itemsToPrev: [{ name: "light-seven", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771961/L12_mabx0z.jpg" }, { name: "light-eight", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771955/L11_t63n3v.jpg" }]
 
-    },
-    {
+        },
+        {
 
-        id: 1,
-        slug: "light",
-        name: "light-ten",
-        src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771953/L9_fg09vn.jpg",
-        prescription: `Elevate Your Space with Our Premium Door Collection! Discover the perfect blend of style, security, and craftsmanship with our versatile range of doors. Whether you're seeking to enhance your home's curb appeal, redefine an interior space, or simply replace an old door, our collection offers exceptional quality and design to suit every need`,
-        whyChoose: ["Exceptional Craftsmanship: Each door is meticulously crafted with attention to detail, ensuring superior quality and a flawless finish. Experience the difference of a door built to last", `Durable & Long-Lasting: Constructed from high-grade materials [mention examples like: solid wood, engineered wood, fiberglass, steel, etc., or keep generic if product range is too wide], our doors are designed to withstand daily wear and tear, offering years of reliable performance and beauty.`, `Versatile Design Options: From sleek modern lines to classic panel designs, and rustic [barn/farmhouse] styles, our diverse collection offers a door to complement any architectural style and interior decor. Find the perfect fit for your aesthetic vision`, `Enhanced Functionality & Security: Beyond aesthetics, our doors provide robust performance. [If applicable, mention: Featuring solid core construction for better sound insulation and energy efficiency, or pre-bored for standard hardware for easy lock installation, etc.] Many designs offer enhanced security features for your peace of mind.`, `
-Easy Installation (or Contractor-Friendly): Designed for straightforward installation, our doors come ready to be fitted into your existing or new doorway. [If applicable, mention: Pre-hung options available for even simpler setup, or standard sizing to fit common door frames.]`, `Ready for Your Personal Touch: Most of our doors come [primed and ready to paint/stain, or in a natural finish], allowing you to customize them to perfectly match your home's color scheme and personal style.`],
-        itemsToPrev: [{ name: "light-eleven", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771952/L8_amq7gb.jpg" }, { name: "light-twelve", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771939/l3_wwzii5.jpg" }]
+                id: 1,
+                slug: "light",
+                name: "light-seven",
+                src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771961/L12_mabx0z.jpg",
+                prescription: `This elegant flush mount features a circular design framed in gold, with a frosted center panel for smooth diffusion. It offers warm, consistent lighting while blending seamlessly into ceilings.`,
 
-    },
-    {
+                whyChoose: [
+                        "Satin Gold Trim: Adds subtle shine without overpowering.",
+                        "Frosted Center Panel: Softens the brightness for ambient glow.",
+                        "Flush-Mounted: Ideal for spaces with lower ceiling clearance.",
+                        "Minimalist Profile: Blends well with both classic and modern decor.",
+                        "LED-Ready or Compatible: Choose your bulb preference.",
+                        "Perfect for Bedrooms, Kitchens, or Corridors."
+                ],
+                itemsToPrev: [{ name: "light-eight", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771955/L11_t63n3v.jpg" }, { name: "light-nine", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863723/door-09_bcyh0r.svg" }]
 
-        id: 1,
-        slug: "light",
-        name: "light-eleven",
-        src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771952/L8_amq7gb.jpg",
-        prescription: `Elevate Your Space with Our Premium Door Collection! Discover the perfect blend of style, security, and craftsmanship with our versatile range of doors. Whether you're seeking to enhance your home's curb appeal, redefine an interior space, or simply replace an old door, our collection offers exceptional quality and design to suit every need`,
-        whyChoose: ["Exceptional Craftsmanship: Each door is meticulously crafted with attention to detail, ensuring superior quality and a flawless finish. Experience the difference of a door built to last", `Durable & Long-Lasting: Constructed from high-grade materials [mention examples like: solid wood, engineered wood, fiberglass, steel, etc., or keep generic if product range is too wide], our doors are designed to withstand daily wear and tear, offering years of reliable performance and beauty.`, `Versatile Design Options: From sleek modern lines to classic panel designs, and rustic [barn/farmhouse] styles, our diverse collection offers a door to complement any architectural style and interior decor. Find the perfect fit for your aesthetic vision`, `Enhanced Functionality & Security: Beyond aesthetics, our doors provide robust performance. [If applicable, mention: Featuring solid core construction for better sound insulation and energy efficiency, or pre-bored for standard hardware for easy lock installation, etc.] Many designs offer enhanced security features for your peace of mind.`, `
-Easy Installation (or Contractor-Friendly): Designed for straightforward installation, our doors come ready to be fitted into your existing or new doorway. [If applicable, mention: Pre-hung options available for even simpler setup, or standard sizing to fit common door frames.]`, `Ready for Your Personal Touch: Most of our doors come [primed and ready to paint/stain, or in a natural finish], allowing you to customize them to perfectly match your home's color scheme and personal style.`],
-        itemsToPrev: [{ name: "light-twelve", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771939/l3_wwzii5.jpg" }, { name: "light-thirteen", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771939/l5_b2qup0.jpg" }]
+        },
+        {
 
-    },
-    {
+                id: 1,
+                slug: "light",
+                name: "light-eight",
+                src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771955/L11_t63n3v.jpg",
+                prescription: `A layered ceiling pendant with tiered white shades and gold accents, this piece adds depth and texture to your lighting. It evokes retro vibes while feeling fresh and contemporary.`,
 
-        id: 1,
-        slug: "light",
-        name: "light-twelve",
-        src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771939/l3_wwzii5.jpg",
-        prescription: `Elevate Your Space with Our Premium Door Collection! Discover the perfect blend of style, security, and craftsmanship with our versatile range of doors. Whether you're seeking to enhance your home's curb appeal, redefine an interior space, or simply replace an old door, our collection offers exceptional quality and design to suit every need`,
-        whyChoose: ["Exceptional Craftsmanship: Each door is meticulously crafted with attention to detail, ensuring superior quality and a flawless finish. Experience the difference of a door built to last", `Durable & Long-Lasting: Constructed from high-grade materials [mention examples like: solid wood, engineered wood, fiberglass, steel, etc., or keep generic if product range is too wide], our doors are designed to withstand daily wear and tear, offering years of reliable performance and beauty.`, `Versatile Design Options: From sleek modern lines to classic panel designs, and rustic [barn/farmhouse] styles, our diverse collection offers a door to complement any architectural style and interior decor. Find the perfect fit for your aesthetic vision`, `Enhanced Functionality & Security: Beyond aesthetics, our doors provide robust performance. [If applicable, mention: Featuring solid core construction for better sound insulation and energy efficiency, or pre-bored for standard hardware for easy lock installation, etc.] Many designs offer enhanced security features for your peace of mind.`, `
-Easy Installation (or Contractor-Friendly): Designed for straightforward installation, our doors come ready to be fitted into your existing or new doorway. [If applicable, mention: Pre-hung options available for even simpler setup, or standard sizing to fit common door frames.]`, `Ready for Your Personal Touch: Most of our doors come [primed and ready to paint/stain, or in a natural finish], allowing you to customize them to perfectly match your home's color scheme and personal style.`],
-        itemsToPrev: [{ name: "light-thirteen", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771939/l5_b2qup0.jpg" }, { name: "light-fourteen", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771938/l4_ujpvkm.jpg" }]
+                whyChoose: [
+                        "Multi-Tier Shade Design: Creates interest through stacked forms.",
+                        "White and Gold Contrast: Clean meets glam in the best way.",
+                        "Soft Downlight: Excellent for dining rooms or lounge settings.",
+                        "Height Adjustable: Tailor it to fit above tables or counters.",
+                        "Retro Modern Feel: Nods to vintage without looking dated.",
+                        "Sturdy Frame: Engineered to stay balanced and stable."
+                ],
+                itemsToPrev: [{ name: "light-nine", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771954/L10_zzsykc.jpg" }, { name: "light-ten", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771953/L9_fg09vn.jpg" }]
 
-    },
-     {
+        },
+        {
 
-        id: 1,
-        slug: "light",
-        name: "light-thirteen",
-        src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771939/l5_b2qup0.jpg",
-        prescription: `Elevate Your Space with Our Premium Door Collection! Discover the perfect blend of style, security, and craftsmanship with our versatile range of doors. Whether you're seeking to enhance your home's curb appeal, redefine an interior space, or simply replace an old door, our collection offers exceptional quality and design to suit every need`,
-        whyChoose: ["Exceptional Craftsmanship: Each door is meticulously crafted with attention to detail, ensuring superior quality and a flawless finish. Experience the difference of a door built to last", `Durable & Long-Lasting: Constructed from high-grade materials [mention examples like: solid wood, engineered wood, fiberglass, steel, etc., or keep generic if product range is too wide], our doors are designed to withstand daily wear and tear, offering years of reliable performance and beauty.`, `Versatile Design Options: From sleek modern lines to classic panel designs, and rustic [barn/farmhouse] styles, our diverse collection offers a door to complement any architectural style and interior decor. Find the perfect fit for your aesthetic vision`, `Enhanced Functionality & Security: Beyond aesthetics, our doors provide robust performance. [If applicable, mention: Featuring solid core construction for better sound insulation and energy efficiency, or pre-bored for standard hardware for easy lock installation, etc.] Many designs offer enhanced security features for your peace of mind.`, `
-Easy Installation (or Contractor-Friendly): Designed for straightforward installation, our doors come ready to be fitted into your existing or new doorway. [If applicable, mention: Pre-hung options available for even simpler setup, or standard sizing to fit common door frames.]`, `Ready for Your Personal Touch: Most of our doors come [primed and ready to paint/stain, or in a natural finish], allowing you to customize them to perfectly match your home's color scheme and personal style.`],
-        itemsToPrev: [{ name: "light-fourteen", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771938/l4_ujpvkm.jpg" }, { name: "light-fifteen", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863727/door-11_kdh3cu.svg" }]
+                id: 1,
+                slug: "light",
+                name: "light-nine",
+                src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771954/L10_zzsykc.jpg",
+                prescription: `This three-light pendant brings balanced symmetry and ambient warmth to any space. With opal glass globes suspended at different heights, it adds a sculptural touch to dining areas or stairwells.`,
 
-    },
-     {
+                whyChoose: [
+                        "Three-Globe Pendant: Offers visual rhythm and balanced lighting.",
+                        "Opal Glass Shades: Emits a diffused, gentle illumination.",
+                        "Adjustable Drop Lengths: Customize spacing for ceiling height.",
+                        "Brushed Brass Details: Adds a refined, warm metallic finish.",
+                        "Ideal for Dining Rooms or Foyers: Makes a modern yet timeless statement.",
+                        "Easy Hardwire Install: Designed for stability and quick setup."
+                ],
+                itemsToPrev: [{ name: "light-ten", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771953/L9_fg09vn.jpg" }, { name: "light-eleven", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771952/L8_amq7gb.jpg" }]
 
-        id: 1,
-        slug: "light",
-        name: "light-fourteen",
-        src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771938/l4_ujpvkm.jpg",
-        prescription: `Elevate Your Space with Our Premium Door Collection! Discover the perfect blend of style, security, and craftsmanship with our versatile range of doors. Whether you're seeking to enhance your home's curb appeal, redefine an interior space, or simply replace an old door, our collection offers exceptional quality and design to suit every need`,
-        whyChoose: ["Exceptional Craftsmanship: Each door is meticulously crafted with attention to detail, ensuring superior quality and a flawless finish. Experience the difference of a door built to last", `Durable & Long-Lasting: Constructed from high-grade materials [mention examples like: solid wood, engineered wood, fiberglass, steel, etc., or keep generic if product range is too wide], our doors are designed to withstand daily wear and tear, offering years of reliable performance and beauty.`, `Versatile Design Options: From sleek modern lines to classic panel designs, and rustic [barn/farmhouse] styles, our diverse collection offers a door to complement any architectural style and interior decor. Find the perfect fit for your aesthetic vision`, `Enhanced Functionality & Security: Beyond aesthetics, our doors provide robust performance. [If applicable, mention: Featuring solid core construction for better sound insulation and energy efficiency, or pre-bored for standard hardware for easy lock installation, etc.] Many designs offer enhanced security features for your peace of mind.`, `
-Easy Installation (or Contractor-Friendly): Designed for straightforward installation, our doors come ready to be fitted into your existing or new doorway. [If applicable, mention: Pre-hung options available for even simpler setup, or standard sizing to fit common door frames.]`, `Ready for Your Personal Touch: Most of our doors come [primed and ready to paint/stain, or in a natural finish], allowing you to customize them to perfectly match your home's color scheme and personal style.`],
-        itemsToPrev: [{ name: "light-fifteen", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771937/l2_hnr8ca.jpg" }, { name: "light-sixteen", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771936/l1_ipver7.jpg" }]
+        },
+        {
 
-    },
-     {
+                id: 1,
+                slug: "light",
+                name: "light-ten",
+                src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771953/L9_fg09vn.jpg",
+                prescription: `Minimalist but impactful, this LED linear bar light brings clean lines and cutting-edge performance to your walls. Ideal for vanities, workstations, or gallery-style lighting setups.`,
 
-        id: 1,
-        slug: "light",
-        name: "light-fifteen",
-        src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771937/l2_hnr8ca.jpg",
-        prescription: `Elevate Your Space with Our Premium Door Collection! Discover the perfect blend of style, security, and craftsmanship with our versatile range of doors. Whether you're seeking to enhance your home's curb appeal, redefine an interior space, or simply replace an old door, our collection offers exceptional quality and design to suit every need`,
-        whyChoose: ["Exceptional Craftsmanship: Each door is meticulously crafted with attention to detail, ensuring superior quality and a flawless finish. Experience the difference of a door built to last", `Durable & Long-Lasting: Constructed from high-grade materials [mention examples like: solid wood, engineered wood, fiberglass, steel, etc., or keep generic if product range is too wide], our doors are designed to withstand daily wear and tear, offering years of reliable performance and beauty.`, `Versatile Design Options: From sleek modern lines to classic panel designs, and rustic [barn/farmhouse] styles, our diverse collection offers a door to complement any architectural style and interior decor. Find the perfect fit for your aesthetic vision`, `Enhanced Functionality & Security: Beyond aesthetics, our doors provide robust performance. [If applicable, mention: Featuring solid core construction for better sound insulation and energy efficiency, or pre-bored for standard hardware for easy lock installation, etc.] Many designs offer enhanced security features for your peace of mind.`, `
-Easy Installation (or Contractor-Friendly): Designed for straightforward installation, our doors come ready to be fitted into your existing or new doorway. [If applicable, mention: Pre-hung options available for even simpler setup, or standard sizing to fit common door frames.]`, `Ready for Your Personal Touch: Most of our doors come [primed and ready to paint/stain, or in a natural finish], allowing you to customize them to perfectly match your home's color scheme and personal style.`],
-        itemsToPrev: [{ name: "light-sixteen", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771936/l1_ipver7.jpg" }, { name: "light-fourteen", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771938/l4_ujpvkm.jpg" }]
+                whyChoose: [
+                        "Slim Linear Profile: Sleek, space-saving, and ultra-modern.",
+                        "Integrated LED: Long lifespan with low energy consumption.",
+                        "Brushed Aluminum Finish: Cool-toned sophistication.",
+                        "Horizontal or Vertical Mounting: Versatile design flexibility.",
+                        "Perfect for Bathrooms or Studios: Bright and efficient light output.",
+                        "No Flicker, No Delay: Instant-on clarity with soft diffusion."
+                ],
+                itemsToPrev: [{ name: "light-eleven", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771952/L8_amq7gb.jpg" }, { name: "light-twelve", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771939/l3_wwzii5.jpg" }]
 
-    },
-     {
+        },
+        {
 
-        id: 1,
-        slug: "light",
-        name: "light-sixteen",
-        src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771936/l1_ipver7.jpg",
-        prescription: `Elevate Your Space with Our Premium Door Collection! Discover the perfect blend of style, security, and craftsmanship with our versatile range of doors. Whether you're seeking to enhance your home's curb appeal, redefine an interior space, or simply replace an old door, our collection offers exceptional quality and design to suit every need`,
-        whyChoose: ["Exceptional Craftsmanship: Each door is meticulously crafted with attention to detail, ensuring superior quality and a flawless finish. Experience the difference of a door built to last", `Durable & Long-Lasting: Constructed from high-grade materials [mention examples like: solid wood, engineered wood, fiberglass, steel, etc., or keep generic if product range is too wide], our doors are designed to withstand daily wear and tear, offering years of reliable performance and beauty.`, `Versatile Design Options: From sleek modern lines to classic panel designs, and rustic [barn/farmhouse] styles, our diverse collection offers a door to complement any architectural style and interior decor. Find the perfect fit for your aesthetic vision`, `Enhanced Functionality & Security: Beyond aesthetics, our doors provide robust performance. [If applicable, mention: Featuring solid core construction for better sound insulation and energy efficiency, or pre-bored for standard hardware for easy lock installation, etc.] Many designs offer enhanced security features for your peace of mind.`, `
-Easy Installation (or Contractor-Friendly): Designed for straightforward installation, our doors come ready to be fitted into your existing or new doorway. [If applicable, mention: Pre-hung options available for even simpler setup, or standard sizing to fit common door frames.]`, `Ready for Your Personal Touch: Most of our doors come [primed and ready to paint/stain, or in a natural finish], allowing you to customize them to perfectly match your home's color scheme and personal style.`],
-        itemsToPrev: [{ name: "light-fifteen", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771937/l2_hnr8ca.jpg" }, { name: "light-one", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772009/mmexport1748708887089_tjhojd.jpg" }]
+                id: 1,
+                slug: "light",
+                name: "light-eleven",
+                src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771952/L8_amq7gb.jpg",
+                prescription: `With a whimsical form and warm lighting, this abstract swirl ceiling fixture doubles as art and illumination. It’s a statement piece for modern lounges, studios, or creative spaces.`,
 
-    },
+                whyChoose: [
+                        "Sculptural Swirl Design: Eye-catching and expressive.",
+                        "Matte White Body: Clean and neutral to match any palette.",
+                        "Warm White LED: Comfortable glow without harsh glare.",
+                        "Flush Mount Installation: Great for smaller or lower-ceiling rooms.",
+                        "Creative Ambience: Inspires mood and movement.",
+                        "Durable & Lightweight: Easy to handle and install solo."
+                ],
+                itemsToPrev: [{ name: "light-twelve", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771939/l3_wwzii5.jpg" }, { name: "light-thirteen", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771939/l5_b2qup0.jpg" }]
+
+        },
+        {
+
+                id: 1,
+                slug: "light",
+                name: "light-twelve",
+                src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771939/l3_wwzii5.jpg",
+                prescription: `This tiered crystal chandelier blends traditional opulence with a modern silhouette. Dozens of prismatic drops catch and scatter light, creating a show-stopping centerpiece for dining areas or grand foyers.`,
+
+                whyChoose: [
+                        "Multi-Layer Crystal Design: Radiates elegance and depth.",
+                        "Polished Chrome Base: Reflects light for maximum brilliance.",
+                        "Dimmable Compatible: Adjust brightness for mood or time of day.",
+                        "Ideal for Grand Entrances or Dining Rooms: A true focal point.",
+                        "Statement Size: Bold without overwhelming the space.",
+                        "Timeless Glamour: Adds luxury to both contemporary and classic interiors."
+                ],
+                itemsToPrev: [{ name: "light-thirteen", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771939/l5_b2qup0.jpg" }, { name: "light-fourteen", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771938/l4_ujpvkm.jpg" }]
+
+        },
+        {
+
+                id: 1,
+                slug: "light",
+                name: "light-thirteen",
+                src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771939/l5_b2qup0.jpg",
+                prescription: `A flush ceiling light with a geometric frame, combining sharp angles and frosted acrylic for a clean, architectural feel. Ideal for entryways, hallways, or modern office ceilings.`,
+
+                whyChoose: [
+                        "Angular Frame Design: Geometric beauty with clean lines.",
+                        "Frosted Acrylic Center: Glows without glare.",
+                        "Flush Mount: Perfect for spaces with low ceilings.",
+                        "Black and White Contrast: Sophisticated, neutral combo.",
+                        "Energy-Efficient Build: LED-compatible structure.",
+                        "Reliable Everyday Use: Minimal, modern, and maintenance-free."
+                ],
+                itemsToPrev: [{ name: "light-fourteen", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771938/l4_ujpvkm.jpg" }, { name: "light-fifteen", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863727/door-11_kdh3cu.svg" }]
+
+        },
+        {
+
+                id: 1,
+                slug: "light",
+                name: "light-fourteen",
+                src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771938/l4_ujpvkm.jpg",
+                prescription: `An avant-garde spiral pendant light that bends the rules of form and illumination. Made for designers and creatives, this fixture floats above tables like a light sculpture.`,
+
+                whyChoose: [
+                        "Spiral LED Body: Modern form meets functional brilliance.",
+                        "Black Finish: Sleek and adaptable to any color scheme.",
+                        "Floating Illusion: Lightweight design with visual impact.",
+                        "Height Adjustable: Tailor its presence to the space.",
+                        "Great for Dining, Studios, or Creative Spaces.",
+                        "Built-in LED Strip: Energy-efficient and long-lasting."
+                ],
+                itemsToPrev: [{ name: "light-fifteen", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771937/l2_hnr8ca.jpg" }, { name: "light-sixteen", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771936/l1_ipver7.jpg" }]
+
+        },
+        {
+
+                id: 1,
+                slug: "light",
+                name: "light-fifteen",
+                src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771937/l2_hnr8ca.jpg",
+                prescription: `This dome-shaped pendant light features a ribbed glass cover and brushed nickel cap. A versatile piece that suits kitchens, cafes, or reading corners with soft ambient glow.`,
+
+                whyChoose: [
+                        "Ribbed Glass Diffuser: Creates textured, warm lighting.",
+                        "Brushed Nickel Top: Subtle metallic detail.",
+                        "Classic Dome Shape: Timeless and transitional.",
+                        "Perfect for Kitchens or Breakfast Bars.",
+                        "LED-Compatible: Choose your preferred bulb style.",
+                        "Simple Mounting: Quick install with minimal fuss."
+                ],
+                itemsToPrev: [{ name: "light-sixteen", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771936/l1_ipver7.jpg" }, { name: "light-fourteen", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771938/l4_ujpvkm.jpg" }]
+
+        },
+        {
+
+                id: 1,
+                slug: "light",
+                name: "light-sixteen",
+                src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771936/l1_ipver7.jpg",
+                prescription: `Designed with minimalism in mind, this vertical wall light brings soft, vertical illumination perfect for modern bathrooms, stairwells, or flanking mirrors. Sleek and subtle, yet highly effective.`,
+
+                whyChoose: [
+                        "Vertical LED Bar: Elegant up-down lighting.",
+                        "Matte Black Frame: A versatile, architectural accent.",
+                        "Slim Wall Mount: Clean and space-efficient.",
+                        "Warm Light Temperature: Gentle glow for relaxing spaces.",
+                        "Pairs Well in Multiples: Use symmetrically or staggered.",
+                        "Moisture-Resistant: Suitable for bathroom installations."
+                ],
+                itemsToPrev: [{ name: "light-fifteen", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771937/l2_hnr8ca.jpg" }, { name: "light-one", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772009/mmexport1748708887089_tjhojd.jpg" }]
+
+        },
 ]
