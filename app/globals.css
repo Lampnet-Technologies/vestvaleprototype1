@@ -39,3 +39,11 @@ body {
 html, body {
   overflow-x: hidden;
 }
+
+/* Add this in your globals.css */
+#google_translate_element2,
+.skiptranslate,
+.goog-te-banner-frame,
+body > .goog-te-spinner-pos {
+  display: none !important;
+}

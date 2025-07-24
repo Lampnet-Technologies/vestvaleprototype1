@@ -40,9 +40,8 @@ const FooterSection = () => {
 
         {/* Flex Grouped Sections */}
         <section className="flex lg:flex-row flex-col space-y-4 justify-between my-6">
-
-{/* motion div */}
-        {/* <motion.div
+          {/* motion div */}
+          {/* <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -52,61 +51,137 @@ const FooterSection = () => {
             </motion.div> */}
           {/* Vestvale + Navigation */}
           <div className="flex-1">
-            {/* <h2 className="text-2xl font-bold text-[#361B06]">Vestvale</h2> */}
             <ul className="space-y-4">
-              {["About", "Service", "Virtual Tour"].map((item) => (
-                <li key={item}>
-                  <a href={`#${item.toLowerCase().replace(/\s+/g, "")}`} className="hover:text-white transition-colors">
-                    {item}
-                  </a>
-                </li>
-              ))}
+              <li>
+                <a href="#about" className="hover:text-white transition-colors">
+                  About
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#service"
+                  className="hover:text-white transition-colors"
+                >
+                  Service
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#virtualtour"
+                  className="hover:text-white transition-colors"
+                >
+                  Virtual Tour
+                </a>
+              </li>
             </ul>
           </div>
 
-          {/* Home accessorites */}
+          {/* Our Home Accessories */}
           <div className="flex-1">
-            <h3 className="text-lg font-bold text-[#361B06]">Home Accessorites</h3>
+            <h3 className="text-lg font-bold text-[#361B06]">
+              Home Accessorites
+            </h3>
             <ul className="mt-4 space-y-4">
-              {["Door handles", "Wallpapers", "Lights","Doors","Tiles"].map((item) => (
-                <li key={item}>
-                  <a href="#properties" className="hover:text-white transition-colors">
-                    {item}
-                  </a>
-                </li>
-              ))}
+              <li>
+                <a
+                  href="/accessories/door-handles"
+                  className="hover:text-white transition-colors"
+                >
+                  Door Handles
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/accessories/wallpapers"
+                  className="hover:text-white transition-colors"
+                >
+                  Wallpapers
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/accessories/lights"
+                  className="hover:text-white transition-colors"
+                >
+                  Lights
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/accessories/doors"
+                  className="hover:text-white transition-colors"
+                >
+                  Doors
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/accessories/tiles"
+                  className="hover:text-white transition-colors"
+                >
+                  Tiles
+                </a>
+              </li>
             </ul>
           </div>
 
-          {/* Interior Decoration */}
+          {/* our Interior Decoration */}
           <div className="flex-1 space-y-4">
-            <h3 className="text-lg font-bold text-[#361B06]">Interior Decoration</h3>
+            <h3 className="text-lg font-bold text-[#361B06]">
+              Interior Decoration
+            </h3>
             <ul className="space-y-4">
-              {["Russia", "Italy", "China","Morocco"].map((item) => (
-                <li key={item}>
-                  <a href="#appliances" className="hover:text-white transition-colors">
-                    {item}
-                  </a>
-                </li>
-              ))}
+              <li>
+                <a
+                  href="/country/russia"
+                  className="hover:text-white transition-colors"
+                >
+                  Russia
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/country/italy"
+                  className="hover:text-white transition-colors"
+                >
+                  Italy
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/country/china"
+                  className="hover:text-white transition-colors"
+                >
+                  China
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/country/morocco"
+                  className="hover:text-white transition-colors"
+                >
+                  Morocco
+                </a>
+              </li>
             </ul>
           </div>
 
-        {/* Our Office */}
-        <div className="flex-1 space-y-4">
+          {/* Our Office */}
+          <div className="flex-1 space-y-4">
+            <h3 className="text-lg font-bold text-[#361B06]">
+              Our Email Address
+            </h3>
 
-        <h3 className="text-lg font-bold text-[#361B06]">Our Email Address</h3>
+            <div className="mt-4 space-y-2">
+              <a
+                href="mailto:info@vestvaleestate.com"
+                className=" hover:text-white transition-colors"
+              >
+                Info@vestvaleestate.com
+              </a>
+            </div>
 
-        <div className="mt-4 space-y-2">
-          <a href="mailto:info@vestvaleestate.com" className=" hover:text-white transition-colors">Info@vestvaleestate.com</a>
-        </div>
-
-
-
-
-
-
-          {/* <div className="flex space-x-4">
+            {/* <div className="flex space-x-4">
             {[FaTwitter, FaInstagram, FaLinkedin].map((Icon, i) => (
               <a key={i} href="#" className="hover:text-white transition-colors">
                 <Icon size={20} />
@@ -122,45 +197,50 @@ const FooterSection = () => {
               </li>
             ))}
           </ul> */}
-        </div>
-
-        <div className="flex flex-col">
-<div className="flex space-x-4">
-            {[
-  { Icon: FaTwitter, href: "https://twitter.com/yourhandle" },
-  { Icon: FaInstagram, href: "https://instagram.com/yourhandle" },
-  { Icon: FaLinkedin, href: "https://linkedin.com/in/yourhandle" },
-].map(({ Icon, href }, i) => (
-  <a
-    key={i}
-    href={href}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="hover:text-white transition-colors"
-  >
-    <Icon size={20} />
-  </a>
-))}
-
           </div>
-          <ul className="flex flex-col space-y-4 text-sm mt-4">
-  {[
-    { label: "Privacy Policy", href: "/privacy-policy" },
-    { label: "Cookie Policy", href: "/cookie-policy" },
-    { label: "Security", href: "/security" },
-  ].map((item) => (
-    <li key={item.label}>
-      <a href={item.href} target="_blank" className="hover:text-white transition-colors">
-        {item.label}
-      </a>
-    </li>
-  ))}
-</ul>
-</div>
 
+          <div className="flex flex-col">
+            <div className="flex space-x-4">
+              {[
+                { Icon: FaTwitter, href: "https://twitter.com/yourhandle" },
+                { Icon: FaInstagram, href: "https://instagram.com/yourhandle" },
+                {
+                  Icon: FaLinkedin,
+                  href: "https://linkedin.com/in/yourhandle",
+                },
+              ].map(({ Icon, href }, i) => (
+                <a
+                  key={i}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors"
+                >
+                  <Icon size={20} />
+                </a>
+              ))}
+            </div>
+            <ul className="flex flex-col space-y-4 text-sm mt-4">
+              {[
+                { label: "Privacy Policy", href: "/privacy-policy" },
+                { label: "Cookie Policy", href: "/cookie-policy" },
+                { label: "Security", href: "/security" },
+              ].map((item) => (
+                <li key={item.label}>
+                  <a
+                    href={item.href}
+                    target="_blank"
+                    className="hover:text-white transition-colors"
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-        {/* Copyright */}
-        {/* <motion.div
+          {/* Copyright */}
+          {/* <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.8, duration: 0.6 }}
@@ -168,7 +248,7 @@ const FooterSection = () => {
           >
           <p>&copy; {new Date().getFullYear()} Vestvale Homes & Decor. All rights reserved.</p>
         </motion.div> */}
-          </section>
+        </section>
       </div>
     </footer>
   );
