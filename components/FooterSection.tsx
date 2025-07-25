@@ -2,7 +2,7 @@
 
 import React from "react";
 import { FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
-import { motion } from "framer-motion";
+/* import { motion } from "framer-motion"; */
 import Image from "next/image";
 import Link from "next/link";
 
@@ -51,85 +51,125 @@ const FooterSection = () => {
           >
             </motion.div> */}
           {/* Vestvale + Navigation */}
-         {/* About / Service / Virtual Tour Section */}
-<div className="flex-1">
-  <ul className="space-y-4">
-    <li>
-      <Link href="#about" className="hover:text-white transition-colors">
-        About
-      </Link>
-    </li>
-    <li>
-      <Link href="#service" className="hover:text-white transition-colors">
-        Service
-      </Link>
-    </li>
-    <li>
-      <Link href="#virtualtour" className="hover:text-white transition-colors">
-        Virtual Tour
-      </Link>
-    </li>
-  </ul>
-</div>
+          {/* About / Service / Virtual Tour Section */}
+          <div className="flex-1">
+            <ul className="space-y-4">
+              <li>
+                <Link
+                  href="#about"
+                  className="hover:text-white transition-colors"
+                >
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#service"
+                  className="hover:text-white transition-colors"
+                >
+                  Service
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#virtualtour"
+                  className="hover:text-white transition-colors"
+                >
+                  Virtual Tour
+                </Link>
+              </li>
+            </ul>
+          </div>
 
-{/* Our Home Accessories */}
-<div className="flex-1">
-  <h3 className="text-lg font-bold text-[#361B06]">Home Accessories</h3>
-  <ul className="mt-4 space-y-4">
-    <li>
-      <Link href="/accessories/door-handles" className="hover:text-white transition-colors">
-        Door Handles
-      </Link>
-    </li>
-    <li>
-      <Link href="/accessories/wallpapers" className="hover:text-white transition-colors">
-        Wallpapers
-      </Link>
-    </li>
-    <li>
-      <Link href="/accessories/lights" className="hover:text-white transition-colors">
-        Lights
-      </Link>
-    </li>
-    <li>
-      <Link href="/accessories/doors" className="hover:text-white transition-colors">
-        Doors
-      </Link>
-    </li>
-    <li>
-      <Link href="/accessories/tiles" className="hover:text-white transition-colors">
-        Tiles
-      </Link>
-    </li>
-  </ul>
-</div>
+          {/* Our Home Accessories */}
+          <div className="flex-1">
+            <h3 className="text-lg font-bold text-[#361B06]">
+              Home Accessories
+            </h3>
+            <ul className="mt-4 space-y-4">
+              <li>
+                <Link
+                  href="/accessories/door-handles"
+                  className="hover:text-white transition-colors"
+                >
+                  Door Handles
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/accessories/wallpapers"
+                  className="hover:text-white transition-colors"
+                >
+                  Wallpapers
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/accessories/lights"
+                  className="hover:text-white transition-colors"
+                >
+                  Lights
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/accessories/doors"
+                  className="hover:text-white transition-colors"
+                >
+                  Doors
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/accessories/tiles"
+                  className="hover:text-white transition-colors"
+                >
+                  Tiles
+                </Link>
+              </li>
+            </ul>
+          </div>
 
-{/* Our Interior Decoration */}
-<div className="flex-1 space-y-4">
-  <h3 className="text-lg font-bold text-[#361B06]">Interior Decoration</h3>
-  <ul className="space-y-4">
-    <li>
-      <Link href="/country/russia" className="hover:text-white transition-colors">
-        Russia
-      </Link>
-    </li>
-    <li>
-      <Link href="/country/italy" className="hover:text-white transition-colors">
-        Italy
-      </Link>
-    </li>
-    <li>
-      <Link href="/country/china" className="hover:text-white transition-colors">
-        China
-      </Link>
-    </li>
-    <li>
-      <Link href="/country/morocco" className="hover:text-white transition-colors">
-        Morocco
-      </Link>
-    </li>
-  </ul>
-</div>
+          {/* Our Interior Decoration */}
+          <div className="flex-1 space-y-4">
+            <h3 className="text-lg font-bold text-[#361B06]">
+              Interior Decoration
+            </h3>
+            <ul className="space-y-4">
+              <li>
+                <Link
+                  href="/country/russia"
+                  className="hover:text-white transition-colors"
+                >
+                  Russia
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/country/italy"
+                  className="hover:text-white transition-colors"
+                >
+                  Italy
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/country/china"
+                  className="hover:text-white transition-colors"
+                >
+                  China
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/country/morocco"
+                  className="hover:text-white transition-colors"
+                >
+                  Morocco
+                </Link>
+              </li>
+            </ul>
+          </div>
 
           {/* Our Office */}
           <div className="flex-1 space-y-4">
@@ -174,7 +214,7 @@ const FooterSection = () => {
                   href: "https://linkedin.com/in/yourhandle",
                 },
               ].map(({ Icon, href }, i) => (
-                <a
+                <Link
                   key={i}
                   href={href}
                   target="_blank"
@@ -182,7 +222,7 @@ const FooterSection = () => {
                   className="hover:text-white transition-colors"
                 >
                   <Icon size={20} />
-                </a>
+                </Link>
               ))}
             </div>
             <ul className="flex flex-col space-y-4 text-sm mt-4">
@@ -192,13 +232,12 @@ const FooterSection = () => {
                 { label: "Security", href: "/security" },
               ].map((item) => (
                 <li key={item.label}>
-                  <a
+                  <Link
                     href={item.href}
-                    target="_blank"
                     className="hover:text-white transition-colors"
                   >
                     {item.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

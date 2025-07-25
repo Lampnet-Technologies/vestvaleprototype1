@@ -39,11 +39,58 @@ body {
 html, body {
   overflow-x: hidden;
 }
+html {
+  scroll-behavior: smooth;
+}
 
-/* Add this in your globals.css */
-#google_translate_element2,
-.skiptranslate,
-.goog-te-banner-frame,
-body > .goog-te-spinner-pos {
-  display: none !important;
+/* GTranslate Select Styling */
+.gtranslate_wrapper select.gt_selector {
+  appearance: none !important;
+  background-color: white !important;
+  color: #361B06 !important;
+  border: 1.5px solid #9D6B53 !important;
+  padding: 4px 8px 4px 32px !important; /* left space for flag */
+  border-radius: 6px !important;
+  font-size: 0.7rem !important;
+  font-weight: 500 !important;
+  cursor: pointer !important;
+  background-repeat: no-repeat !important;
+  background-position: 8px center !important;
+  background-size: 18px !important;
+  text-transform: uppercase !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) !important;
+  min-width: 90px !important;
+  max-width: 110px !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+
+/* Hover and focus effect */
+.gtranslate_wrapper select.gt_selector:hover {
+  background-color: #f9f6f3 !important;
+  border-color: #7a4d36 !important;
+}
+
+.gtranslate_wrapper select.gt_selector:focus {
+  outline: none !important;
+  border-color: #9D6B53 !important;
+  box-shadow: 0 0 0 2px rgba(157, 107, 83, 0.3) !important;
+}
+
+/* Option style (not all browsers render this, but still good practice) */
+.gtranslate_wrapper select.gt_selector option {
+  color: #361B06 !important;
+  font-weight: 500 !important;
+  background-color: white !important;
+}
+
+/* Mobile-specific tweaks */
+@media screen and (max-width: 480px) {
+  .gtranslate_wrapper select.gt_selector {
+    font-size: 0.6rem !important;
+    padding: 3px 6px 3px 28px !important;
+    min-width: 70px !important;
+    max-width: 90px !important;
+  }
 }

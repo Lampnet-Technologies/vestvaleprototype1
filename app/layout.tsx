@@ -19,9 +19,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html>
       <head>
-
       </head>
       <body
         className={`overflow-x-hidden ${geistSans.variable} ${geistMono.variable}`}

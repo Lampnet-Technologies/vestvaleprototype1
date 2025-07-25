@@ -47,7 +47,7 @@ export default function HomePage() {
       <BackgroundWrapper backgroundUrl="https://res.cloudinary.com/dnoycjq2q/image/upload/v1753287923/mainBg_btg9kv.png">
       <OurStory ref={sections.about} />
       <PropertiesSection ref={sections.interiorDecor} />
-      <HomeDecor ref={sections.homedecor} />  
+      <HomeDecor ref={sections.homedecor} />
       <Accessories ref={sections.homeAccessories} />
       </BackgroundWrapper>
       <Services ref={sections.services}/>
@@ -58,8 +58,6 @@ export default function HomePage() {
       <NewsletterSection ref={sections.service} />
       {/* <ContactSection ref={sections.contact}   />  */}
       <FooterSection />
-      {/* Add FooterSection if you have one, or remove this line if not */}
-      
     </main>
   );
 }

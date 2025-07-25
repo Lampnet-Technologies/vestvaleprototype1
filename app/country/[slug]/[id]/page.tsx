@@ -1,5 +1,3 @@
-
-
 import Image from 'next/image'
 import React from 'react'
 import { countryPropertyData } from '../page';
@@ -7,6 +5,7 @@ import { allImagesForChineseDecor } from '@/app/utils/interior-utils/chinadecorP
 import { allImagesForMoroccanDecor } from '@/app/utils/interior-utils/morroccodecorPopUpProps';
 import { allImagesForItalianDecor } from '@/app/utils/interior-utils/italydecorPopUpProps';
 import { allImagesForRussianDecor } from '@/app/utils/interior-utils/russiadecorPopUpProps';
+import Navbar from '@/components/Navbar';
 
 
 // const data = [
@@ -73,6 +72,7 @@ if (!content) {
      // style={{background:""}}
      className='bg-[#F5F1E6] min-h-screen  text-black pb-8'
      >
+      <Navbar />
  {/* Image Preview */}
  <div className='relative w-full h-[400px]'>
    <Image 

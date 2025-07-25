@@ -80,27 +80,16 @@ const Navbar: React.FC<NavbarProps> = ({ onNavClick }) => {
           ))}
         </nav>
 
-        {/* GTranslate - Desktop Only */}
-        {/* <div className="hidden md:block">
-          <GTranslate show={true} />
-        </div> */}
-
-        {/* GTranslate - appears once, works on all screen sizes */}
-        <div className="ml-4">
+        <div className="flex items-center space-x-4">
+          {/* Single GTranslate always visible on right */}
           <GTranslate />
-        </div>
-
-        {/* Mobile Menu Toggle */}
-        <div className="md:hidden flex items-center space-x-4">
-          {/* GTranslate - Mobile Only */}
-          {/* <div className="md:hidden">
-            <GTranslate show={true} />
-          </div> */}
 
           {/* Burger icon */}
           <button
             onClick={toggleMenu}
-            className="text-[#9d6b53] focus:outline-none"
+            aria-label="Open navigation menu"
+            title="Open navigation menu"
+            className="text-[#9d6b53] focus:outline-none md:hidden"
           >
             <FaBars className="text-2xl" />
           </button>
