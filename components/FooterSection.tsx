@@ -215,7 +215,7 @@ const FooterSection = () => {
                 },
               ].map(({ Icon, href }, i) => (
                 <Link
-                  key={i}
+                  key={i+2}
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"

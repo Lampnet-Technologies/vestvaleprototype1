@@ -35,7 +35,7 @@ export default function SecurityPage() {
 
       <h2 className="text-xl font-semibold mt-6 mb-2">3. Contact Us</h2>
       <p className="mb-4">
-        For any privacy-related questions, email us at <a href="mailto:info@vestvaleestate.com" className="underline">support@vestvale.com</a>.
+        For any privacy-related questions, email us at <a href="mailto:info@vestvaleestate.com" className="underline">info@vestvaleestate.com</a>.
       </p>
     </main>
     </div>

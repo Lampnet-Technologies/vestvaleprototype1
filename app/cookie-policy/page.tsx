@@ -71,7 +71,7 @@ export default function CookiesPolicyPage() {
         <p className="mb-4">
           For any privacy-related questions, email us at{" "}
           <a href="mailto:info@vestvaleestate.com" className="underline">
-            support@vestvale.com
+            info@vestvaleestate.com
           </a>
         </p>
       </main>
