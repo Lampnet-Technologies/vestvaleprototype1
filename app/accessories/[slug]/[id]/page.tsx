@@ -6,6 +6,7 @@ import { allImagesForWallpapers } from "@/app/utils/wallpaperPopUpProps";
 import { allImagesForDoorHandles } from "@/app/utils/doorhandlePopUpProps";
 import { allImagesForTiles } from "@/app/utils/tilePopUpProps";
 import Navbar from "@/components/Navbar";
+import BackButton from "@/components/BackButton";
 
 const images = [
   {
@@ -68,6 +69,7 @@ export default async function AccessoriesInfo({
   return (
     <div className="bg-[#F5F1E6] min-h-screen  text-black pb-8">
       <Navbar />
+      <BackButton topOffset={80} />
       {/* Image Preview */}
       <div className="relative w-full h-[400px] ">
         <Image
@@ -116,7 +118,7 @@ export default async function AccessoriesInfo({
         <aside className=" flex md:justify-between md:flex-row flex-col items-center ">
           {content?.itemsToPrev.map((item, index) => (
             <div
-              key={item.name || index} // 👈 unique key
+              key={item.name || index}
               className="relative w-[300px] h-[400px] my-4 md:my-0"
             >
               <Image

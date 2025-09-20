@@ -303,4 +303,188 @@ export const allImagesForLights = [
                 itemsToPrev: [{ name: "light-fifteen", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771937/l2_hnr8ca.jpg" }, { name: "light-one", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772009/mmexport1748708887089_tjhojd.jpg" }]
 
         },
+        {
+
+                id: 1,
+                slug: "light",
+                name: "light-seventeen",
+                src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771936/l1_ipver7.jpg",
+                prescription: `Realistic face sculpture hanging light that adds artistic flair and ambient illumination to any space. Perfect for modern interiors seeking a unique blend of art and function. Height adjustable to fit your space.`,
+
+                whyChoose: [
+                        "Artistic Face Design: A sculptural piece that doubles as decor.",
+                        "Matte Black Finish: Sleek and versatile for various interiors.",
+                        "Warm LED Lighting: Creates a cozy and inviting atmosphere.",
+                        "Durable Material: Crafted from high-quality resin for longevity.",
+                        "Perfect for Accent Lighting: Ideal for living rooms, bedrooms, or creative spaces.",
+                        "Easy Installation: Comes with all necessary hardware for quick setup.",
+                        "Height Adjustable: Customize the drop length to fit your space."
+                ],
+                itemsToPrev: [{ name: "light-eighteen", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758385303/light-18_hhwjxj.jpg" }, { name: "light-nineteen", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758385303/light-19_zom6az.jpg" }]
+
+        },
+        {
+
+                id: 1,
+                slug: "light",
+                name: "light-eighteen",
+                src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758385303/light-18_hhwjxj.jpg",
+                prescription: `Realistic face sculpture hanging light that adds artistic flair and ambient illumination to any space. Perfect for modern interiors seeking a unique blend of art and function.`,
+
+                whyChoose: [
+                        "Artistic Face Design: A sculptural piece that doubles as decor.",
+                        "Matte Black Finish: Sleek and versatile for various interiors.",
+                        "Warm LED Lighting: Creates a cozy and inviting atmosphere.",
+                        "Durable Material: Crafted from high-quality resin for longevity.",
+                        "Perfect for Accent Lighting: Ideal for living rooms, bedrooms, or creative spaces.",
+                        "Easy Installation: Comes with all necessary hardware for quick setup."
+                ],
+                itemsToPrev: [{ name: "light-nineteen", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758385303/light-19_zom6az.jpg" }, { name: "light-twenty", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758385303/light-20_yz9g3x.jpg" }]
+
+        },
+        {
+
+                id: 1,
+                slug: "light",
+                name: "light-nineteen",
+                src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758385303/light-19_zom6az.jpg",
+                prescription: `Realistic face sculpture hanging light that adds artistic flair and ambient illumination to any space. Perfect for modern interiors seeking a unique blend of art and function.`,
+
+                whyChoose: [
+                        "Artistic Face Design: A sculptural piece that doubles as decor.",
+                        "Matte Black Finish: Sleek and versatile for various interiors.",
+                        "Warm LED Lighting: Creates a cozy and inviting atmosphere.",
+                        "Durable Material: Crafted from high-quality resin for longevity.",
+                        "Perfect for Accent Lighting: Ideal for living rooms, bedrooms, or creative spaces.",
+                        "Easy Installation: Comes with all necessary hardware for quick setup."
+                ],
+                itemsToPrev: [{ name: "light-twenty", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758385303/light-20_yz9g3x.jpg" }, { name: "light-twenty-one", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758385304/light-21_vgec2e.jpg" }]
+
+        },
+        {
+
+                id: 1,
+                slug: "light",
+                name: "light-twenty",
+                src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758385303/light-20_yz9g3x.jpg",
+                prescription: `Looking for a sleek faced, modern lighting solution that combines form and function? This vertical LED wall light is designed to provide elegant up-down illumination while serving as a stylish architectural accent. Its matte black frame and slim profile make it a versatile choice for various interior styles, from contemporary to industrial.`,
+
+                whyChoose: [
+                        "Vertical LED Bar: Elegant up-down lighting.",
+                        "Matte Black Frame: A versatile, architectural accent.",
+                        "Slim Wall Mount: Clean and space-efficient.",
+                        "Warm Light Temperature: Gentle glow for relaxing spaces.",
+                        "Pairs Well in Multiples: Use symmetrically or staggered.",
+                        "Moisture-Resistant: Suitable for bathroom installations.",
+                        "Artistic Face Design: A sculptural piece that doubles as decor.",
+                        "Durable Material: Crafted from high-quality resin for longevity.",
+                        "Perfect for Accent Lighting: Ideal for living rooms, bedrooms, or creative spaces.",
+                        "Easy Installation: Comes with all necessary hardware for quick setup.",
+                        "Height Adjustable: Customize the drop length to fit your space."
+                ],
+                itemsToPrev: [{ name: "light-twenty-one", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758385304/light-21_vgec2e.jpg" }, { name: "light-twenty-two", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758385304/light-22_a9lvvb.jpg" }]
+
+        },
+        {
+
+                id: 1,
+                slug: "light",
+                name: "light-twenty-one",
+                src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758385304/light-21_vgec2e.jpg",
+                prescription: `Realistic face sculpture hanging light that adds artistic flair and ambient illumination to any space. Perfect for modern interiors seeking a unique blend of art and function.`,
+
+                whyChoose: [
+                        "Artistic Face Design: A sculptural piece that doubles as decor.",
+                        "Matte Black Finish: Sleek and versatile for various interiors.",
+                        "Warm LED Lighting: Creates a cozy and inviting atmosphere.",
+                        "Durable Material: Crafted from high-quality resin for longevity.",
+                        "Perfect for Accent Lighting: Ideal for living rooms, bedrooms, or creative spaces.",
+                        "Easy Installation: Comes with all necessary hardware for quick setup.",
+                        "Height Adjustable: Customize the drop length to fit your space."
+                ],
+                itemsToPrev: [{ name: "light-twenty-two", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758385304/light-22_a9lvvb.jpg" }, { name: "light-twenty-three", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758385304/light-23_lnghsi.jpg" }]
+
+        },
+        {
+
+                id: 1,
+                slug: "light",
+                name: "light-twenty-two",
+                src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758385304/light-22_a9lvvb.jpg",
+                prescription: `Realistic face sculpture hanging light that adds artistic flair and ambient illumination to any space. Perfect for modern interiors seeking a unique blend of art and function.`,
+
+                whyChoose: [
+                        "Artistic Face Design: A sculptural piece that doubles as decor.",
+                        "Matte Black Finish: Sleek and versatile for various interiors.",
+                        "Warm LED Lighting: Creates a cozy and inviting atmosphere.",
+                        "Durable Material: Crafted from high-quality resin for longevity.",
+                        "Perfect for Accent Lighting: Ideal for living rooms, bedrooms, or creative spaces.",
+                        "Easy Installation: Comes with all necessary hardware for quick setup."
+                ],
+                itemsToPrev: [{ name: "light-twenty-three", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758385304/light-23_lnghsi.jpg" }, { name: "light-twenty-four", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758385305/light-24_mrgui1.jpg" }]
+
+        },
+        {
+
+                id: 1,
+                slug: "light",
+                name: "light-twenty-three",
+                src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758385304/light-23_lnghsi.jpg",
+                prescription: `Realistic face sculpture hanging light that adds artistic flair and ambient illumination to any space. Perfect for modern interiors seeking a unique blend of art and function.`,
+
+                whyChoose: [
+                        "Artistic Face Design: A sculptural piece that doubles as decor.",
+                        "Matte Black Finish: Sleek and versatile for various interiors.",
+                        "Warm LED Lighting: Creates a cozy and inviting atmosphere.",
+                        "Durable Material: Crafted from high-quality resin for longevity.",
+                        "Perfect for Accent Lighting: Ideal for living rooms, bedrooms, or creative spaces.",
+                        "Easy Installation: Comes with all necessary hardware for quick setup."
+                ],
+                itemsToPrev: [{ name: "light-twenty-four", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758385305/light-24_mrgui1.jpg" }, { name: "light-twenty-five", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758385303/light-25_qhk3p7.jpg" }]
+
+        },
+        {
+
+                id: 1,
+                slug: "light",
+                name: "light-twenty-four",
+                src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758385305/light-24_mrgui1.jpg",
+                prescription: `Realistic face sculpture hanging light that adds artistic flair and ambient illumination to any space. Perfect for modern interiors seeking a unique blend of art and function. Height adjustable to fit your space.`,
+
+                whyChoose: [
+                        "Artistic Face Design: A sculptural piece that doubles as decor.",
+                        "Matte Black Finish: Sleek and versatile for various interiors.",
+                        "Warm LED Lighting: Creates a cozy and inviting atmosphere.",
+                        "Durable Material: Crafted from high-quality resin for longevity.",
+                        "Perfect for Accent Lighting: Ideal for living rooms, bedrooms, or creative spaces.",
+                        "Easy Installation: Comes with all necessary hardware for quick setup.",
+                        "Height Adjustable: Customize the drop length to fit your space."
+                ],
+                itemsToPrev: [{ name: "light-twenty-five", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758385303/light-25_qhk3p7.jpg" }, { name: "light-twenty-three", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758385304/light-23_lnghsi.jpg" }]
+
+        },
+        {
+
+                id: 1,
+                slug: "light",
+                name: "light-twenty-five",
+                src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758385303/light-25_qhk3p7.jpg",
+                prescription: `looking for a sleek face styled, modern lighting solution that combines form and function? This vertical LED wall light is designed to provide elegant up-down illumination while serving as a stylish architectural accent. Its matte black frame and slim profile make it a versatile choice for various interior styles, from contemporary to industrial.`,
+
+                whyChoose: [
+                        "Vertical LED Bar: Elegant up-down lighting.",
+                        "Matte Black Frame: A versatile, architectural accent.",
+                        "Slim Wall Mount: Clean and space-efficient.",
+                        "Warm Light Temperature: Gentle glow for relaxing spaces.",
+                        "Pairs Well in Multiples: Use symmetrically or staggered.",
+                        "Moisture-Resistant: Suitable for bathroom installations.",
+                        "Artistic Face Design: A sculptural piece that doubles as decor.",
+                        "Durable Material: Crafted from high-quality resin for longevity.",
+                        "Perfect for Accent Lighting: Ideal for living rooms, bedrooms, or creative spaces.",
+                        "Easy Installation: Comes with all necessary hardware for quick setup.",
+                        "Height Adjustable: Customize the drop length to fit your space."
+                ],
+                itemsToPrev: [{ name: "light-twenty-four", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758385305/light-24_mrgui1.jpg" }, { name: "light-one", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772009/mmexport1748708887089_tjhojd.jpg" }]
+
+        }
 ]

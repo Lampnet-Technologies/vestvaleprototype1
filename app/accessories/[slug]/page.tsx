@@ -1,6 +1,8 @@
 import { type Metadata } from "next";
 import AccessoryDynamicComponent from "@/components/AccessoryComponent/AccessoryDynamicComponent";
 import Navbar from "@/components/Navbar";
+import BackButton from "@/components/BackButton";
+
 
 export const dynamic = "force-static";
 
@@ -182,98 +184,152 @@ export const accessoriesData: Record<
       {
         image:
           "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772009/mmexport1748708887089_tjhojd.jpg",
-        text: "light-one",
+        text: "light one",
         id: "light-one",
       },
       {
         image:
           "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772006/mmexport1748708902266_tabbd8.jpg",
-        text: "light-two",
+        text: "light two",
         id: "light-two",
       },
       {
         image:
           "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771985/mmexport1748443273048_c37cdg.jpg",
-        text: "light-three",
+        text: "light three",
         id: "light-three",
       },
       {
         image:
           "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771980/mmexport1748443184366_rpcnfp.jpg",
-        text: "light-four",
+        text: "light four",
         id: "light-four",
       },
       {
         image:
           "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771975/L17_fgwgbd.jpg",
-        text: "light-five",
+        text: "light five",
         id: "light-five",
       },
       {
         image:
           "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771964/L13_mltxer.jpg",
-        text: "light-six",
+        text: "light six",
         id: "light-six",
       },
       {
         image:
           "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771961/L12_mabx0z.jpg",
-        text: "light-seven",
+        text: "light seven",
         id: "light-seven",
       },
       {
         image:
           "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771955/L11_t63n3v.jpg",
-        text: "light-eight",
+        text: "light eight",
         id: "light-eight",
       },
       {
         image:
           "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771954/L10_zzsykc.jpg",
-        text: "light-nine",
+        text: "light nine",
         id: "light-nine",
       },
       {
         image:
           "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771953/L9_fg09vn.jpg",
-        text: "light-ten",
+        text: "light ten",
         id: "light-ten",
       },
       {
         image:
           "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771952/L8_amq7gb.jpg",
-        text: "light-eleven",
+        text: "light eleven",
         id: "light-eleven",
       },
       {
         image:
           "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771939/l3_wwzii5.jpg",
-        text: "light-twelve",
+        text: "light twelve",
         id: "light-twelve",
       },
       {
         image:
           "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771939/l5_b2qup0.jpg",
-        text: "light-thirteen",
+        text: "light thirteen",
         id: "light-thirteen",
       },
       {
         image:
           "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771938/l4_ujpvkm.jpg",
-        text: "light-fourteen",
+        text: "light fourteen",
         id: "light-fourteen",
       },
       {
         image:
           "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771937/l2_hnr8ca.jpg",
-        text: "light-fifteen",
+        text: "light fifteen",
         id: "light-fifteen",
       },
       {
         image:
           "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771936/l1_ipver7.jpg",
-        text: "light-sixteen",
+        text: "light sixteen",
         id: "light-sixteen",
+      },
+       {
+        image:
+          "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758385303/light-17_ldvd8u.jpg",
+        text: "light seventeen",
+        id: "light-seventeen",
+      },
+       {
+        image:
+          "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758385303/light-18_hhwjxj.jpg",
+        text: "light eighteen",
+        id: "light-eighteen",
+      },
+       {
+        image:
+          "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758385303/light-19_zom6az.jpg",
+        text: "light nineteen",
+        id: "light-nineteen",
+      },
+       {
+        image:
+          "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758385303/light-20_yz9g3x.jpg",
+        text: "light twenty",
+        id: "light-twenty",
+      },
+       {
+        image:
+          "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758385304/light-21_vgec2e.jpg",
+        text: "light twenty one",
+        id: "light-twenty-one",
+      },
+       {
+        image:
+          "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758385304/light-22_a9lvvb.jpg",
+        text: "light twenty two",
+        id: "light-twenty-two",
+      },
+       {
+        image:
+          "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758385304/light-23_lnghsi.jpg",
+        text: "light twenty three",
+        id: "light-twenty-three",
+      },
+       {
+        image:
+          "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758385305/light-24_mrgui1.jpg",
+        text: "light twenty four",
+        id: "light-twenty-four",
+      },
+       {
+        image:
+          "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758385303/light-25_qhk3p7.jpg",
+        text: "light twenty five",
+        id: "light-twenty-five",
       },
     ],
   },
@@ -456,6 +512,7 @@ const AccessoriesDetailPage = async ({ params }: PageProps) => {
   return (
     <>
       <Navbar />
+      <BackButton topOffset={80} />
       <AccessoryDynamicComponent slug={slug} content={content} />
     </>
   );

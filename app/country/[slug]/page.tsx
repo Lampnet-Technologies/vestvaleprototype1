@@ -1,5 +1,6 @@
 import CountryDynamicComponent from "@/components/CountryComponents/CountryDynamicComponent";
 import Navbar from "@/components/Navbar";
+import BackButton from "@/components/BackButton";
 import Image from "next/image";
 
 type propertyImage = { image: string; text: string; id: string };
@@ -183,6 +184,7 @@ const PropertyPage = async ({ params }: PageProps) => {
   return (
     <>
       <Navbar />
+      <BackButton topOffset={80} />
       <CountryDynamicComponent content={content} slug={slug} />
     </>
   );
