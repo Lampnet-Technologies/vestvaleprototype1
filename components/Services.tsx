@@ -19,7 +19,7 @@ const serviceItem = [
   },
   {
     id: 3,
-    image: "/window-icon.svg",
+    image: "/interiordecor.jpeg",
     heading: "Interior Design",
     paragraph:
       "Transform your space with our expert interior design and furnishing solutions tailored to your taste.",

@@ -1,7 +1,6 @@
 import CountryDynamicComponent from "@/components/CountryComponents/CountryDynamicComponent";
 import Navbar from "@/components/Navbar";
 import BackButton from "@/components/BackButton";
-import Image from "next/image";
 
 type propertyImage = { image: string; text: string; id: string };
 
@@ -26,7 +25,7 @@ export const countryPropertyData: Record<
       },
       {
         image:
-          "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772016/R1_fzcmkq.png",
+          "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772031/Russia-06_y7u2jj.jpg",
         text: "Russia Decor Two",
         id: "russian-decor-two",
       },

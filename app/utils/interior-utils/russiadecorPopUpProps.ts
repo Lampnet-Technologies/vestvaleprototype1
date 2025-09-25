@@ -23,7 +23,7 @@ export const allImagesForRussianDecor = [
         id: 2,
         slug: "russian-decor",
         name: "russian-decor-two",
-        src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772016/R1_fzcmkq.png",
+        src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772031/Russia-06_y7u2jj.jpg",
         prescription: `Rooted in the grandeur of Russian Orthodox cathedral doors, this piece balances ornamental formality with spiritual reverence. Its bold symmetry and arched details evoke old-world dignity and timeless elegance.`,
 
         whyChoose: [

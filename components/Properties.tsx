@@ -75,22 +75,22 @@ const countries = [
   {
     name: "Russia",
     text: "Rooted in grandeur and artistic legacy, the Russian-inspired interiors at Vestvale Estate exude a sense of power and poise.",
-    image: "/image-13.svg",
+    image: "/Russia.svg",
   },
   {
     name: "China",
     text: "Drawing from centuries of harmony, balance, and natural symbolism, our Chinese-style interiors bring serenity and flow into each home.",
-    image: "/image-11.svg",
+    image: "/China.jpg",
   },
   {
     name: "Italy",
     text: "A celebration of form, function, and finesse, the Italian-inspired interiors are marked by sleek design and architectural purity.",
-    image: "/image-09.svg",
+    image: "/Italy.svg",
   },
   {
     name: "Morocco",
     text: "Step into a world of vibrant geometry and cultural soul. The Moroccan interiors of Vestvale Estate feature colorful mosaic tiles, arched doorways, and ",
-    image: "/image-10.svg",
+    image: "/Morocco.svg",
   },
 ];
 

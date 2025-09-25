@@ -53,7 +53,7 @@ const OurStory = React.forwardRef<HTMLElement>((_, ref) => {
               <div className="relative w-full h-full object-cover rounded flex justify-center items-center">
                 <img src={"/virtual-video-btn.png"} alt="play" className="z-20 w-30 h-16" />
               <img
-                src="/image-3.svg"
+                src="/hero.svg"
                 alt="Vestvale Estate Preview"
                 className="w-full h-full object-cover rounded absolute"
               />

@@ -99,7 +99,7 @@ export const Accessories = React.forwardRef<
 
   const theAccessories = [
     {
-      image: "/image-05.svg",
+      image: "/doorhandles.svg",
       title: "🚪 Door Handles",
       text: "Every touch counts. Vestvale’s door handles are crafted to blend luxury and function, adding a refined finish to your home’s entryways.",
       tag: "door-handles",
@@ -111,7 +111,7 @@ export const Accessories = React.forwardRef<
       tag: "doors",
     },
     {
-      image: "/lights.svg",
+      image: "/lights.jpg",
       title: "💡 Lighting",
       text: "Vestvale Estate lighting designs blend warmth and grandeur, illuminating your home with timeless elegance and modern brilliance.",
       tag: "lights",

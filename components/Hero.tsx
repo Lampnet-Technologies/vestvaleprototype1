@@ -119,7 +119,7 @@ const Hero = React.forwardRef<HTMLElement>((_, ref) => {
           }}
         >
           <img
-            src="/image-3.svg"
+            src="/hero.svg"
             alt="Hero Visual"
             className="w-full h-auto object-cover"
             style={{ filter: "blur(0.3px)" }}
