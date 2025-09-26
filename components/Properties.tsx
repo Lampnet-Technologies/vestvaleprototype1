@@ -72,6 +72,11 @@ const CountryCard: React.FC<CountryCardProps> = ({
 };
 
 const countries = [
+    {
+    name: "Bespoke",
+    text: "For those seeking a truly unique living experience, our bespoke interiors offer personalized designs tailored to individual tastes and lifestyles.",
+    image: "/bespokes.jpg",
+  },
   {
     name: "Russia",
     text: "Rooted in grandeur and artistic legacy, the Russian-inspired interiors at Vestvale Estate exude a sense of power and poise.",
@@ -92,11 +97,6 @@ const countries = [
     text: "Step into a world of vibrant geometry and cultural soul. The Moroccan interiors of Vestvale Estate feature colorful mosaic tiles, arched doorways, and ",
     image: "/Morocco.svg",
   },
-  {
-    name: "Bespoke",
-    text: "For those seeking a truly unique living experience, our bespoke interiors offer personalized designs tailored to individual tastes and lifestyles.",
-    image: "/bespokes.jpg",
-  }
 ];
 
 const sectionVariants = {

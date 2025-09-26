@@ -1,10 +1,36 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 
 const Hero = React.forwardRef<HTMLElement>((_, ref) => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  // Array of hero images for the carousel
+  const heroImages = [
+    "/slider1.jpg",
+    "/slider2.jpg",
+    "/slider3.jpg",
+    "/slider4.jpg",
+    "/slider5.jpg",
+    "/slider6.jpg",
+    "/slider7.jpg",
+    "/slider8.jpg",
+    "/slider9.jpg",
+    "/slider10.jpg",
+    "/slider11.jpg",
+  ];
+
+  // Auto-advance carousel every 4 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % heroImages.length);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, [heroImages.length]);
+
   return (
     <section
       ref={ref}
@@ -60,8 +86,8 @@ const Hero = React.forwardRef<HTMLElement>((_, ref) => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.6, duration: 0.6 }}
         >
-          Experience the fusion of timeless architecture: International interior
-          design, and modern eco-conscious living.
+          Experience the Fusion of Timeless Architectures, International Interior
+          Designs, and Modern Eco-Conscious Living.
         </motion.p>
 
         <motion.div
@@ -85,7 +111,7 @@ const Hero = React.forwardRef<HTMLElement>((_, ref) => {
               if (el) el.scrollIntoView({ behavior: "smooth" });
             }}
           >
-           Home Accessories
+            Home Accessories
           </motion.button>
 
           <motion.button
@@ -106,11 +132,15 @@ const Hero = React.forwardRef<HTMLElement>((_, ref) => {
         </motion.div>
       </div>
 
-      {/* Centered Building Image */}
+      {/* Carousel Image Container */}
       <div className="w-full flex justify-center items-center mt-16 md:mt-24 relative z-0 px-4">
         <div
-          className="w-full md:w-3/4"
+          className="w-full md:w-3/4 relative"
           style={{
+            minHeight: "400px", // Ensure enough height for images
+            overflow: "hidden",
+            borderRadius: "12px",
+            boxShadow: "0 4px 15px rgba(0, 0, 0, 0.3)",
             maskImage:
               "radial-gradient(circle at center, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%)",
             WebkitMaskImage:
@@ -118,12 +148,37 @@ const Hero = React.forwardRef<HTMLElement>((_, ref) => {
             maskSize: "100% 100%",
           }}
         >
-          <img
-            src="/hero.svg"
-            alt="Hero Visual"
-            className="w-full h-auto object-cover"
-            style={{ filter: "blur(0.3px)" }}
-          />
+          {heroImages.map((image, index) => (
+            <motion.img
+              key={index}
+              src={image}
+              alt={`Hero Visual ${index + 1}`}
+              className="w-full h-auto object-cover absolute top-0 left-0"
+              style={{ filter: "blur(0.3px)" }}
+              initial={{ opacity: 0 }}
+              animate={{
+                opacity: index === currentImageIndex ? 1 : 0,
+                scale: index === currentImageIndex ? 1 : 1.05,
+              }}
+              transition={{ duration: 0.8, ease: "easeInOut" }}
+            />
+          ))}
+
+          {/* Carousel Indicators */}
+          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+            {heroImages.map((_, index) => (
+              <button
+                key={index}
+                title="Carousel Indicator"
+                className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                  index === currentImageIndex
+                    ? "bg-[#D3BD9E] w-6"
+                    : "bg-white/30 hover:bg-white/50"
+                }`}
+                onClick={() => setCurrentImageIndex(index)}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>
