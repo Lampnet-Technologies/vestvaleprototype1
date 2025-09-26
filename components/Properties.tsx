@@ -95,7 +95,7 @@ const countries = [
   {
     name: "Bespoke",
     text: "For those seeking a truly unique living experience, our bespoke interiors offer personalized designs tailored to individual tastes and lifestyles.",
-    image: "/Bespokes.jpg",
+    image: "/bespokes.jpg",
   }
 ];
 
