@@ -166,6 +166,174 @@ export const countryPropertyData: Record<
       },
     ],
   },
+  bespoke: {
+    title: "About Our Bespoke Home Decor",
+    description: "Vestvale Estate offers bespoke home decor services, allowing you to create personalized and unique interior designs that reflect your individual style and preferences. Our team of skilled designers works closely with you to bring your vision to life, ensuring every detail is tailored to your taste. From custom furniture to exclusive decor pieces, our bespoke services provide a one-of-a-kind experience that transforms your living space into a true reflection of you.",
+    images: [
+      {
+        image:
+          "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758845044/bespoke1_nnhitd.jpg",
+        text: "Bespoke Interior One",
+        id: "bespoke-decor-one",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758845065/bespoke2_id9xzs.jpg",
+        text: "Bespoke Interior Two",
+        id: "bespoke-decor-two",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758845049/bespoke11_gdygfj.jpg",
+        text: "Bespoke Interior Three",
+        id: "bespoke-decor-three",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758845043/bespoke4_iqvhqp.jpg",
+        text: "Bespoke Interior Four",
+        id: "bespoke-decor-four",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758845045/bespoke5_n7szzh.jpg",
+        text: "Bespoke Interior Five",
+        id: "bespoke-decor-five",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758845051/bespoke6_hmcnth.jpg",
+        text: "Bespoke Interior Six",
+        id: "bespoke-decor-six",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758845050/bespoke7_sp2pzj.jpg",
+        text: "Bespoke Interior Seven",
+        id: "bespoke-decor-seven",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758845050/bespoke8_dlcv25.jpg",
+        text: "Bespoke Interior Eight",
+        id: "bespoke-decor-eight",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758845062/bespoke9_pqr6ea.jpg",
+        text: "Bespoke Interior Nine",
+        id: "bespoke-decor-nine",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758845046/bespoke10_lqwdhl.jpg",
+        text: "Bespoke Interior Ten",
+        id: "bespoke-decor-ten",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758845052/bespoke3_vtrwq3.jpg",
+        text: "Bespoke Interior Eleven",
+        id: "bespoke-decor-eleven",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758845052/bespoke12_w9udad.jpg",
+        text: "Bespoke Interior Twelve",
+        id: "bespoke-decor-twelve",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758845049/bespoke13_kti19l.jpg",
+        text: "Bespoke Interior Thirteen",
+        id: "bespoke-decor-thirteen",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758845040/bespoke14_ezpvxe.jpg",
+        text: "Bespoke Interior Fourteen",
+        id: "bespoke-decor-fourteen",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758845043/bespoke15_vm2okj.jpg",
+        text: "Bespoke Interior Fifteen",
+        id: "bespoke-decor-fifteen",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758845043/bespoke16_tkyruz.jpg",
+        text: "Bespoke Interior Sixteen",
+        id: "bespoke-decor-sixteen",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758845043/bespoke17_gsysek.jpg",
+        text: "Bespoke Interior Seventeen",
+        id: "bespoke-decor-seventeen",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758845043/bespoke18_f8s267.jpg",
+        text: "Bespoke Interior Eighteen",
+        id: "bespoke-decor-eighteen",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758845040/bespoke19_zvrsct.jpg",
+        text: "Bespoke Interior Nineteen",
+        id: "bespoke-decor-nineteen",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758845084/bespoke20_tpetqk.jpg",
+        text: "Bespoke Interior Twenty",
+        id: "bespoke-decor-twenty",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758845079/bespoke21_wz3ajw.jpg",
+        text: "Bespoke Interior Twenty-One",
+        id: "bespoke-decor-twenty-one",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758845080/bespoke22_sfpdv7.jpg",
+        text: "Bespoke Interior Twenty-Two",
+        id: "bespoke-decor-twenty-two",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758845074/bespoke23_zjnhw3.jpg",
+        text: "Bespoke Interior Twenty-Three",
+        id: "bespoke-decor-twenty-three",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758845063/bespoke24_mc4p1z.jpg",
+        text: "Bespoke Interior Twenty-Four",
+        id: "bespoke-decor-twenty-four",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758845069/bespoke25_obgolt.jpg",
+        text: "Bespoke Interior Twenty-Five",
+        id: "bespoke-decor-twenty-five",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758845061/bespoke26_pup9xl.jpg",
+        text: "Bespoke Interior Twenty-Six",
+        id: "bespoke-decor-twenty-six",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758845063/bespoke27_ctyx3u.jpg",
+        text: "Bespoke Interior Twenty-Seven",
+        id: "bespoke-decor-twenty-seven",
+      }
+    ],
+  }
 };
 
 interface PageProps {

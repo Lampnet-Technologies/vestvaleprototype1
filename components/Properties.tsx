@@ -92,6 +92,11 @@ const countries = [
     text: "Step into a world of vibrant geometry and cultural soul. The Moroccan interiors of Vestvale Estate feature colorful mosaic tiles, arched doorways, and ",
     image: "/Morocco.svg",
   },
+  {
+    name: "Bespoke",
+    text: "For those seeking a truly unique living experience, our bespoke interiors offer personalized designs tailored to individual tastes and lifestyles.",
+    image: "/Bespokes.jpg",
+  }
 ];
 
 const sectionVariants = {
