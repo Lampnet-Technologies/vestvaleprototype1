@@ -49,25 +49,14 @@ const OurStory = React.forwardRef<HTMLElement>((_, ref) => {
                   Virtual Tour
                 </h2>
                 <p>
-                  3D walkthrough image preview of the Vestvale Estate duplex
-                  units
+                  A video walkthrough of one of the Vestvale Estate's apartment Interior Decor
                 </p>
               </div>
               {/* Image place holder for video */}
               <div className="relative w-full h-full object-cover rounded flex justify-center items-center">
-                {/* <img
-                  src={"/virtual-video-btn.png"}
-                  alt="play"
-                  className="z-20 w-30 h-16"
-                /> */}
-                <img
-                  src="/hero.svg"
-                  alt="Vestvale Estate Preview"
-                  className="w-full h-full object-cover rounded absolute"
-                />
                 <video
                   src="https://res.cloudinary.com/dnoycjq2q/video/upload/v1759142245/vestvale_i4bcnh.mp4"
-                  className="w-full h-full object-cover rounded absolute top-0 left-0 opacity-0 hover:opacity-100 transition-opacity duration-300"
+                  className="w-full h-full object-cover rounded"
                   controls
                 />
               </div>
