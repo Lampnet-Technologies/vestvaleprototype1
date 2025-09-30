@@ -11,10 +11,10 @@ const inter = Inter({
 const OurStory = React.forwardRef<HTMLElement>((_, ref) => {
   return (
     <section
-  ref={ref}
-  id="about"
-  className="mx-auto font-inter container md:w-10/12 py-10 md:py-16 text-white overflow-x-hidden px-4 lg:px-0"
->
+      ref={ref}
+      id="about"
+      className="mx-auto font-inter container md:w-10/12 py-10 md:py-16 text-white overflow-x-hidden px-4 lg:px-0"
+    >
       <div className="container mx-auto px-4">
         <div className="flex flex-col gap-20 lg:flex-row">
           {/* Right Text */}
@@ -22,9 +22,10 @@ const OurStory = React.forwardRef<HTMLElement>((_, ref) => {
             <h3 className="text-3xl md:text-6xl font-medium mb-4">About us</h3>
             <div>
               <p className="mb-4 text-base font-normal text-[#fffdfd]">
-                Vestvale Estate is a visionary real estate development based in Nigeria. Designed for those who seek more than a home,
-                Vestvale offers a lifestyle that combines architectural elegance
-                with nature, international influences, and luxury
+                Vestvale Estate is a visionary real estate development based in
+                Nigeria. Designed for those who seek more than a home, Vestvale
+                offers a lifestyle that combines architectural elegance with
+                nature, international influences, and luxury
               </p>
               <p className="mb-6 text-base font-normal text-[#fffdfd]">
                 Nestled amidst serene hills and natural landscapes, we are
@@ -47,16 +48,17 @@ const OurStory = React.forwardRef<HTMLElement>((_, ref) => {
                 <h2 className=" text-[#0d0c0c] text-3xl font-bold">
                   Virtual Tour
                 </h2>
-                <p>3D walkthrough image preview of the Vestvale Estate duplex units</p>
+                <p>
+                  A video walkthrough of one of the Vestvale Estate's apartment Interior Decor
+                </p>
               </div>
               {/* Image place holder for video */}
               <div className="relative w-full h-full object-cover rounded flex justify-center items-center">
-                <img src={"/virtual-video-btn.png"} alt="play" className="z-20 w-30 h-16" />
-              <img
-                src="/hero.svg"
-                alt="Vestvale Estate Preview"
-                className="w-full h-full object-cover rounded absolute"
-              />
+                <video
+                  src="https://res.cloudinary.com/dnoycjq2q/video/upload/v1759142245/vestvale_i4bcnh.mp4"
+                  className="w-full h-full object-cover rounded"
+                  controls
+                />
               </div>
             </div>
           </div>

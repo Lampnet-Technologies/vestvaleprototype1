@@ -5,6 +5,7 @@ import { allImagesForChineseDecor } from "@/app/utils/interior-utils/chinadecorP
 import { allImagesForMoroccanDecor } from "@/app/utils/interior-utils/morroccodecorPopUpProps";
 import { allImagesForItalianDecor } from "@/app/utils/interior-utils/italydecorPopUpProps";
 import { allImagesForRussianDecor } from "@/app/utils/interior-utils/russiadecorPopUpProps";
+import { allImagesForBespokeDecor } from "@/app/utils/interior-utils/bespokedecorPopUpProps";
 import Navbar from "@/components/Navbar";
 import BackButton from "@/components/BackButton";
 
@@ -52,6 +53,8 @@ export default async function CountryInfo({
     content = allImagesForItalianDecor.find((item) => item.name == id);
   } else if (slug == "russia") {
     content = allImagesForRussianDecor.find((item) => item.name == id);
+  } else if (slug == "bespoke") {
+    content = allImagesForBespokeDecor.find((item) => item.name == id);
   }
 
   console.log(content);
@@ -156,5 +159,8 @@ export async function generateStaticParams() {
     ...countryPropertyData["china"].images.map((item, index) => {
       return { slug: "china", id: item.id };
     }),
+    ...countryPropertyData["bespoke"].images.map((item, index) => {
+      return { slug: "bespoke", id: item.id };
+    })
   ];
 }
