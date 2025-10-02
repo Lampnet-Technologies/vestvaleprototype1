@@ -7,15 +7,15 @@ import { Typewriter } from "react-simple-typewriter";
 const Hero = React.forwardRef<HTMLElement>((_, ref) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  // Array of hero images for the carousel
+  // Array of hero images - replace with your actual image paths
   const heroImages = [
     "/slider1.jpg",
     "/slider2.jpg",
     "/slider3.jpg",
     "/slider4.jpg",
     "/slider5.jpg",
-    "/slider6.jpg",
-    "/slider7.jpg",
+    /* "/slider6.jpg", */
+    /* "/slider7.jpg", */
     "/slider8.jpg",
     "/slider9.jpg",
     "/slider10.jpg",
@@ -86,8 +86,8 @@ const Hero = React.forwardRef<HTMLElement>((_, ref) => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.6, duration: 0.6 }}
         >
-          Experience the Fusion of Timeless Architectures, International Interior
-          Designs, and Modern Eco-Conscious Living.
+          Experience the fusion of timeless architecture: International interior
+          design, and modern eco-conscious living.
         </motion.p>
 
         <motion.div
@@ -137,10 +137,7 @@ const Hero = React.forwardRef<HTMLElement>((_, ref) => {
         <div
           className="w-full md:w-3/4 relative"
           style={{
-            minHeight: "400px", // Ensure enough height for images
-            overflow: "hidden",
-            borderRadius: "12px",
-            boxShadow: "0 4px 15px rgba(0, 0, 0, 0.3)",
+            minHeight: "600px", // Add minimum height
             maskImage:
               "radial-gradient(circle at center, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%)",
             WebkitMaskImage:
@@ -169,7 +166,7 @@ const Hero = React.forwardRef<HTMLElement>((_, ref) => {
             {heroImages.map((_, index) => (
               <button
                 key={index}
-                title="Carousel Indicator"
+                title="image slider"
                 className={`w-2 h-2 rounded-full transition-all duration-300 ${
                   index === currentImageIndex
                     ? "bg-[#D3BD9E] w-6"

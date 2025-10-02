@@ -4,6 +4,7 @@ import { useRef } from 'react';
 import Hero from '@/components/Hero';
 import Navbar from '@/components/Navbar';
 import {PropertiesSection} from '@/components/Properties';
+import { BespokePropertiesSection } from '@/components/BespokeCard';
 import OurStory from '@/components/OurStory';
 /* import TestimonialsSection from '@/components/TestimonialsSection';
 import ContactSection from "@/components/Contact" */
@@ -33,7 +34,8 @@ export default function HomePage() {
     properties: useRef<HTMLElement>(null),
     service: useRef<HTMLElement>(null),
     partners: useRef<HTMLElement>(null),
-    "interior-decor": useRef<HTMLElement>(null)
+    "interior-decor": useRef<HTMLElement>(null),
+    bespokeinterior: useRef<HTMLElement>(null)
   };
 
   const scrollToSection = (key: keyof typeof sections) => {
@@ -47,7 +49,8 @@ export default function HomePage() {
       <BackgroundWrapper backgroundUrl="https://res.cloudinary.com/dnoycjq2q/image/upload/v1753287923/mainBg_btg9kv.png">
       <OurStory ref={sections.about} />
       <PropertiesSection ref={sections.interiorDecor} />
-      <HomeDecor ref={sections.homedecor} />
+      <BespokePropertiesSection ref={sections.bespokeinterior} />
+      {/* <HomeDecor ref={sections.homedecor} /> */}
       <Accessories ref={sections.homeAccessories} />
       </BackgroundWrapper>
       <Services ref={sections.services}/>
