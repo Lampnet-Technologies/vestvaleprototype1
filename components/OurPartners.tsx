@@ -38,8 +38,12 @@ const OurPartners = forwardRef<HTMLElement,{}>((_,ref) => {
 src={item.src} 
 alt={item.name}
 width={200}
-height={50}
-
+height={200}
+style={{
+  width: '200px',
+  height: 'auto',
+}}
+className="object-contain"
 />
 
         </motion.div>

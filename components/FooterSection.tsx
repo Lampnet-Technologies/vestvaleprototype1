@@ -17,8 +17,8 @@ const sectionVariants = {
 
 const FooterSection = () => {
   return (
-    <footer className="bg-[#D3BD9E] text-black py-12 sm:py-16 font-inter overflow-x-hidden px-4 lg:px-0">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <footer className="bg-[#D3BD9E] text-black py-12 sm:py-16 font-inter">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Logo Centered Above */}
         <div className="">
           <Image
@@ -40,7 +40,7 @@ const FooterSection = () => {
         </div> */}
 
         {/* Flex Grouped Sections */}
-        <section className="flex lg:flex-row flex-col space-y-4 justify-between my-6">
+        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 my-6">
           {/* motion div */}
           {/* <motion.div
           initial="hidden"
@@ -52,7 +52,7 @@ const FooterSection = () => {
             </motion.div> */}
           {/* Vestvale + Navigation */}
           {/* About / Service / Virtual Tour Section */}
-          <div className="flex-1">
+          <div className="space-y-6">
             <ul className="space-y-4">
               <li>
                 <Link
@@ -82,11 +82,11 @@ const FooterSection = () => {
           </div>
 
           {/* Our Home Accessories */}
-          <div className="flex-1">
-            <h3 className="text-lg font-bold text-[#361B06]">
+          <div>
+            <h3 className="text-lg font-bold text-[#361B06] mb-4">
               Home Accessories
             </h3>
-            <ul className="mt-4 space-y-4">
+            <ul className="space-y-4">
               <li>
                 <Link
                   href="/accessories/door-handles"
@@ -166,6 +166,47 @@ const FooterSection = () => {
                   className="hover:text-white transition-colors"
                 >
                   Morocco
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Our Bespoke Interior */}
+          <div className="flex-1 space-y-4">
+            <h3 className="text-lg font-bold text-[#361B06]">
+              Bespoke Interior
+            </h3>
+            <ul className="space-y-4">
+              <li>
+                <Link
+                  href="/bespoke/astoria"
+                  className="hover:text-white transition-colors"
+                >
+                  Astoria
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/bespoke/emerald"
+                  className="hover:text-white transition-colors"
+                >
+                  Emerald
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/bespoke/sapphire"
+                  className="hover:text-white transition-colors"
+                >
+                  Sapphire
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/bespoke/windsor"
+                  className="hover:text-white transition-colors"
+                >
+                  Windsor
                 </Link>
               </li>
             </ul>

@@ -9,20 +9,22 @@ const Hero = React.forwardRef<HTMLElement>((_, ref) => {
 
   // Array of hero images - replace with your actual image paths
   const heroImages = [
-    "/slide1.jpg",
-    "/slide2.jpg",
-    "/slide3.jpg",
-    "/slide4.jpg",
-    "/sliderportrait1.jpg",
-   "/sliderportrait2.jpg",
-    "/sliderportrait3.jpg",
-    "/sliderportrait4.jpg",
-    "/sliderportrait5.jpg",
-    "/sliderportrait6.jpg",
-    "/sliderportrait7.jpg",
-    "/sliderportrait8.jpg",
-    "/sliderportrait9.jpg",
-    "/sliderportrait10.jpg",
+    "https://res.cloudinary.com/dnoycjq2q/image/upload/v1759491031/Slide1_e883sa.jpg",
+    "https://res.cloudinary.com/dnoycjq2q/image/upload/v1759491032/Slide2_ystmbg.jpg",
+    "https://res.cloudinary.com/dnoycjq2q/image/upload/v1759491032/slide3_mq0vcq.jpg",
+    "https://res.cloudinary.com/dnoycjq2q/image/upload/v1759491032/slide4_oyusec.jpg",
+    "https://res.cloudinary.com/dnoycjq2q/image/upload/v1759491032/Sliderportrait1_qo8o7l.jpg",
+   "https://res.cloudinary.com/dnoycjq2q/image/upload/v1759491032/Sliderportrait2_lsnqs5.jpg",
+    "https://res.cloudinary.com/dnoycjq2q/image/upload/v1759491033/Sliderportrait3_mqxemn.jpg",
+    "https://res.cloudinary.com/dnoycjq2q/image/upload/v1759491033/Sliderportrait4_s7xvez.jpg",
+    "https://res.cloudinary.com/dnoycjq2q/image/upload/v1759491035/Sliderportrait5_axn0yo.jpg",
+    "https://res.cloudinary.com/dnoycjq2q/image/upload/v1759491033/Sliderportrait6_ckde0b.jpg",
+    "https://res.cloudinary.com/dnoycjq2q/image/upload/v1759491033/Sliderportrait7_vlgrzt.jpg",
+    "https://res.cloudinary.com/dnoycjq2q/image/upload/v1759491034/Sliderportrait8_q1eiqy.jpg",
+    "https://res.cloudinary.com/dnoycjq2q/image/upload/v1759491032/Sliderportrait10_ahjzmc.jpg",
+    "https://res.cloudinary.com/dnoycjq2q/image/upload/v1759491032/Sliderportrait11_xrlqnr.jpg",
+    "https://res.cloudinary.com/dnoycjq2q/image/upload/v1759491033/Sliderportrait12_afwgsx.jpg",
+    "https://res.cloudinary.com/dnoycjq2q/image/upload/v1759491033/Sliderportrait13_a43gqt.jpg",
   ];
 
   // Auto-advance carousel every 4 seconds

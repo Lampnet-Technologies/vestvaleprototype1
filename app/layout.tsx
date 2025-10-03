@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 
@@ -8,6 +8,10 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+export const viewport: Viewport = {
+  themeColor: '#D3BD9E',
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.vestvale.com"),
@@ -73,8 +77,7 @@ export const metadata: Metadata = {
     icon: "/favicon.ico",
     shortcut: ["/favicon-16x16.png"],
     apple: ["/apple-touch-icon.png"],
-  },
-  themeColor: "#F5F1E6",
+  }
 };
 
 export default function RootLayout({
@@ -83,9 +86,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${interFont.variable} ${geistSans.variable} ${geistMono.variable}`}>
+      <head>
+        <link
+          rel="preconnect"
+          href="https://res.cloudinary.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="dns-prefetch"
+          href="https://res.cloudinary.com"
+        />
+      </head>
       <body
-        className={`overflow-x-hidden ${geistSans.variable} ${geistMono.variable}`}
+        className="overflow-x-hidden"
       >
         {children}
       </body>

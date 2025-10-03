@@ -113,7 +113,11 @@ const Services = React.forwardRef<HTMLElement>((_, ref) => {
                   alt={item.heading}
                   width={48}
                   height={48}
-                  className="mx-auto"
+                  className="mx-auto object-contain"
+                  style={{
+                    width: '48px',
+                    height: 'auto'
+                  }}
                 />
               </div>
               <h3 className="text-xl font-semibold text-[#D3BD9E] mb-2">
