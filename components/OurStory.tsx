@@ -55,7 +55,7 @@ const OurStory = React.forwardRef<HTMLElement>((_, ref) => {
               {/* Image place holder for video */}
               <div className="relative w-full h-full object-cover rounded flex justify-center items-center">
                 <video
-                  src="https://res.cloudinary.com/dnoycjq2q/video/upload/v1759142245/vestvale_i4bcnh.mp4"
+                  src="https://res.cloudinary.com/dnoycjq2q/video/upload/v1759484407/vestvale_edited_video_vfypnq.mp4"
                   className="w-full h-full object-cover rounded"
                   controls
                 />

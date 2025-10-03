@@ -9,17 +9,20 @@ const Hero = React.forwardRef<HTMLElement>((_, ref) => {
 
   // Array of hero images - replace with your actual image paths
   const heroImages = [
-    "/slider1.jpg",
-    "/slider2.jpg",
-    "/slider3.jpg",
-    "/slider4.jpg",
-    "/slider5.jpg",
-    /* "/slider6.jpg", */
-    /* "/slider7.jpg", */
-    "/slider8.jpg",
-    "/slider9.jpg",
-    "/slider10.jpg",
-    "/slider11.jpg",
+    "/slide1.jpg",
+    "/slide2.jpg",
+    "/slide3.jpg",
+    "/slide4.jpg",
+    "/sliderportrait1.jpg",
+   "/sliderportrait2.jpg",
+    "/sliderportrait3.jpg",
+    "/sliderportrait4.jpg",
+    "/sliderportrait5.jpg",
+    "/sliderportrait6.jpg",
+    "/sliderportrait7.jpg",
+    "/sliderportrait8.jpg",
+    "/sliderportrait9.jpg",
+    "/sliderportrait10.jpg",
   ];
 
   // Auto-advance carousel every 4 seconds
@@ -150,7 +153,7 @@ const Hero = React.forwardRef<HTMLElement>((_, ref) => {
               key={index}
               src={image}
               alt={`Hero Visual ${index + 1}`}
-              className="w-full h-auto object-cover absolute top-0 left-0"
+              className="w-full h-40% object-cover absolute top-0 left-0"
               style={{ filter: "blur(0.3px)" }}
               initial={{ opacity: 0 }}
               animate={{
