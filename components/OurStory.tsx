@@ -35,8 +35,14 @@ const OurStory = React.forwardRef<HTMLElement>((_, ref) => {
                 from Russia, China, Morocco, and Italy.
               </p>
 
-              <button className="bg-[#D3BD9E] hover:bg-amber-900 text-black px-6 py-3 rounded transition font-bold">
-                Explore Homes
+              <button
+                className="bg-[#D3BD9E] hover:bg-amber-900 text-black px-6 py-3 rounded transition font-bold"
+                onClick={() => {
+                  const el = document.getElementById("services");
+                  if (el) el.scrollIntoView({ behavior: "smooth" });
+                }}
+              >
+                Explore Our Services
               </button>
             </div>
           </div>
@@ -49,7 +55,8 @@ const OurStory = React.forwardRef<HTMLElement>((_, ref) => {
                   Virtual Tour
                 </h2>
                 <p>
-                  A video walkthrough of one of the Vestvale Estate's apartment Interior Decor
+                  A Video Walkthrough of One of The Vestvale Estate's Apartment
+                  Interior Decoration
                 </p>
               </div>
               {/* Image place holder for video */}

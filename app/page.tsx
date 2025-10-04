@@ -50,7 +50,7 @@ export default function HomePage() {
       <OurStory ref={sections.about} />
       <PropertiesSection ref={sections.interiorDecor} />
       <BespokePropertiesSection ref={sections.bespokeinterior} />
-      {/* <HomeDecor ref={sections.homedecor} /> */}
+      <HomeDecor ref={sections.homedecor} />
       <Accessories ref={sections.homeAccessories} />
       </BackgroundWrapper>
       <Services ref={sections.services}/>

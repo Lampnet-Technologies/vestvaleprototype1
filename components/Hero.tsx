@@ -11,20 +11,14 @@ const Hero = React.forwardRef<HTMLElement>((_, ref) => {
   const heroImages = [
     "https://res.cloudinary.com/dnoycjq2q/image/upload/v1759491031/Slide1_e883sa.jpg",
     "https://res.cloudinary.com/dnoycjq2q/image/upload/v1759491032/Slide2_ystmbg.jpg",
-    "https://res.cloudinary.com/dnoycjq2q/image/upload/v1759491032/slide3_mq0vcq.jpg",
     "https://res.cloudinary.com/dnoycjq2q/image/upload/v1759491032/slide4_oyusec.jpg",
-    "https://res.cloudinary.com/dnoycjq2q/image/upload/v1759491032/Sliderportrait1_qo8o7l.jpg",
-   "https://res.cloudinary.com/dnoycjq2q/image/upload/v1759491032/Sliderportrait2_lsnqs5.jpg",
-    "https://res.cloudinary.com/dnoycjq2q/image/upload/v1759491033/Sliderportrait3_mqxemn.jpg",
-    "https://res.cloudinary.com/dnoycjq2q/image/upload/v1759491033/Sliderportrait4_s7xvez.jpg",
-    "https://res.cloudinary.com/dnoycjq2q/image/upload/v1759491035/Sliderportrait5_axn0yo.jpg",
-    "https://res.cloudinary.com/dnoycjq2q/image/upload/v1759491033/Sliderportrait6_ckde0b.jpg",
-    "https://res.cloudinary.com/dnoycjq2q/image/upload/v1759491033/Sliderportrait7_vlgrzt.jpg",
-    "https://res.cloudinary.com/dnoycjq2q/image/upload/v1759491034/Sliderportrait8_q1eiqy.jpg",
-    "https://res.cloudinary.com/dnoycjq2q/image/upload/v1759491032/Sliderportrait10_ahjzmc.jpg",
-    "https://res.cloudinary.com/dnoycjq2q/image/upload/v1759491032/Sliderportrait11_xrlqnr.jpg",
-    "https://res.cloudinary.com/dnoycjq2q/image/upload/v1759491033/Sliderportrait12_afwgsx.jpg",
-    "https://res.cloudinary.com/dnoycjq2q/image/upload/v1759491033/Sliderportrait13_a43gqt.jpg",
+    "https://res.cloudinary.com/dnoycjq2q/image/upload/v1759570254/Newslide1_k5qsww.jpg",
+    "https://res.cloudinary.com/dnoycjq2q/image/upload/v1759570253/Newslide2_hhvplx.jpg",
+    "https://res.cloudinary.com/dnoycjq2q/image/upload/v1759570254/Newslide3_g5gbuk.jpg",
+    "https://res.cloudinary.com/dnoycjq2q/image/upload/v1759570255/Newslide4_tnjf88.jpg",
+    "https://res.cloudinary.com/dnoycjq2q/image/upload/v1759570254/Newslide7_g2ifxq.jpg",
+    "https://res.cloudinary.com/dnoycjq2q/image/upload/v1759570253/Newslide8_zvqkei.jpg",
+    "https://res.cloudinary.com/dnoycjq2q/image/upload/v1759570252/Newslide9_rdb0jr.jpg",
   ];
 
   // Auto-advance carousel every 4 seconds
@@ -39,15 +33,16 @@ const Hero = React.forwardRef<HTMLElement>((_, ref) => {
   return (
     <section
       ref={ref}
-      className="w-full font-inter text-white overflow-hidden relative flex flex-col items-center justify-start "
+      className="w-full font-inter text-white overflow-hidden relative flex flex-col items-center justify-start"
       style={{
         minHeight: "120vh",
-        background: "linear-gradient(to bottom, #0a0a0a 40%, #ffffff 90%)",
+        background:
+          "linear-gradient(to bottom, #0a0a0a 30%, transparent 70%, #ffffff 100%)",
         color: "#ebebeb",
       }}
     >
       {/* Hero Content */}
-      <div className="pt-28 text-center px-4 z-10">
+      <div className="pt-20 md:pt-24 text-center px-4 z-10">
         <motion.h1
           className="text-3xl md:text-5xl font-bold mb-6 leading-snug"
           initial="hidden"
@@ -91,8 +86,8 @@ const Hero = React.forwardRef<HTMLElement>((_, ref) => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.6, duration: 0.6 }}
         >
-          Experience the fusion of timeless architecture: International interior
-          design, and modern eco-conscious living.
+          Experience the Fusion of Timeless Architecture: International Interior
+          Design, and Modern Eco-Conscious Living.
         </motion.p>
 
         <motion.div
@@ -138,16 +133,13 @@ const Hero = React.forwardRef<HTMLElement>((_, ref) => {
       </div>
 
       {/* Carousel Image Container */}
-      <div className="w-full flex justify-center items-center mt-16 md:mt-24 relative z-0 px-4">
+      <div className="w-full flex justify-center items-center mt-8 md:mt-12 relative z-0 px-0 md:px-4 flex-grow">
         <div
-          className="w-full md:w-3/4 relative"
+          className="w-full md:w-4/5 lg:w-3/4 relative rounded-lg overflow-hidden"
           style={{
-            minHeight: "600px", // Add minimum height
-            maskImage:
-              "radial-gradient(circle at center, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%)",
-            WebkitMaskImage:
-              "radial-gradient(circle at center, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%)",
-            maskSize: "100% 100%",
+            height: "calc(120vh - 250px)", // Increased height
+            minHeight: "350px", // Increased minimum height
+            maxHeight: "700px", // Increased maximum height
           }}
         >
           {heroImages.map((image, index) => (
@@ -155,8 +147,11 @@ const Hero = React.forwardRef<HTMLElement>((_, ref) => {
               key={index}
               src={image}
               alt={`Hero Visual ${index + 1}`}
-              className="w-full h-40% object-cover absolute top-0 left-0"
-              style={{ filter: "blur(0.3px)" }}
+              className="w-full h-full object-cover absolute top-0 left-0"
+              style={{
+                filter: "blur(0.3px)",
+                objectPosition: "center center",
+              }}
               initial={{ opacity: 0 }}
               animate={{
                 opacity: index === currentImageIndex ? 1 : 0,
@@ -167,15 +162,15 @@ const Hero = React.forwardRef<HTMLElement>((_, ref) => {
           ))}
 
           {/* Carousel Indicators */}
-          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+          <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2 bg-black/20 px-3 py-2 rounded-full backdrop-blur-sm">
             {heroImages.map((_, index) => (
               <button
                 key={index}
                 title="image slider"
                 className={`w-2 h-2 rounded-full transition-all duration-300 ${
                   index === currentImageIndex
-                    ? "bg-[#D3BD9E] w-6"
-                    : "bg-white/30 hover:bg-white/50"
+                    ? "bg-[#D3BD9E] w-4"
+                    : "bg-white/50 hover:bg-white/70"
                 }`}
                 onClick={() => setCurrentImageIndex(index)}
               />

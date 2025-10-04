@@ -19,6 +19,7 @@ type SectionKey =
   | "service"
   | "interior-decor"
   | "homeAccessories"
+  | "bespokeinterior"
   | "interiorDecor";
 
 interface NavbarProps {
@@ -32,6 +33,7 @@ const navLinks: { label: string; section: SectionKey; href: string }[] = [
     section: "homeAccessories",
     href: "#homeAccessories",
   },
+  { label: "Bespoke", section: "bespokeinterior", href: "#bespokeinterior" },
   { label: "Interior Decor", section: "interiorDecor", href: "#interiorDecor" },
   { label: "Services", section: "services", href: "#services" },
   { label: "Virtual Tour", section: "testimonials", href: "#virtualTour" },
