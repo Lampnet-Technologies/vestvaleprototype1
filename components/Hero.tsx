@@ -35,16 +35,16 @@ const Hero = React.forwardRef<HTMLElement>((_, ref) => {
       ref={ref}
       className="w-full font-inter text-white overflow-hidden relative flex flex-col items-center justify-start"
       style={{
-        minHeight: "120vh",
+        minHeight: "100vh",
         background:
           "linear-gradient(to bottom, #0a0a0a 30%, transparent 70%, #ffffff 100%)",
         color: "#ebebeb",
       }}
     >
       {/* Hero Content */}
-      <div className="pt-20 md:pt-24 text-center px-4 z-10">
+      <div className="pt-16 md:pt-24 text-center px-4 z-10 w-full">
         <motion.h1
-          className="text-3xl md:text-5xl font-bold mb-6 leading-snug"
+          className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 md:mb-6 leading-snug"
           initial="hidden"
           animate="visible"
           variants={{
@@ -81,7 +81,7 @@ const Hero = React.forwardRef<HTMLElement>((_, ref) => {
         </motion.h1>
 
         <motion.p
-          className="text-base md:text-lg mb-8 max-w-xl mx-auto text-[#ccc] font-light"
+          className="text-sm md:text-lg mb-6 md:mb-8 max-w-xl mx-auto text-[#ccc] font-light px-2"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.6, duration: 0.6 }}
@@ -91,7 +91,7 @@ const Hero = React.forwardRef<HTMLElement>((_, ref) => {
         </motion.p>
 
         <motion.div
-          className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-xl mx-auto"
+          className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center items-center max-w-xl mx-auto mb-6 md:mb-0"
           initial="hidden"
           animate="visible"
           variants={{
@@ -99,7 +99,7 @@ const Hero = React.forwardRef<HTMLElement>((_, ref) => {
           }}
         >
           <motion.button
-            className="cursor-pointer px-6 py-3 bg-[#D3BD9E] text-[#17120F] rounded-md font-medium text-sm md:text-base tracking-wide"
+            className="cursor-pointer w-full sm:w-auto px-6 py-3 bg-[#D3BD9E] text-[#17120F] rounded-md font-medium text-sm md:text-base tracking-wide"
             variants={{
               hidden: { opacity: 0, y: 40 },
               visible: { opacity: 1, y: 0 },
@@ -115,7 +115,7 @@ const Hero = React.forwardRef<HTMLElement>((_, ref) => {
           </motion.button>
 
           <motion.button
-            className="cursor-pointer px-6  py-3 border border-[#9d6b53] text-white rounded-md font-medium text-sm md:text-base tracking-wide"
+            className="cursor-pointer w-full sm:w-auto px-6 py-3 border border-[#9d6b53] text-white rounded-md font-medium text-sm md:text-base tracking-wide"
             variants={{
               hidden: { opacity: 0, y: 40 },
               visible: { opacity: 1, y: 0 },
@@ -133,13 +133,14 @@ const Hero = React.forwardRef<HTMLElement>((_, ref) => {
       </div>
 
       {/* Carousel Image Container */}
-      <div className="w-full flex justify-center items-center mt-8 md:mt-12 relative z-0 px-0 md:px-4 flex-grow">
+      <div className="w-full flex justify-center items-center mt-4 md:mt-12 relative z-0 px-0 md:px-4 flex-grow pb-4 md:pb-0">
         <div
-          className="w-full md:w-4/5 lg:w-3/4 relative rounded-lg overflow-hidden"
+          className="w-full md:w-4/5 lg:w-3/4 relative rounded-none md:rounded-lg overflow-hidden"
           style={{
-            height: "calc(120vh - 250px)", // Increased height
-            minHeight: "350px", // Increased minimum height
-            maxHeight: "700px", // Increased maximum height
+            height: "auto",
+            aspectRatio: "16/9",
+            minHeight: "300px",
+            maxHeight: "700px",
           }}
         >
           {heroImages.map((image, index) => (
@@ -162,11 +163,12 @@ const Hero = React.forwardRef<HTMLElement>((_, ref) => {
           ))}
 
           {/* Carousel Indicators */}
-          <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2 bg-black/20 px-3 py-2 rounded-full backdrop-blur-sm">
+          <div className="absolute bottom-4 md:bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2 bg-black/30 px-3 py-2 rounded-full backdrop-blur-sm">
             {heroImages.map((_, index) => (
               <button
                 key={index}
-                title="image slider"
+                title={`Go to slide ${index + 1}`}
+                aria-label={`Go to slide ${index + 1}`}
                 className={`w-2 h-2 rounded-full transition-all duration-300 ${
                   index === currentImageIndex
                     ? "bg-[#D3BD9E] w-4"
