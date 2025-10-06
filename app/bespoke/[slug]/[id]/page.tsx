@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import BackButton from "@/components/BackButton";
-import { bespokePropertyData } from "../page";
+import { bespokePropertyData } from "@/app/bespoke/bespokePropertyData";
 import { allImagesForAstoria } from "@/app/utils/bespoke-utils/astoriapropPopUpProps";
 import { allImagesForEmerald } from "@/app/utils/bespoke-utils/emeraldpropPopUpProps";
 import { allImagesForSapphire } from "@/app/utils/bespoke-utils/sapphirepropPopUpProps";

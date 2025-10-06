@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { countryPropertyData } from "../page";
+import { countryPropertyData } from "@/app/country/countryPropertyData";
 import { allImagesForChineseDecor } from "@/app/utils/interior-utils/chinadecorPopUpProps";
 import { allImagesForMoroccanDecor } from "@/app/utils/interior-utils/morroccodecorPopUpProps";
 import { allImagesForItalianDecor } from "@/app/utils/interior-utils/italydecorPopUpProps";
