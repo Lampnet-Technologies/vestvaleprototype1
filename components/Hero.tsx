@@ -57,7 +57,7 @@ const Hero = React.forwardRef<HTMLElement>((_, ref) => {
               visible: { opacity: 1, y: 0 },
             }}
           >
-            Redefining Real Estate in Nigeria—
+            Redefining Real Estate in Nigeria
           </motion.span>
           <br />
           <motion.span

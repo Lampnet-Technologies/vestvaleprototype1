@@ -1,10 +1,10 @@
 import Image from "next/image";
 import { accessoriesData } from "../page";
-import { allImagesForDoors } from "@/app/utils/doorPopUpProps";
-import { allImagesForLights } from "@/app/utils/lightPopUpProps";
-import { allImagesForWallpapers } from "@/app/utils/wallpaperPopUpProps";
-import { allImagesForDoorHandles } from "@/app/utils/doorhandlePopUpProps";
-import { allImagesForTiles } from "@/app/utils/tilePopUpProps";
+import { allImagesForDoors } from "@/app/utils/homedecor-utils/doorPopUpProps";
+import { allImagesForLights } from "@/app/utils/homedecor-utils/lightPopUpProps";
+import { allImagesForWallpapers } from "@/app/utils/homedecor-utils/wallpaperPopUpProps";
+import { allImagesForDoorHandles } from "@/app/utils/homedecor-utils/doorhandlePopUpProps";
+import { allImagesForFurniture } from "@/app/utils/homedecor-utils/furniturePopUpProps";
 import Navbar from "@/components/Navbar";
 import BackButton from "@/components/BackButton";
 
@@ -50,8 +50,8 @@ export default async function AccessoriesInfo({
     content = allImagesForWallpapers.find((item) => item.name == id);
   } else if (slug == "door-handles") {
     content = allImagesForDoorHandles.find((item) => item.name == id);
-  } else if (slug == "tiles") {
-    content = allImagesForTiles.find((item) => item.name == id);
+  } else if (slug == "furniture") {
+    content = allImagesForFurniture.find((item) => item.name == id);
   }
 
   // console.log(allObjects);
@@ -149,8 +149,8 @@ export function generateStaticParams() {
     ...accessoriesData.lights.images.map((item) => {
       return { slug: "lights", id: item.id };
     }),
-    ...accessoriesData.tiles.images.map((item) => {
-      return { slug: "tiles", id: item.id };
+    ...accessoriesData.furniture.images.map((item) => {
+      return { slug: "furniture", id: item.id };
     }),
     // {slug: "doors", id: "1"},
     // {slug: "doors", id: "door-one"},

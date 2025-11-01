@@ -1,7 +1,7 @@
 export const allImagesForWallpapers = [
     {
 
-        id: 5,
+        id: 1,
         slug: "wallpaper",
         name: "wallpaper-one",
         src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772167/WhatsApp_Image_2025-05-31_at_09.49.39_bcdc07df_tqwrct.jpg",
@@ -23,7 +23,7 @@ export const allImagesForWallpapers = [
     },
     {
 
-        id: 5,
+        id: 2,
         slug: "wallpaper",
         name: "wallpaper-two",
         src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772167/WhatsApp_Image_2025-05-31_at_09.49.38_ecc7b942_gxjaar.jpg",
@@ -42,7 +42,7 @@ export const allImagesForWallpapers = [
     },
     {
 
-        id: 5,
+        id: 3,
         slug: "wallpaper",
         name: "wallpaper-three",
         src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772166/WhatsApp_Image_2025-05-31_at_09.49.38_41df8110_hna74p.jpg",
@@ -61,7 +61,7 @@ export const allImagesForWallpapers = [
     },
     {
 
-        id: 5,
+        id: 4,
         slug: "wallpaper",
         name: "wallpaper-four",
         src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772152/W18_dbqc92.jpg",
@@ -99,7 +99,7 @@ export const allImagesForWallpapers = [
     },
     {
 
-        id: 5,
+        id: 6,
         slug: "wallpaper",
         name: "wallpaper-six",
         src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772144/W14_qzclki.jpg",
@@ -118,7 +118,7 @@ export const allImagesForWallpapers = [
     },
     {
 
-        id: 5,
+        id: 7,
         slug: "wallpaper",
         name: "wallpaper-seven",
         src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772144/W16_twkum5.jpg",
@@ -137,7 +137,7 @@ export const allImagesForWallpapers = [
     },
     {
 
-        id: 5,
+        id: 8,
         slug: "wallpaper",
         name: "wallpaper-eight",
         src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772143/W15_sfgifu.jpg",
@@ -156,7 +156,7 @@ export const allImagesForWallpapers = [
     },
     {
 
-        id: 5,
+        id: 9,
         slug: "wallpaper",
         name: "wallpaper-nine",
         src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772139/W13_yylyga.jpg",
@@ -175,7 +175,7 @@ export const allImagesForWallpapers = [
     },
     {
 
-        id: 5,
+        id: 10,
         slug: "wallpaper",
         name: "wallpaper-ten",
         src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772119/W12_ihktmt.jpg",
@@ -194,7 +194,7 @@ export const allImagesForWallpapers = [
     },
     {
 
-        id: 5,
+        id: 11,
         slug: "wallpaper",
         name: "wallpaper-eleven",
         src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772119/w10_ozornt.jpg",
@@ -213,7 +213,7 @@ export const allImagesForWallpapers = [
     },
     {
 
-        id: 5,
+        id: 12,
         slug: "wallpaper",
         name: "wallpaper-twelve",
         src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772117/w11_k3xp7i.jpg",
@@ -232,7 +232,7 @@ export const allImagesForWallpapers = [
     },
     {
 
-        id: 5,
+        id: 13,
         slug: "wallpaper",
         name: "wallpaper-thirteen",
         src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772115/w8_sfk9id.jpg",
@@ -251,7 +251,7 @@ export const allImagesForWallpapers = [
     },
     {
 
-        id: 5,
+        id: 14,
         slug: "wallpaper",
         name: "wallpaper-fourteen",
         src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772114/w9_jlmzdr.jpg",
@@ -270,7 +270,7 @@ export const allImagesForWallpapers = [
     },
     {
 
-        id: 5,
+        id: 15,
         slug: "wallpaper",
         name: "wallpaper-fifteen",
         src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772009/mmexport1748657099248_eqxzy6.jpg",
@@ -289,7 +289,7 @@ export const allImagesForWallpapers = [
     },
     {
 
-        id: 5,
+        id: 16,
         slug: "wallpaper",
         name: "wallpaper-sixteen",
         src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772007/mmexport1748573163380_flsxkr.jpg",
@@ -308,7 +308,7 @@ export const allImagesForWallpapers = [
     },
     {
 
-        id: 5,
+        id: 17,
         slug: "wallpaper",
         name: "wallpaper-seventeen",
         src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771998/mmexport1748572390478_szfmhk.jpg",
@@ -327,7 +327,7 @@ export const allImagesForWallpapers = [
     },
     {
 
-        id: 5,
+        id: 18,
         slug: "wallpaper",
         name: "wallpaper-eighteen",
         src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771872/1748572496523_msdodm.png",
@@ -346,7 +346,7 @@ export const allImagesForWallpapers = [
     },
     {
 
-        id: 5,
+        id: 19,
         slug: "wallpaper",
         name: "wallpaper-nineteen",
         src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772090/w5_rcpu8z.jpg",
@@ -365,7 +365,7 @@ export const allImagesForWallpapers = [
     },
     {
 
-        id: 5,
+        id: 20,
         slug: "wallpaper",
         name: "wallpaper-twenty",
         src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772113/w7_k0cvwj.jpg",

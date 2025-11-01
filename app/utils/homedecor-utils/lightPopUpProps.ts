@@ -1,7 +1,7 @@
 export const allImagesForLights = [
         {
 
-                id: 4,
+                id: 1,
                 slug: "light",
                 name: "light-one",
                 src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772009/mmexport1748708887089_tjhojd.jpg",
@@ -20,7 +20,7 @@ export const allImagesForLights = [
         },
         {
 
-                id: 1,
+                id: 2,
                 slug: "light",
                 name: "light-two",
                 src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772006/mmexport1748708902266_tabbd8.jpg",
@@ -39,7 +39,7 @@ export const allImagesForLights = [
         },
         {
 
-                id: 1,
+                id: 3,
                 slug: "light",
                 name: "light-three",
                 src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771985/mmexport1748443273048_c37cdg.jpg",
@@ -58,7 +58,7 @@ export const allImagesForLights = [
         },
         {
 
-                id: 1,
+                id: 4,
                 slug: "light",
                 name: "light-four",
                 src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771980/mmexport1748443184366_rpcnfp.jpg",
@@ -77,7 +77,7 @@ export const allImagesForLights = [
         },
         {
 
-                id: 1,
+                id: 5,
                 slug: "light",
                 name: "light-five",
                 src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771975/L17_fgwgbd.jpg",
@@ -96,7 +96,7 @@ export const allImagesForLights = [
         },
         {
 
-                id: 1,
+                id: 6,
                 slug: "light",
                 name: "light-six",
                 src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771964/L13_mltxer.jpg",
@@ -115,7 +115,7 @@ export const allImagesForLights = [
         },
         {
 
-                id: 1,
+                id: 7,
                 slug: "light",
                 name: "light-seven",
                 src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771961/L12_mabx0z.jpg",
@@ -134,7 +134,7 @@ export const allImagesForLights = [
         },
         {
 
-                id: 1,
+                id: 8,
                 slug: "light",
                 name: "light-eight",
                 src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771955/L11_t63n3v.jpg",
@@ -153,7 +153,7 @@ export const allImagesForLights = [
         },
         {
 
-                id: 1,
+                id: 9,
                 slug: "light",
                 name: "light-nine",
                 src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771954/L10_zzsykc.jpg",
@@ -172,7 +172,7 @@ export const allImagesForLights = [
         },
         {
 
-                id: 1,
+                id: 10,
                 slug: "light",
                 name: "light-ten",
                 src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771953/L9_fg09vn.jpg",
@@ -191,7 +191,7 @@ export const allImagesForLights = [
         },
         {
 
-                id: 1,
+                id: 11,
                 slug: "light",
                 name: "light-eleven",
                 src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771952/L8_amq7gb.jpg",
@@ -210,7 +210,7 @@ export const allImagesForLights = [
         },
         {
 
-                id: 1,
+                id: 12,
                 slug: "light",
                 name: "light-twelve",
                 src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771939/l3_wwzii5.jpg",
@@ -229,7 +229,7 @@ export const allImagesForLights = [
         },
         {
 
-                id: 1,
+                id: 13,
                 slug: "light",
                 name: "light-thirteen",
                 src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771939/l5_b2qup0.jpg",
@@ -248,7 +248,7 @@ export const allImagesForLights = [
         },
         {
 
-                id: 1,
+                id: 14,
                 slug: "light",
                 name: "light-fourteen",
                 src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771938/l4_ujpvkm.jpg",
@@ -267,7 +267,7 @@ export const allImagesForLights = [
         },
         {
 
-                id: 1,
+                id: 15,
                 slug: "light",
                 name: "light-fifteen",
                 src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771937/l2_hnr8ca.jpg",
@@ -286,7 +286,7 @@ export const allImagesForLights = [
         },
         {
 
-                id: 1,
+                id: 16,
                 slug: "light",
                 name: "light-sixteen",
                 src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771936/l1_ipver7.jpg",
@@ -305,7 +305,7 @@ export const allImagesForLights = [
         },
         {
 
-                id: 1,
+                id: 17,
                 slug: "light",
                 name: "light-seventeen",
                 src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771936/l1_ipver7.jpg",
@@ -325,7 +325,7 @@ export const allImagesForLights = [
         },
         {
 
-                id: 1,
+                id: 18,
                 slug: "light",
                 name: "light-eighteen",
                 src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758385303/light-18_hhwjxj.jpg",
@@ -344,7 +344,7 @@ export const allImagesForLights = [
         },
         {
 
-                id: 1,
+                id: 19,
                 slug: "light",
                 name: "light-nineteen",
                 src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758385303/light-19_zom6az.jpg",
@@ -363,7 +363,7 @@ export const allImagesForLights = [
         },
         {
 
-                id: 1,
+                id: 20,
                 slug: "light",
                 name: "light-twenty",
                 src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758385303/light-20_yz9g3x.jpg",
@@ -387,7 +387,7 @@ export const allImagesForLights = [
         },
         {
 
-                id: 1,
+                id: 21,
                 slug: "light",
                 name: "light-twenty-one",
                 src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758385304/light-21_vgec2e.jpg",
@@ -407,7 +407,7 @@ export const allImagesForLights = [
         },
         {
 
-                id: 1,
+                id: 22,
                 slug: "light",
                 name: "light-twenty-two",
                 src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758385304/light-22_a9lvvb.jpg",
@@ -426,7 +426,7 @@ export const allImagesForLights = [
         },
         {
 
-                id: 1,
+                id: 23,
                 slug: "light",
                 name: "light-twenty-three",
                 src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758385304/light-23_lnghsi.jpg",
@@ -445,7 +445,7 @@ export const allImagesForLights = [
         },
         {
 
-                id: 1,
+                id: 24,
                 slug: "light",
                 name: "light-twenty-four",
                 src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758385305/light-24_mrgui1.jpg",
@@ -465,7 +465,7 @@ export const allImagesForLights = [
         },
         {
 
-                id: 1,
+                id: 25,
                 slug: "light",
                 name: "light-twenty-five",
                 src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1758385303/light-25_qhk3p7.jpg",

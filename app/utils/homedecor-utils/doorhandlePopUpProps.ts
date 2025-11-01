@@ -20,7 +20,7 @@ export const allImagesForDoorHandles = [
     },
     {
 
-        id: 1,
+        id: 2,
         slug: "doorhandle",
         name: "door-handle-two",
         src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752865127/door-handle-02_oh320d.svg",
@@ -39,7 +39,7 @@ export const allImagesForDoorHandles = [
     },
     {
 
-        id: 1,
+        id: 3,
         slug: "doorhandle",
         name: "door-handle-three",
         src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752865130/door-handle-03_nqxcsd.svg",
@@ -58,7 +58,7 @@ export const allImagesForDoorHandles = [
     },
     {
 
-        id: 1,
+        id: 4,
         slug: "doorhandle",
         name: "door-handle-four",
         src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771879/DH1_j9uxds.jpg",
@@ -77,7 +77,7 @@ export const allImagesForDoorHandles = [
     },
     {
 
-        id: 1,
+        id: 5,
         slug: "doorhandle",
         name: "door-handle-five",
         src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771901/DH11_ocqo6s.jpg",
@@ -96,7 +96,7 @@ export const allImagesForDoorHandles = [
     },
     {
 
-        id: 1,
+        id: 6,
         slug: "doorhandle",
         name: "door-handle-six",
         src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771904/DH12_yj0ynu.jpg",
@@ -115,7 +115,7 @@ export const allImagesForDoorHandles = [
     },
     {
 
-        id: 1,
+        id: 7,
         slug: "doorhandle",
         name: "door-handle-seven",
         src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771880/DH2_zftzic.jpg",
@@ -134,7 +134,7 @@ export const allImagesForDoorHandles = [
     },
     {
 
-        id: 1,
+        id: 8,
         slug: "doorhandle",
         name: "door-handle-eight",
         src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771880/DH4_jdhlrg.jpg",
@@ -153,7 +153,7 @@ export const allImagesForDoorHandles = [
     },
     {
 
-        id: 1,
+        id: 9,
         slug: "door",
         name: "door-handle-nine",
         src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863723/door-09_bcyh0r.svg",
@@ -172,7 +172,7 @@ export const allImagesForDoorHandles = [
     },
     {
 
-        id: 1,
+        id: 10,
         slug: "doorhandle",
         name: "door-handle-ten",
         src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771893/DH6_f9jim7.jpg",
@@ -191,7 +191,7 @@ export const allImagesForDoorHandles = [
     },
     {
 
-        id: 1,
+        id: 11,
         slug: "doorhandle",
         name: "door-handle-eleven",
         src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771894/DH8_kwvxeq.jpg",
@@ -210,7 +210,7 @@ export const allImagesForDoorHandles = [
     },
     {
 
-        id: 3,
+        id: 12,
         slug: "doorhandle",
         name: "door-handle-twelve",
         src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771896/DH9_qsgo6h.jpg",

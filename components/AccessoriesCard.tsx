@@ -123,10 +123,10 @@ export const Accessories = React.forwardRef<
       tag: "wallpapers",
     },
     {
-      image: "/tiles.svg",
-      title: "🧱 Tiles",
-      text: "From Italian marble to premium ceramic finishes, Vestvale tiles bring luxury underfoot, combining beauty, strength, and effortless maintenance.",
-      tag: "tiles",
+      image: "https://res.cloudinary.com/ds9q0abgk/image/upload/v1761920826/furniture29_dwvl4n.jpg",
+      title: "🛋️ Furnitures",
+      text: "Luxury meets legacy in our furniture collection, where each piece is a testament to timeless design and exceptional craftsmanship.",
+      tag: "furniture",
     },
   ];
 

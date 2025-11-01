@@ -460,34 +460,286 @@ export const accessoriesData: Record<
       },
     ],
   },
-  tiles: {
-    title: "About Our Tiles Accessories ",
+  furniture: {
+    title: "About Our Furniture Accessories ",
     description:
-      "Our tiles are designed to elevate your spaces with their unique patterns and textures. Perfect for both walls and floors, our collection offers a wide range of styles, from classic to contemporary, ensuring that you find the perfect match for your home decor.",
+      "Our furniture accessories are designed to enhance the functionality and aesthetics of your living spaces. Each piece is crafted with attention to detail, combining style and practicality to create a harmonious environment. From elegant tables to comfortable seating, our furniture accessories are perfect for elevating your home decor.",
     images: [
       {
         image:
-          "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772040/T4_fhom6g.png",
-        text: "Tile One",
-        id: "Tile-one",
+          "https://res.cloudinary.com/ds9q0abgk/image/upload/v1761920812/furniture01_grykyf.png",
+        text: "Furniture One",
+        id: "Furniture-one",
       },
       {
         image:
-          "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772038/T2_dvgxgw.png",
-        text: "Tile Two",
-        id: "Tile-two",
+          "https://res.cloudinary.com/ds9q0abgk/image/upload/v1761920811/furniture02_zx5z54.png",
+        text: "Furniture Two",
+        id: "Furniture-two",
       },
       {
         image:
-          "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772038/T3_l1iiuu.png",
-        text: "Tile Three",
-        id: "Tile-three",
+          "https://res.cloudinary.com/ds9q0abgk/image/upload/v1761920812/furniture03_txwrno.png",
+        text: "Furniture Three",
+        id: "Furniture-three",
       },
       {
         image:
-          "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772038/T3_l1iiuu.png",
-        text: "Tile Four",
-        id: "Tile-four",
+          "https://res.cloudinary.com/ds9q0abgk/image/upload/v1761920815/furniture04_ycjsb8.png",
+        text: "Furniture Four",
+        id: "Furniture-four",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/ds9q0abgk/image/upload/v1761920813/furniture05_iar6wo.png",
+        text: "Furniture Five",
+        id: "Furniture-five",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/ds9q0abgk/image/upload/v1761920818/furniture06_mtktvv.png",
+        text: "Furniture Six",
+        id: "Furniture-six",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/ds9q0abgk/image/upload/v1761920825/furniture07_mzv8pk.png",
+        text: "Furniture Seven",
+        id: "Furniture-seven",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/ds9q0abgk/image/upload/v1761920814/furniture08_hpdl9a.jpg",
+        text: "Furniture Eight",
+        id: "Furniture-eight",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/ds9q0abgk/image/upload/v1761920818/furniture09_f2xwct.jpg",
+        text: "Furniture Nine",
+        id: "Furniture-nine",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/ds9q0abgk/image/upload/v1761920809/furniture10_di6cov.jpg",
+        text: "Furniture Ten",
+        id: "Furniture-ten",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/ds9q0abgk/image/upload/v1761920813/furniture11_h5auei.jpg",
+        text: "Furniture Eleven",
+        id: "Furniture-eleven",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/ds9q0abgk/image/upload/v1761920810/furniture12_nj3irw.jpg",
+        text: "Furniture Twelve",
+        id: "Furniture-twelve",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/ds9q0abgk/image/upload/v1761920814/furniture13_akvpgg.jpg",
+        text: "Furniture Thirteen",
+        id: "Furniture-thirteen",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/ds9q0abgk/image/upload/v1761920826/furniture14_hfa14e.jpg",
+        text: "Furniture Fourteen",
+        id: "Furniture-fourteen",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/ds9q0abgk/image/upload/v1761920819/furniture15_mifaxw.jpg",
+        text: "Furniture Fifteen",
+        id: "Furniture-fifteen",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/ds9q0abgk/image/upload/v1761920820/furniture16_cbn1cf.jpg",
+        text: "Furniture Sixteen",
+        id: "Furniture-sixteen",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/ds9q0abgk/image/upload/v1761920822/furniture17_wb4o56.jpg",
+        text: "Furniture Seventeen",
+        id: "Furniture-seventeen",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/ds9q0abgk/image/upload/v1761920822/furniture18_cijoax.jpg",
+        text: "Furniture Eighteen",
+        id: "Furniture-eighteen",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/ds9q0abgk/image/upload/v1761920820/furniture19_wl0vns.jpg",
+        text: "Furniture Nineteen",
+        id: "Furniture-nineteen",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/ds9q0abgk/image/upload/v1761920822/furniture20_kurgc5.jpg",
+        text: "Furniture Twenty",
+        id: "Furniture-twenty",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/ds9q0abgk/image/upload/v1761920822/furniture21_vydnru.jpg",
+        text: "Furniture Twenty One",
+        id: "Furniture-twenty-one",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/ds9q0abgk/image/upload/v1761920825/furniture22_dryv4g.jpg",
+        text: "Furniture Twenty Two",
+        id: "Furniture-twenty-two",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/ds9q0abgk/image/upload/v1761920823/furniture23_afvbzi.jpg",
+        text: "Furniture Twenty Three",
+        id: "Furniture-twenty-three",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/ds9q0abgk/image/upload/v1761920824/furniture24_gptcjz.jpg",
+        text: "Furniture Twenty Four",
+        id: "Furniture-twenty-four",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/ds9q0abgk/image/upload/v1761920824/furniture25_qc3zkm.jpg",
+        text: "Furniture Twenty Five",
+        id: "Furniture-twenty-five",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/ds9q0abgk/image/upload/v1761920825/furniture26_vmewgc.jpg",
+        text: "Furniture Twenty Six",
+        id: "Furniture-twenty-six",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/ds9q0abgk/image/upload/v1761920825/furniture27_hg9vss.jpg",
+        text: "Furniture Twenty Seven",
+        id: "Furniture-twenty-seven",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/ds9q0abgk/image/upload/v1761920825/furniture28_szkkx6.jpg",
+        text: "Furniture Twenty Eight",
+        id: "Furniture-twenty-eight",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/ds9q0abgk/image/upload/v1761920826/furniture29_dwvl4n.jpg",
+        text: "Furniture Twenty Nine",
+        id: "Furniture-twenty-nine",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/ds9q0abgk/image/upload/v1761920828/furniture30_s5mwuu.jpg",
+        text: "Furniture Thirty",
+        id: "Furniture-thirty",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/ds9q0abgk/image/upload/v1761920828/furniture31_gcvlyn.jpg",
+        text: "Furniture Thirty One",
+        id: "Furniture-thirty-one",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/ds9q0abgk/image/upload/v1761920832/furniture32_baec8m.jpg",
+        text: "Furniture Thirty Two",
+        id: "Furniture-thirty-two",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/ds9q0abgk/image/upload/v1761920844/furniture33_gcjbpx.jpg",
+        text: "Furniture Thirty Three",
+        id: "Furniture-thirty-three",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/ds9q0abgk/image/upload/v1761920832/furniture34_vnmgo3.jpg",
+        text: "Furniture Thirty Four",
+        id: "Furniture-thirty-four",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/ds9q0abgk/image/upload/v1761920829/furniture35_qnmved.jpg",
+        text: "Furniture Thirty Five",
+        id: "Furniture-thirty-five",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/ds9q0abgk/image/upload/v1761920828/furniture36_s30t6p.jpg",
+        text: "Furniture Thirty Six",
+        id: "Furniture-thirty-six",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/ds9q0abgk/image/upload/v1761920830/furniture37_mbzthm.jpg",
+        text: "Furniture Thirty Seven",
+        id: "Furniture-thirty-seven",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/ds9q0abgk/image/upload/v1761920830/furniture38_s0glgb.jpg",
+        text: "Furniture Thirty Eight",
+        id: "Furniture-thirty-eight",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/ds9q0abgk/image/upload/v1761920831/furniture39_wbzwmx.jpg",
+        text: "Furniture Thirty Nine",
+        id: "Furniture-thirty-nine",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/ds9q0abgk/image/upload/v1761920831/furniture40_mlppi1.jpg",
+        text: "Furniture Forty",
+        id: "Furniture-forty",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/ds9q0abgk/image/upload/v1761920832/furniture41_ypke7t.jpg",
+        text: "Furniture Forty One",
+        id: "Furniture-forty-one",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/ds9q0abgk/image/upload/v1761920832/furniture42_gg99ud.jpg",
+        text: "Furniture Forty Two",
+        id: "Furniture-forty-two",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/ds9q0abgk/image/upload/v1761920833/furniture43_jubo74.jpg",
+        text: "Furniture Forty Three",
+        id: "Furniture-forty-three",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/ds9q0abgk/image/upload/v1761920833/furniture44_pid4o0.jpg",
+        text: "Furniture Forty Four",
+        id: "Furniture-forty-four",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/ds9q0abgk/image/upload/v1761920833/furniture45_kqkccv.jpg",
+        text: "Furniture Forty Five",
+        id: "Furniture-forty-five",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/ds9q0abgk/image/upload/v1761920809/furniture46_aumeuf.jpg",
+        text: "Furniture Forty Six",
+        id: "Furniture-forty-six",
       },
     ],
   },

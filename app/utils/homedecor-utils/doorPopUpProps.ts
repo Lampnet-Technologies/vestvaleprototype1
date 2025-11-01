@@ -19,7 +19,7 @@ export const allImagesForDoors = [
     ]
   },
   {
-    id: 1,
+    id: 2,
     slug: "door",
     name: "door-two",
     src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863737/door-02_lqrk81.svg",
@@ -38,7 +38,7 @@ export const allImagesForDoors = [
     ]
   },
   {
-    id: 1,
+    id: 3,
     slug: "door",
     name: "door-three",
     src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863739/door-03_nq89hb.svg",
@@ -57,7 +57,7 @@ export const allImagesForDoors = [
     ]
   },
   {
-    id: 1,
+    id: 4,
     slug: "door",
     name: "door-four",
     src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863742/door-04_b9z7s9.svg",
@@ -76,7 +76,7 @@ export const allImagesForDoors = [
     ]
   },
   {
-    id: 1,
+    id: 5,
     slug: "door",
     name: "door-five",
     src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863715/door-05_tassgr.svg",
@@ -95,7 +95,7 @@ export const allImagesForDoors = [
     ]
   },
   {
-    id: 1,
+    id: 6,
     slug: "door",
     name: "door-six",
     src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863716/door-06_pvxpt2.svg",
@@ -114,7 +114,7 @@ export const allImagesForDoors = [
     ]
   },
   {
-    id: 1,
+    id: 7,
     slug: "door",
     name: "door-seven",
     src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863718/door-07_wzqcea.svg",
@@ -133,7 +133,7 @@ export const allImagesForDoors = [
     ]
   },
   {
-    id: 1,
+    id: 8,
     slug: "door",
     name: "door-eight",
     src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863720/door-08_eevlf1.svg",
@@ -152,7 +152,7 @@ export const allImagesForDoors = [
     ]
   },
   {
-    id: 1,
+    id: 9,
     slug: "door",
     name: "door-nine",
     src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863723/door-09_bcyh0r.svg",
@@ -171,7 +171,7 @@ export const allImagesForDoors = [
     ]
   },
   {
-    id: 1,
+    id: 10,
     slug: "door",
     name: "door-ten",
     src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863724/door-10_agl9pz.svg",
@@ -190,7 +190,7 @@ export const allImagesForDoors = [
     ]
   },
   {
-    id: 1,
+    id: 11,
     slug: "door",
     name: "door-eleven",
     src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863727/door-11_kdh3cu.svg",
@@ -209,7 +209,7 @@ export const allImagesForDoors = [
     ]
   },
   {
-    id: 1,
+    id: 12,
     slug: "door",
     name: "door-twelve",
     src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863729/door-12_ehernk.svg",
